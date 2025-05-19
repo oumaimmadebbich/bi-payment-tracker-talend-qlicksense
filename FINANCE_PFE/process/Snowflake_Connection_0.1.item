@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:DbConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/connection">
+  <connection xmi:id="f1debae4-548b-44b5-8b48-c5506f309b9d" id="f1debae4-548b-44b5-8b48-c5506f309b9d" label="Snowflake_Connection" name="Snowflake_Connection" version="0.1" type="JDBC">
+    <DbConnection url="jdbc:snowflake://PTTGBJG-RI77688.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=PFE_WAREHOUSE&amp;db=BANQUE&amp;schema=PFE" dbType="Snowflake" driverClass="net.snowflake.client.jdbc.SnowflakeDriver" username="OUMAYMADEBBICH1" password="enc:system.encryption.key.v1:1d91f359d6b148fe966afd07c6ddf690">
+      <driverTable name="drivers">
+        <drivers path="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar"/>
+      </driverTable>
+    </DbConnection>
+  </connection>
+</talendfile:DbConnection>

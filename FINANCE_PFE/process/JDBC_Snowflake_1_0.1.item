@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:DbConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/connection">
+  <connection xmi:id="_1926c46430414c55862618" id="_1926c46430414c55862618" label="JDBC_Snowflake_1" name="JDBC_Snowflake_1" version="0.1" type="JDBC">
+    <DbConnection url="jdbc:snowflake://PTTGBJG-RI77688.snowflakecomputing.com/?user=OUMAYMADEBBICH1&warehouse=PFE_WAREHOUSE&db=BANQUE&schema=PFE" dbType="Snowflake" driverClass="net.snowflake.client.jdbc.SnowflakeDriver" username="OUMAYMADEBBICH1" password="enc:system.encryption.key.v1:410fcfea81b347cc8eee48e0f36b8959">
+      <driverTable name="drivers">
+        <drivers path="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar"/>
+      </driverTable>
+    </DbConnection>
+    <schema xmi:id="def6d750-14f7-4eda-b6cb-67bab57c5a1d" name="snowflake_schema_1_0.1" label="snowflake_schema_1_0.1">
+            <column name="KEKCONTR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+    </schema>
+  </connection>
+</talendfile:DbConnection>

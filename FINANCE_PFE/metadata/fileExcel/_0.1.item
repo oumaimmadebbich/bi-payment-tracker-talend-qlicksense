@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenericMetadata:GenericMetadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:GenericMetadata="http://www.talend.org/genericmetadata">
+  <connection xmi:id="c2981c0c-184a-40db-b61e-df66c76942bd" id="c2981c0c-184a-40db-b61e-df66c76942bd" name="" label="" version="0.1">
+    <additionalProperties xmi:id="ec22909f-43d2-462e-9a23-573529fefac0" key="filePath" value=""/>
+    <additionalProperties xmi:id="7cfb71cb-5fd7-4713-b63a-ff9a93261596" key="header" value="1"/>
+    <additionalProperties xmi:id="3702be01-abeb-4976-acf5-7b0c641abba4" key="footer" value="0"/>
+    <additionalProperties xmi:id="67847314-7ff1-4aba-9ee8-eacea514507d" key="encoding" value="UTF-8"/>
+    <additionalProperties xmi:id="202316cd-036f-4e48-92e6-99f2e6807d12" key="firstColumn" value="1"/>
+    <additionalProperties xmi:id="95938ef8-161d-46bc-bdd2-889b126aa621" key="lastColumn" value=""/>
+    <additionalProperties xmi:id="a3e94cca-41fb-470e-a345-edcb882bafdf" key="allSheets" value="true"/>
+    <additionalProperties xmi:id="58b5fa5a-d929-4fab-96e2-526ee1f5c509" key="sheetList" value="Sheet1"/>
+    <schema xmi:id="bfa77c32-a9df-471e-ba46-59ea7a3366fc" name="" label="">
+      <!-- Dynamic schema for repository 1 -->
+    </schema>
+  </connection>
+</GenericMetadata:GenericMetadata>

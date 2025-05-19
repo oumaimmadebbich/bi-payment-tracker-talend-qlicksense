@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:FileMetadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/file">
+  <connection xmi:id="_S7NS0CwpEfCYXa0lt59XIQ" id="_S7NS0CwpEfCYXa0lt59XIQ" label="kontr_0_1" name="kontr_0_1" version="0.1" type="Excel">
+    <FileConnection allSheets="true" encoding="UTF-8" fieldSeparatorValue=";" firstColumn="1" footer="0" header="1" limitValue="">
+      <filePath>C:/Users/Admin/Downloads/kontrr.xlsx</filePath>
+      <sheetName>Sheet1</sheetName>
+    </FileConnection>
+    <schema xmi:id="8bf41d66-4df3-4078-9b6c-c9e26e2fd66c" name="test_0_1" label="test_0_1">
+            <column name="KEKCONTR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTVALIDFR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTVALIDTO" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="CREATEDON" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="CRM_ENDDAT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTEKAPROD" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTEKDPROD" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTEKFPROD" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTCANCON" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTACCEPT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTEKBBAG" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTEKDCORB" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTCANCLI" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="EKCTPCD" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="EKNETCOD" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="EKPRDTCO" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKOCNTR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="RECORDMODE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFREKCUST" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFRPAYR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="SEKCONTR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="FEKCONTR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="FEKPBDFL" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="FEKSPCON" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKOBJECT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKPROV" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKPURCHS" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKREPN" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKSALESM" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKDRIVER" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="EKFRPLED" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="FLASTVER" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKADDRE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFREKCS2T" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFREKCST2" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="FFRVWBANK" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="FFRVWFI" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="SEKCOSTI" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DEKURAD" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFRCOMP" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="LOGSYS" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="FBSDOUBT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DEPINCHAR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKBARCC" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKBARFIC" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKBARTPC" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="PKMISSORI" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="TPEKENTCR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KZNEUWGW" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KCONTMAN" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFRPROD" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKCONTR2" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKNADDR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKOCNTR2" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="EKRIBNR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="TIME" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="CCEKOPT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DURATION" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="CALDAY" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DUR_UNIT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="CURRENCY" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="PCEKVATRT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="PCEKINTER" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="PCEKINEFF" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="PCEKINSE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="PCEKINSL" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKFUNB" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKCAPC" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKFPAY" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKOPFEE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKGADEP" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKBYBACK" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AIBFINT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AFRFINHT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ABNFINHT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AFRAPPORT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ABASELOC" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ABSCOLES" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKPART" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ALFNOTAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ALIFETAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ALFYETAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ALPENTAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ALIPETAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ALPEYTAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ABFINTTC" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKPTIMP" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KABDEAL" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKAVNT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KILOMETER" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+    </schema>
+  </connection>
+</talendfile:FileMetadata>

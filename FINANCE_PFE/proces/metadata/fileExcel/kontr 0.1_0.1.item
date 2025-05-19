@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:FileMetadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/file">
+  <connection xmi:id="_S7NS0CwpEfCYXa0lt59XIQ" id="_S7NS0CwpEfCYXa0lt59XIQ" label="kontr 0.1" name="kontr 0.1" version="0.1" type="Excel">
+    <FileConnection allSheets="true" encoding="UTF-8" fieldSeparatorValue=";" firstColumn="1" footer="0" header="1" limitValue="">
+      <filePath>C:/Users/Admin/Downloads/kontrr.xlsx</filePath>
+      <sheetName>Sheet1</sheetName>
+    </FileConnection>
+    <schema xmi:id="9d806718-d496-47f4-9dd6-87dc4450e1ef" name="test 0.1" label="test 0.1">
+    </schema>
+  </connection>
+</talendfile:FileMetadata>

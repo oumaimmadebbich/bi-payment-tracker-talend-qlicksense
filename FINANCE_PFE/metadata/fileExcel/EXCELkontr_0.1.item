@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenericMetadata:GenericMetadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:GenericMetadata="http://www.talend.org/genericmetadata">
+  <connection xmi:id="c33698d6-b764-48c2-97a3-3553f7a794e8" id="c33698d6-b764-48c2-97a3-3553f7a794e8" name="EXCELkontr" label="EXCELkontr" version="0.1">
+    <additionalProperties xmi:id="ffe0a2e5-969b-41b6-8b3b-2775b1e49aa1" key="filePath" value="C:/Users/Admin/Downloads/kontrr.xlsx"/>
+    <additionalProperties xmi:id="c959d4e7-a794-4ec4-ac40-3d3e7a90fc55" key="header" value="1"/>
+    <additionalProperties xmi:id="c3b9b02e-d7a2-42e7-83f8-8d56f6352aee" key="footer" value="0"/>
+    <additionalProperties xmi:id="1a1426d6-b1a9-4e22-8616-1f94bac23c33" key="encoding" value="UTF-8"/>
+    <additionalProperties xmi:id="76638cb4-f4e2-48e5-b6b8-3e271a74076c" key="firstColumn" value="1"/>
+    <additionalProperties xmi:id="b7e7d09d-b33c-4867-84d1-5eee253dc244" key="lastColumn" value=""/>
+    <additionalProperties xmi:id="e3cd274e-f028-489b-b943-7e42d51b7122" key="allSheets" value="true"/>
+    <additionalProperties xmi:id="ebf93798-e4ab-4a2e-bb01-df7cbc062425" key="sheetList" value="Sheet1"/>
+    <schema xmi:id="c55089e6-2e42-43e2-ab70-dda3fa067580" name="no" label="no">
+            <column xmi:id="567228dc-582e-43fe-bcb6-57ca82341eac" name="KEKCONTR" type="id_String" length="255" nullable="true"/>
+    </schema>
+  </connection>
+</GenericMetadata:GenericMetadata>
