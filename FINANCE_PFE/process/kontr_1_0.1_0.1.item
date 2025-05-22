@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:FileMetadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/file">
-  <connection xmi:id="_854b6fd2955149569cfec2" id="_854b6fd2955149569cfec2" label="kontr_1_0.1" name="kontr_1_0.1" version="0.1" type="Excel">
+  <connection xmi:id="_S7NS0CwpEfCYXa0lt59XIQ_1" id="_S7NS0CwpEfCYXa0lt59XIQ_1" label="kontr_1_0.1" name="kontr_1_0.1" version="0.1" type="Excel">
     <FileConnection allSheets="true" encoding="UTF-8" fieldSeparatorValue=";" firstColumn="1" footer="0" header="1" limitValue="">
       <filePath>C:/Users/Admin/Downloads/kontrr.xlsx</filePath>
       <sheetName>Sheet1</sheetName>
     </FileConnection>
-    <schema xmi:id="8987fce6-6bb4-4d83-b1dc-38a7712377e3" name="test_1_0.1" label="test_1_0.1">
+    <schema xmi:id="125761ce-abd5-43b1-b63e-2f215c56d3e0" name="test_1_0.1" label="test_1_0.1">
             <column name="KEKCONTR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
       <column name="DTVALIDFR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
       <column name="DTVALIDTO" type="id_String" length="255" nullable="true" usefulColumn="true"/>

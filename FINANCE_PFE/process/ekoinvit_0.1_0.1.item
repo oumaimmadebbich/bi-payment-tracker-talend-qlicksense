@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:FileMetadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/file">
+  <connection xmi:id="_S7NS0CwpEfCYXa0lt59XIQ" id="_S7NS0CwpEfCYXa0lt59XIQ" label="ekoinvit 0.1" name="ekoinvit 0.1" version="0.1" type="Excel">
+    <FileConnection allSheets="false" encoding="UTF-8" fieldSeparatorValue=";" firstColumn="1" footer="0" header="1" limitValue="">
+      <filePath>D:/Data/ekoinvit.xlsx</filePath>
+      <sheetName>Sheet1</sheetName>
+    </FileConnection>
+    <schema xmi:id="5021f631-7a64-476d-ae6b-a3bb47feb0c3" name="test 0.1" label="test 0.1">
+            <column name="KFRBILNR" type="id_String" length="255" precision="0" pattern="" nullable="true" usefulColumn="true"/>
+      <column name="KFRINLID" type="id_String" length="255" precision="0" pattern="" nullable="true" usefulColumn="true"/>
+      <column name="DM_EXDATE" type="id_String" length="255" precision="0" pattern="" nullable="true" usefulColumn="true"/>
+      <column name="KFRLINID" type="id_String" length="255" precision="0" pattern="" nullable="true" usefulColumn="true"/>
+      <column name="DTFRPBEG" type="id_String" length="255" precision="0" pattern="" nullable="true" usefulColumn="true"/>
+      <column name="DTFRPEND" type="id_String" length="255" precision="0" pattern="" nullable="true" usefulColumn="true"/>
+      <column name="KFRSUBLB" type="id_String" length="255" precision="0" pattern="" nullable="true" usefulColumn="true"/>
+      <column name="AFRNOTAX" type="id_String" length="255" precision="0" pattern="" nullable="true" usefulColumn="true"/>
+      <column name="AFRYETAX" type="id_String" length="255" precision="0" pattern="" nullable="true" usefulColumn="true"/>
+      <column name="AFRTAXAM" type="id_String" length="255" precision="0" pattern="" nullable="true" usefulColumn="true"/>
+      <column name="AFRBATAX" type="id_String" length="255" precision="0" pattern="" nullable="true" usefulColumn="true"/>
+      <column name="CURRENCY" type="id_String" length="255" precision="0" pattern="" nullable="true" usefulColumn="true"/>
+      <column name="RECORDMODE" type="id_String" length="255" precision="0" pattern="" nullable="true" usefulColumn="true"/>
+    </schema>
+  </connection>
+</talendfile:FileMetadata>

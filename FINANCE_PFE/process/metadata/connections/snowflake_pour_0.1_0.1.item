@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:DbConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/connection">
+  <connection xmi:id="6bf58078-cabb-4227-9774-1d4242f15fdf" id="6bf58078-cabb-4227-9774-1d4242f15fdf" label="snowflake_pour_0.1" name="snowflake_pour_0.1" version="0.1" type="JDBC">
+    <DbConnection url=""jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&warehouse=COMPUTE_WH&db=BANQUE&schema=PFE"" dbType="Snowflake" driverClass="net.snowflake.client.jdbc.SnowflakeDriver" username="OUMAYMADEBBICH1" password="enc:system.encryption.key.v1:2ff99987f9ff491bb2afd52cd13c04bf">
+      <driverTable name="drivers">
+        <drivers path="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar"/>
+      </driverTable>
+    </DbConnection>
+    <schema xmi:id="d3f184e5-8cda-4fd2-b946-a4c155546779" name="snowflake_schema_pour_0.1" label="snowflake_schema_pour_0.1">
+            <column name="CONTRACTID" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+    </schema>
+  </connection>
+</talendfile:DbConnection>

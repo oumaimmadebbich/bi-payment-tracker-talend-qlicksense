@@ -1,0 +1,475 @@
+{
+  "job_label": "koil",
+  "job_type": "no",
+  "creation_date": "2025-05-22T01:03:02.170000Z",
+  "pipelines": [
+    {
+      "repository_file": "C:/Users/Admin/Downloads/kontrr.xlsx",
+      "columns": [
+        "KEKCONTR",
+        "DTVALIDFR",
+        "DTVALIDTO",
+        "CREATEDON",
+        "CRM_ENDDAT",
+        "DTEKAPROD",
+        "DTEKDPROD",
+        "DTEKFPROD",
+        "DTCANCON",
+        "DTACCEPT",
+        "DTEKBBAG",
+        "DTEKDCORB",
+        "DTCANCLI",
+        "EKCTPCD",
+        "EKNETCOD",
+        "EKPRDTCO",
+        "KEKOCNTR",
+        "RECORDMODE",
+        "KFREKCUST",
+        "KFRPAYR",
+        "SEKCONTR",
+        "FEKCONTR",
+        "FEKPBDFL",
+        "FEKSPCON",
+        "KEKOBJECT",
+        "KEKPROV",
+        "KEKPURCHS",
+        "KEKREPN",
+        "KEKSALESM",
+        "KEKDRIVER",
+        "EKFRPLED",
+        "FLASTVER",
+        "KEKADDRE",
+        "KFREKCS2T",
+        "KFREKCST2",
+        "FFRVWBANK",
+        "FFRVWFI",
+        "SEKCOSTI",
+        "DEKURAD",
+        "KFRCOMP",
+        "LOGSYS",
+        "FBSDOUBT",
+        "DEPINCHAR",
+        "KEKBARCC",
+        "KEKBARFIC",
+        "KEKBARTPC",
+        "PKMISSORI",
+        "TPEKENTCR",
+        "KZNEUWGW",
+        "KCONTMAN",
+        "KFRPROD",
+        "KEKCONTR2",
+        "KEKNADDR",
+        "KEKOCNTR2",
+        "EKRIBNR",
+        "TIME",
+        "CCEKOPT",
+        "DURATION",
+        "CALDAY",
+        "DUR_UNIT",
+        "CURRENCY",
+        "PCEKVATRT",
+        "PCEKINTER",
+        "PCEKINEFF",
+        "PCEKINSE",
+        "PCEKINSL",
+        "AEKFUNB",
+        "AEKCAPC",
+        "AEKFPAY",
+        "AEKOPFEE",
+        "AEKGADEP",
+        "AEKBYBACK",
+        "AIBFINT",
+        "AFRFINHT",
+        "ABNFINHT",
+        "AFRAPPORT",
+        "ABASELOC",
+        "ABSCOLES",
+        "AEKPART",
+        "ALFNOTAX",
+        "ALIFETAX",
+        "ALFYETAX",
+        "ALPENTAX",
+        "ALIPETAX",
+        "ALPEYTAX",
+        "ABFINTTC",
+        "AEKPTIMP",
+        "KABDEAL",
+        "KEKAVNT",
+        "KILOMETER"
+      ],
+      "repository_name": "koil 0.1",
+      "repository_schema": "koil_schema 0.1",
+      "repository_id": "_S7NS0CwpEfCYXa0lt59XIQ_1",
+      "dataset_name": "koil 0.1",
+      "header": "1",
+      "source_label": "kontre",
+      "snowflake_url": "\"jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&warehouse=COMPUTE_WH&db=BANQUE&schema=PFE\"",
+      "snowflake_user": "OUMAYMADEBBICH1",
+      "snowflake_password": "Adem123456789@",
+      "snowflake_repository_id": "_08r9kCtMEfC1gb9COxFZIA_1",
+      "target_table": "SA_OBJECT",
+      "mappings": [
+        {
+          "source_field": "KEKCONTR",
+          "target_field": "CONTRACTID"
+        },
+        {
+          "source_field": "DTVALIDFR",
+          "target_field": "DTVALIDFR"
+        },
+        {
+          "source_field": "DTVALIDTO",
+          "target_field": "DTVALIDTO"
+        },
+        {
+          "source_field": "CREATEDON",
+          "target_field": "CREATEDON"
+        },
+        {
+          "source_field": "CRM_ENDDAT",
+          "target_field": "CRM_ENDDAT"
+        },
+        {
+          "source_field": "DTEKAPROD",
+          "target_field": "DTEKAPROD"
+        },
+        {
+          "source_field": "DTEKDPROD",
+          "target_field": "DTEKDPROD"
+        },
+        {
+          "source_field": "DTEKFPROD",
+          "target_field": "DTEKFPROD"
+        },
+        {
+          "source_field": "DTCANCON",
+          "target_field": "DTCANCON"
+        },
+        {
+          "source_field": "DTACCEPT",
+          "target_field": "DTACCEPT"
+        },
+        {
+          "source_field": "DTEKBBAG",
+          "target_field": "DTEKBBAG"
+        },
+        {
+          "source_field": "DTEKDCORB",
+          "target_field": "DTEKDCORB"
+        },
+        {
+          "source_field": "DTCANCLI",
+          "target_field": "DTCANCLI"
+        },
+        {
+          "source_field": "EKCTPCD",
+          "target_field": "EKCTPCD"
+        },
+        {
+          "source_field": "EKNETCOD",
+          "target_field": "EKNETCOD"
+        },
+        {
+          "source_field": "EKPRDTCO",
+          "target_field": "EKPRDTCO"
+        },
+        {
+          "source_field": "KEKOCNTR",
+          "target_field": "KEKOCNTR"
+        },
+        {
+          "source_field": "RECORDMODE",
+          "target_field": "RECORDMODE"
+        },
+        {
+          "source_field": "KFREKCUST",
+          "target_field": "KFREKCUST"
+        },
+        {
+          "source_field": "KFRPAYR",
+          "target_field": "KFRPAYR"
+        },
+        {
+          "source_field": "SEKCONTR",
+          "target_field": "SEKCONTR"
+        },
+        {
+          "source_field": "FEKCONTR",
+          "target_field": "FEKCONTR"
+        },
+        {
+          "source_field": "FEKPBDFL",
+          "target_field": "FEKPBDFL"
+        },
+        {
+          "source_field": "FEKSPCON",
+          "target_field": "FEKSPCON"
+        },
+        {
+          "source_field": "KEKOBJECT",
+          "target_field": "KEKOBJECT"
+        },
+        {
+          "source_field": "KEKPROV",
+          "target_field": "KEKPROV"
+        },
+        {
+          "source_field": "KEKPURCHS",
+          "target_field": "KEKPURCHS"
+        },
+        {
+          "source_field": "KEKREPN",
+          "target_field": "KEKREPN"
+        },
+        {
+          "source_field": "KEKSALESM",
+          "target_field": "KEKSALESM"
+        },
+        {
+          "source_field": "KEKDRIVER",
+          "target_field": "KEKDRIVER"
+        },
+        {
+          "source_field": "EKFRPLED",
+          "target_field": "EKFRPLED"
+        },
+        {
+          "source_field": "FLASTVER",
+          "target_field": "FLASTVER"
+        },
+        {
+          "source_field": "KEKADDRE",
+          "target_field": "KEKADDRE"
+        },
+        {
+          "source_field": "KFREKCS2T",
+          "target_field": "KFREKCS2T"
+        },
+        {
+          "source_field": "KFREKCST2",
+          "target_field": "KFREKCST2"
+        },
+        {
+          "source_field": "FFRVWBANK",
+          "target_field": "FFRVWBANK"
+        },
+        {
+          "source_field": "FFRVWFI",
+          "target_field": "FFRVWFI"
+        },
+        {
+          "source_field": "SEKCOSTI",
+          "target_field": "SEKCOSTI"
+        },
+        {
+          "source_field": "DEKURAD",
+          "target_field": "DEKURAD"
+        },
+        {
+          "source_field": "KFRCOMP",
+          "target_field": "KFRCOMP"
+        },
+        {
+          "source_field": "LOGSYS",
+          "target_field": "LOGSYS"
+        },
+        {
+          "source_field": "FBSDOUBT",
+          "target_field": "FBSDOUBT"
+        },
+        {
+          "source_field": "DEPINCHAR",
+          "target_field": "DEPINCHAR"
+        },
+        {
+          "source_field": "KEKBARCC",
+          "target_field": "KEKBARCC"
+        },
+        {
+          "source_field": "KEKBARFIC",
+          "target_field": "KEKBARFIC"
+        },
+        {
+          "source_field": "KEKBARTPC",
+          "target_field": "KEKBARTPC"
+        },
+        {
+          "source_field": "PKMISSORI",
+          "target_field": "PKMISSORI"
+        },
+        {
+          "source_field": "TPEKENTCR",
+          "target_field": "TPEKENTCR"
+        },
+        {
+          "source_field": "KZNEUWGW",
+          "target_field": "KZNEUWGW"
+        },
+        {
+          "source_field": "KCONTMAN",
+          "target_field": "KCONTMAN"
+        },
+        {
+          "source_field": "KFRPROD",
+          "target_field": "KFRPROD"
+        },
+        {
+          "source_field": "KEKCONTR2",
+          "target_field": "KEKCONTR2"
+        },
+        {
+          "source_field": "KEKNADDR",
+          "target_field": "KEKNADDR"
+        },
+        {
+          "source_field": "KEKOCNTR2",
+          "target_field": "KEKOCNTR2"
+        },
+        {
+          "source_field": "EKRIBNR",
+          "target_field": "EKRIBNR"
+        },
+        {
+          "source_field": "TIME",
+          "target_field": "TIME"
+        },
+        {
+          "source_field": "CCEKOPT",
+          "target_field": "CCEKOPT"
+        },
+        {
+          "source_field": "DURATION",
+          "target_field": "DURATION"
+        },
+        {
+          "source_field": "CALDAY",
+          "target_field": "CALDAY"
+        },
+        {
+          "source_field": "DUR_UNIT",
+          "target_field": "DUR_UNIT"
+        },
+        {
+          "source_field": "CURRENCY",
+          "target_field": "CURRENCY"
+        },
+        {
+          "source_field": "PCEKVATRT",
+          "target_field": "PCEKVATRT"
+        },
+        {
+          "source_field": "PCEKINTER",
+          "target_field": "PCEKINTER"
+        },
+        {
+          "source_field": "PCEKINEFF",
+          "target_field": "PCEKINEFF"
+        },
+        {
+          "source_field": "PCEKINSE",
+          "target_field": "PCEKINSE"
+        },
+        {
+          "source_field": "PCEKINSL",
+          "target_field": "PCEKINSL"
+        },
+        {
+          "source_field": "AEKFUNB",
+          "target_field": "AEKFUNB"
+        },
+        {
+          "source_field": "AEKCAPC",
+          "target_field": "AEKCAPC"
+        },
+        {
+          "source_field": "AEKFPAY",
+          "target_field": "AEKFPAY"
+        },
+        {
+          "source_field": "AEKOPFEE",
+          "target_field": "AEKOPFEE"
+        },
+        {
+          "source_field": "AEKGADEP",
+          "target_field": "AEKGADEP"
+        },
+        {
+          "source_field": "AEKBYBACK",
+          "target_field": "AEKBYBACK"
+        },
+        {
+          "source_field": "AIBFINT",
+          "target_field": "AIBFINT"
+        },
+        {
+          "source_field": "AFRFINHT",
+          "target_field": "AFRFINHT"
+        },
+        {
+          "source_field": "ABNFINHT",
+          "target_field": "ABNFINHT"
+        },
+        {
+          "source_field": "AFRAPPORT",
+          "target_field": "AFRAPPORT"
+        },
+        {
+          "source_field": "ABASELOC",
+          "target_field": "ABASELOC"
+        },
+        {
+          "source_field": "ABSCOLES",
+          "target_field": "ABSCOLES"
+        },
+        {
+          "source_field": "AEKPART",
+          "target_field": "AEKPART"
+        },
+        {
+          "source_field": "ALFNOTAX",
+          "target_field": "ALFNOTAX"
+        },
+        {
+          "source_field": "ALIFETAX",
+          "target_field": "ALIFETAX"
+        },
+        {
+          "source_field": "ALFYETAX",
+          "target_field": "ALFYETAX"
+        },
+        {
+          "source_field": "ALPENTAX",
+          "target_field": "ALPENTAX"
+        },
+        {
+          "source_field": "ALIPETAX",
+          "target_field": "ALIPETAX"
+        },
+        {
+          "source_field": "ALPEYTAX",
+          "target_field": "ALPEYTAX"
+        },
+        {
+          "source_field": "ABFINTTC",
+          "target_field": "ABFINTTC"
+        },
+        {
+          "source_field": "AEKPTIMP",
+          "target_field": "AEKPTIMP"
+        },
+        {
+          "source_field": "KABDEAL",
+          "target_field": "KABDEAL"
+        },
+        {
+          "source_field": "KEKAVNT",
+          "target_field": "KEKAVNT"
+        },
+        {
+          "source_field": "KILOMETER",
+          "target_field": "KILOMETER"
+        }
+      ]
+    }
+  ]
+}

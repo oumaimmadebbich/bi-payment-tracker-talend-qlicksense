@@ -99,22 +99,13 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="200" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Input" show="false"/>
+  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="200" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="2" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value=""/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="__configuration.dataSet.tableName__"/>
@@ -133,7 +124,7 @@
     </elementParameter>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH1&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:Iigi4HQ9fxOqEvAy//Sc2dBwTKGt7na1kVvTE1Gjm3Q3eY0QM/7oHVcGdGE="/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:OdgUEfQHwBTbn4lgDfhhpUH4WlwQnZeeBKi+YC/0uInqCtDPqiPlDa6oxFM="/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
@@ -211,8 +202,7 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
-    <metadata connector="FLOW" label="SA_OBJECT" name="tDBInput_1">
+    <metadata connector="FLOW" label="SA_OBJECT" name="tDBInput_2">
       <column comment="" key="false" length="30" name="OBJECT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -296,13 +286,13 @@
       <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="400" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="400" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_pR060DQREfCG9bs1tUVyLA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_pR060DQREfCG9bs1tUVyLA-tMap_2-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
@@ -311,29 +301,14 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="obj" name="obj">
+    <metadata connector="FLOW" label="DIM_OBJECT" name="dim_object">
       <column comment="" key="true" length="30" name="OBJECT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="0" name="ACTUAL_DELIVERY_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="4" name="BRAND_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="4" name="RANGE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="4" name="OBJECT_GROUP_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="4" name="ENERGY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="4" name="TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOMENCLATURA_LABEL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="REGISTRATION_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -343,6 +318,27 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="38" name="FISCAL_POWER" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="PURPOSE_OF_USE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOMENCLATURA_LABEL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="OBJECT_GROUP_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="ENERGY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DELIVERY_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="ACTUAL_DELIVERY_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="YEAR_OF_PRODUCTION" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="38" name="DIN_POWER" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
@@ -357,46 +353,40 @@
       <column comment="" key="false" length="0" name="ROADING_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="0" name="DELIVERY_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="38" name="YEAR_OF_PRODUCTION" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="38" name="MILEAGE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="38" name="RESTITUTION_MILEAGE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="4" name="PURPOSE_OF_USE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="4" name="TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="obj" expressionFilter="row1.OBJECT_ID != null &amp;&amp; !row1.OBJECT_ID.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.ACTUAL_DELIVERY_DATE != null &amp;&amp;&#xD;&#xA;row1.BRAND_CODE != null &amp;&amp; !row1.BRAND_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.RANGE_CODE != null &amp;&amp; !row1.RANGE_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.OBJECT_GROUP_CODE != null &amp;&amp; !row1.OBJECT_GROUP_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.ENERGY_CODE != null &amp;&amp; !row1.ENERGY_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.TYPE_CODE != null &amp;&amp; !row1.TYPE_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.NOMENCLATURA_LABEL_1 != null &amp;&amp; !row1.NOMENCLATURA_LABEL_1.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.REGISTRATION_NUMBER != null &amp;&amp; !row1.REGISTRATION_NUMBER.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.CHASSIS_NUMBER != null &amp;&amp; !row1.CHASSIS_NUMBER.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.FISCAL_POWER != null &amp;&amp;&#xD;&#xA;row1.DIN_POWER != null &amp;&amp;&#xD;&#xA;row1.ENGINE_CUBIC_CAPACITY != null &amp;&amp; !row1.ENGINE_CUBIC_CAPACITY.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.REGISTRATION_DATE != null &amp;&amp;&#xD;&#xA;row1.ROADING_DATE != null &amp;&amp;&#xD;&#xA;row1.DELIVERY_DATE != null &amp;&amp;&#xD;&#xA;row1.YEAR_OF_PRODUCTION != null &amp;&amp;&#xD;&#xA;row1.MILEAGE != null &amp;&amp;&#xD;&#xA;row1.RESTITUTION_MILEAGE != null &amp;&amp;&#xD;&#xA;row1.PURPOSE_OF_USE != null &amp;&amp; !row1.PURPOSE_OF_USE.equals(&quot;NULL&quot;)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="dim_object" expressionFilter="row1.OBJECT_ID != null &amp;&amp; !row1.OBJECT_ID.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.ACTUAL_DELIVERY_DATE != null &amp;&amp;&#xD;&#xA;row1.BRAND_CODE != null &amp;&amp; !row1.BRAND_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.RANGE_CODE != null &amp;&amp; !row1.RANGE_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.OBJECT_GROUP_CODE != null &amp;&amp; !row1.OBJECT_GROUP_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.ENERGY_CODE != null &amp;&amp; !row1.ENERGY_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.TYPE_CODE != null &amp;&amp; !row1.TYPE_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.NOMENCLATURA_LABEL_1 != null &amp;&amp; !row1.NOMENCLATURA_LABEL_1.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.REGISTRATION_NUMBER != null &amp;&amp; !row1.REGISTRATION_NUMBER.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.CHASSIS_NUMBER != null &amp;&amp; !row1.CHASSIS_NUMBER.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.FISCAL_POWER != null &amp;&amp;&#xD;&#xA;row1.DIN_POWER != null &amp;&amp;&#xD;&#xA;row1.ENGINE_CUBIC_CAPACITY != null &amp;&amp; !row1.ENGINE_CUBIC_CAPACITY.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.REGISTRATION_DATE != null &amp;&amp;&#xD;&#xA;row1.ROADING_DATE != null &amp;&amp;&#xD;&#xA;row1.DELIVERY_DATE != null &amp;&amp;&#xD;&#xA;row1.YEAR_OF_PRODUCTION != null &amp;&amp;&#xD;&#xA;row1.MILEAGE != null &amp;&amp;&#xD;&#xA;row1.RESTITUTION_MILEAGE != null &amp;&amp;&#xD;&#xA;row1.PURPOSE_OF_USE != null &amp;&amp; !row1.PURPOSE_OF_USE.equals(&quot;NULL&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="OBJECT_ID" expression="row1.OBJECT_ID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ACTUAL_DELIVERY_DATE" expression="row1.ACTUAL_DELIVERY_DATE " type="id_Date" nullable="true"/>
         <mapperTableEntries name="BRAND_CODE" expression="row1.BRAND_CODE " type="id_String" nullable="true"/>
         <mapperTableEntries name="RANGE_CODE" expression="row1.RANGE_CODE " type="id_String" nullable="true"/>
-        <mapperTableEntries name="OBJECT_GROUP_CODE" expression="row1.OBJECT_GROUP_CODE " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ENERGY_CODE" expression="row1.ENERGY_CODE " type="id_String" nullable="true"/>
-        <mapperTableEntries name="TYPE_CODE" expression="row1.TYPE_CODE " type="id_String" nullable="true"/>
-        <mapperTableEntries name="NOMENCLATURA_LABEL_1" expression="row1.NOMENCLATURA_LABEL_1 " type="id_String" nullable="true"/>
         <mapperTableEntries name="REGISTRATION_NUMBER" expression="row1.REGISTRATION_NUMBER " type="id_String" nullable="true"/>
         <mapperTableEntries name="CHASSIS_NUMBER" expression="row1.CHASSIS_NUMBER " type="id_String" nullable="true"/>
         <mapperTableEntries name="FISCAL_POWER" expression="row1.FISCAL_POWER " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="PURPOSE_OF_USE" expression="row1.PURPOSE_OF_USE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOMENCLATURA_LABEL_1" expression="row1.NOMENCLATURA_LABEL_1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OBJECT_GROUP_CODE" expression="row1.OBJECT_GROUP_CODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ENERGY_CODE" expression="row1.ENERGY_CODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DELIVERY_DATE" expression="row1.DELIVERY_DATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ACTUAL_DELIVERY_DATE" expression="row1.ACTUAL_DELIVERY_DATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="YEAR_OF_PRODUCTION" expression="row1.YEAR_OF_PRODUCTION " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="DIN_POWER" expression="row1.DIN_POWER " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="ENGINE_CUBIC_CAPACITY" expression="row1.ENGINE_CUBIC_CAPACITY " type="id_String" nullable="true"/>
         <mapperTableEntries name="REGISTRATION_DATE" expression="row1.REGISTRATION_DATE " type="id_Date" nullable="true"/>
         <mapperTableEntries name="ROADING_DATE" expression="row1.ROADING_DATE " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="DELIVERY_DATE" expression="row1.DELIVERY_DATE " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="YEAR_OF_PRODUCTION" expression="row1.YEAR_OF_PRODUCTION " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="MILEAGE" expression="row1.MILEAGE " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="RESTITUTION_MILEAGE" expression="row1.RESTITUTION_MILEAGE " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="PURPOSE_OF_USE" expression="row1.PURPOSE_OF_USE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPE_CODE" expression="row1.TYPE_CODE " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="OBJECT_ID" type="id_String" nullable="true"/>
@@ -427,19 +417,10 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="680" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Output" show="false"/>
+  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="600" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="1" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -458,7 +439,7 @@
     </elementParameter>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH1&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:+am6Z64kEFDEkDvxklrghjEXz+t7FAceoqpc1yOYEFRgg97I/Q+rRnvyT1s="/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:iTkHgNqegboyfa4pI+Ejo1ZPiNxdw9Sf4EXTV1LhZZvfFU7tz5LM26pVVHM="/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
@@ -491,32 +472,32 @@
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="2"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="3"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="4"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ACTUAL_DELIVERY_DATE" id="5"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="BRAND_CODE" id="5"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="6"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="7"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="8"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="9"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="BRAND_CODE" id="10"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="RANGE_CODE" id="10"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="11"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="12"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="13"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="14"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="RANGE_CODE" id="15"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="REGISTRATION_NUMBER" id="15"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="16"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="17"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="18"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="19"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="OBJECT_GROUP_CODE" id="20"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CHASSIS_NUMBER" id="20"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="21"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="22"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="23"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="24"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ENERGY_CODE" id="25"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="FISCAL_POWER" id="25"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="26"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="27"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="28"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="29"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TYPE_CODE" id="30"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PURPOSE_OF_USE" id="30"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="31"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="32"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="33"/>
@@ -526,47 +507,47 @@
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="37"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="38"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="39"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="REGISTRATION_NUMBER" id="40"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="OBJECT_GROUP_CODE" id="40"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="41"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="42"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="43"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="44"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CHASSIS_NUMBER" id="45"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ENERGY_CODE" id="45"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="46"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="47"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="48"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="49"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="FISCAL_POWER" id="50"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DELIVERY_DATE" id="50"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="51"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="52"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="53"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="54"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DIN_POWER" id="55"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ACTUAL_DELIVERY_DATE" id="55"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="56"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="57"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="58"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="59"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ENGINE_CUBIC_CAPACITY" id="60"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="YEAR_OF_PRODUCTION" id="60"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="61"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="62"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="63"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="64"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="REGISTRATION_DATE" id="65"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DIN_POWER" id="65"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="66"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="67"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="68"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="69"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ROADING_DATE" id="70"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ENGINE_CUBIC_CAPACITY" id="70"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="71"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="72"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="73"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="74"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DELIVERY_DATE" id="75"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="REGISTRATION_DATE" id="75"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="76"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="77"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="78"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="79"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="YEAR_OF_PRODUCTION" id="80"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ROADING_DATE" id="80"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="81"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="82"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="83"/>
@@ -581,7 +562,7 @@
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="92"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="93"/>
       <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="94"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PURPOSE_OF_USE" id="95"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TYPE_CODE" id="95"/>
       <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="96"/>
       <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="97"/>
       <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="98"/>
@@ -597,30 +578,14 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
-    <metadata connector="FLOW" label="DIM_OBJECT" name="tDBOutput_1">
+    <metadata connector="FLOW" label="DIM_OBJECT" name="tDBOutput_2">
       <column comment="" key="true" length="30" name="OBJECT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="0" name="ACTUAL_DELIVERY_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="4" name="BRAND_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="4" name="RANGE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="4" name="OBJECT_GROUP_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="4" name="ENERGY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="4" name="TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOMENCLATURA_LABEL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="REGISTRATION_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -630,6 +595,27 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="38" name="FISCAL_POWER" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="PURPOSE_OF_USE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOMENCLATURA_LABEL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="OBJECT_GROUP_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="ENERGY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DELIVERY_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="ACTUAL_DELIVERY_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="YEAR_OF_PRODUCTION" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="38" name="DIN_POWER" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
@@ -644,19 +630,13 @@
       <column comment="" key="false" length="0" name="ROADING_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="0" name="DELIVERY_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="38" name="YEAR_OF_PRODUCTION" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="38" name="MILEAGE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="38" name="RESTITUTION_MILEAGE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="4" name="PURPOSE_OF_USE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="4" name="TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -666,25 +646,10 @@
       <column comment="" key="true" length="30" name="OBJECT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="0" name="ACTUAL_DELIVERY_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="4" name="BRAND_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="4" name="RANGE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="4" name="OBJECT_GROUP_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="4" name="ENERGY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="4" name="TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="30" name="NOMENCLATURA_LABEL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="REGISTRATION_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -694,6 +659,27 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="38" name="FISCAL_POWER" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="PURPOSE_OF_USE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NOMENCLATURA_LABEL_1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="OBJECT_GROUP_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="ENERGY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DELIVERY_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="ACTUAL_DELIVERY_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="YEAR_OF_PRODUCTION" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="38" name="DIN_POWER" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
@@ -708,36 +694,30 @@
       <column comment="" key="false" length="0" name="ROADING_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="0" name="DELIVERY_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="38" name="YEAR_OF_PRODUCTION" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="38" name="MILEAGE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="38" name="RESTITUTION_MILEAGE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="4" name="PURPOSE_OF_USE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="4" name="TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="obj" lineStyle="0" metaname="obj" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+  <connection connectorName="FLOW" label="dim_object" lineStyle="0" metaname="dim_object" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="obj" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="dim_object" show="false"/>
   </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
   </subjob>
 </talendfile:ProcessType>

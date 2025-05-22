@@ -5,7 +5,7 @@
       <filePath>C:/Users/Admin/Downloads/kontrr.xlsx</filePath>
       <sheetName>Sheet1</sheetName>
     </FileConnection>
-    <schema xmi:id="e769aa18-81fc-4084-999e-a85b36205c6f" name="test 0.1" label="test 0.1">
+    <schema xmi:id="3e149742-c59f-4b3b-99a7-c5edb2ad4470" name="test 0.1" label="test 0.1">
             <column name="KEKCONTR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
       <column name="DTVALIDFR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
       <column name="DTVALIDTO" type="id_String" length="255" nullable="true" usefulColumn="true"/>
