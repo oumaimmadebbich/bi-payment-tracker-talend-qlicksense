@@ -101,17 +101,8 @@
   </parameters>
   <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="160" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Input" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="2" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value=""/>
@@ -343,7 +334,6 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
     <metadata connector="FLOW" label="SA_CONTRACT" name="tDBInput_1">
       <column comment="" key="false" length="12" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -642,6 +632,18 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="FACT_CONTRAT" name="fact_contrat">
+      <column comment="" key="true" length="12" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="30" name="OBJECT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="38" name="ID_JOUR" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="17" name="FUNDING_BASE_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -704,6 +706,10 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="fact_contrat">
+        <mapperTableEntries name="CONTRACT_ID" expression="row2.CONTRACT_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUSTOMER_ID" expression="row4.CUSTOMER_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OBJECT_ID" expression="row5.OBJECT_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ID_JOUR" expression="row3.ID_JOUR " type="id_BigDecimal"/>
         <mapperTableEntries name="FUNDING_BASE_HT" expression="row1.FUNDING_BASE " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="CAPITAL_CONTRIBUTION_HT" expression="row1.CAPITAL_CONTRIBUTION " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="GARENTEE_DEPOSIT" expression="row1.GUARANTEE_DEPOSIT " type="id_BigDecimal" nullable="true"/>
@@ -711,18 +717,18 @@
         <mapperTableEntries name="LITIGATION_FEE_HT" expression="row1.LITIGATION_FEE_TAX " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="LITIGATION_FEE_WITH_TAX" expression="row1.LITIGATION_FEE_WITH_TAX " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="LITIGATION_PENALTIES_HT" expression="row1.LITIGATION_PENALTIES " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="TAX_FEES_ON_LITIGATION_PENALTIES" expression="" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="TAX_FEES_ON_LITIGATION_PENALTIES" expression="row1.LITIGATION_PENALTIES_VAT_IN " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="LITIGATION_PENALTIES_WITH_TAX" expression="row1.LITIGATION_PENALTIES_TAX " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="MONTANT_TOTAL_FINANCE_HT" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="MONTANT_TOTAL_FINANCE_WITH_TAX" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="MONTANT_CONTRIB_PERSO_CLIENT_HT" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="PRIME_IMPORTEUR" expression="" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="TAUX_INTERET_NOMINAL" type="id_Double" nullable="true"/>
-        <mapperTableEntries name="INITIAL_RATE" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="MONTANT_TOTAL_FINANCE_HT" expression="row1.FINANCED_AMOUNT_VAT_1 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MONTANT_TOTAL_FINANCE_WITH_TAX" expression="row1.FINANCED_AMOUNT_VAT_2 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="MONTANT_CONTRIB_PERSO_CLIENT_HT" expression="row1.OWN_CONTRIBUTION_AMOUNT " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="PRIME_IMPORTEUR" expression="row1.IMPORTER_BONUS_VAT_2 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="TAUX_INTERET_NOMINAL" expression="row1.NOMINAL_INTEREST_RATE " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INITIAL_RATE" expression="row1.YEARLY_GLOBAL_INITIAL_RATE " type="id_Double" nullable="true"/>
         <mapperTableEntries name="TAUX_INTERET_TESE" expression="row1.TESE_INTEREST_RATE " type="id_Double" nullable="true"/>
         <mapperTableEntries name="TAUX_INTERET_TESL" expression="row1.TESL_INTEREST_RATE " type="id_Double" nullable="true"/>
         <mapperTableEntries name="VAT_RATE" expression="row1.VAT_RATE " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="IMPORTER_BONUS" expression="row1.IMPORTER_BONUS_VAT_2 " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="IMPORTER_BONUS" expression="row1.IMPORTER_BONUS_VAT_1 " type="id_BigDecimal" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="CONTRACT_ID" type="id_String" nullable="true"/>
@@ -817,36 +823,36 @@
         <mapperTableEntries name="VERSION_CODE" type="id_String" nullable="true"/>
         <mapperTableEntries name="KILOMETER" type="id_BigDecimal" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="CONTRACT_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LAST_CONTRACT_VERSION" type="id_String" nullable="true"/>
-        <mapperTableEntries name="STATUS_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DESCRIPTION" type="id_String" nullable="true"/>
-        <mapperTableEntries name="RECORD_CREATION_DATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="END_DATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="FIRST_PRODUCTION_DATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ACCOUNTANCY_PRODUCTION_DATE" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PRODUCT_TYPE_CODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PRE_BAD_DEBT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SPECIAL_CONTRACT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONTRACT_RECEIVED" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DOUBTFUL_FLAG" type="id_String" nullable="true"/>
-        <mapperTableEntries name="VERSION_CODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COLLATERAL_ESTIMATED" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="NETWORK_CODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COMPANY_CODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KILOMETER" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LAST_CONTRACT_VERSION" expression="row1.LAST_CONTRACT_VERSION " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="STATUS_ID" expression="row1.STATUS_ID " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="DESCRIPTION" expression="row1.DESCRIPTION " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="RECORD_CREATION_DATE" expression="row1.RECORD_CREATION_DATE " type="id_Date" nullable="true" operator="="/>
+        <mapperTableEntries name="END_DATE" expression="row1.END_DATE " type="id_Date" nullable="true" operator="="/>
+        <mapperTableEntries name="FIRST_PRODUCTION_DATE" expression="row1.FIRST_PRODUCTION_DATE " type="id_Date" nullable="true" operator="="/>
+        <mapperTableEntries name="ACCOUNTANCY_PRODUCTION_DATE" expression="row1.ACCOUNTANCY_PRODUCTION_DATE " type="id_Date" nullable="true" operator="="/>
+        <mapperTableEntries name="PRODUCT_TYPE_CODE" expression="row1.PRODUCT_TYPE_CODE " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="PRE_BAD_DEBT" expression="row1.PRE_BAD_DEBT " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="SPECIAL_CONTRACT" expression="row1.SPECIAL_CONTRACT " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="CONTRACT_RECEIVED" expression="row1.CONTRACT_RECEIVED " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="DOUBTFUL_FLAG" expression="row1.DOUBTFUL_FLAG " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="VERSION_CODE" expression="row1.VERSION_CODE " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="COLLATERAL_ESTIMATED" expression="row1.COLLATERAL_ESTIMATED " type="id_BigDecimal" nullable="true" operator="="/>
+        <mapperTableEntries name="NETWORK_CODE" expression="row1.NETWORK_CODE " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="COMPANY_CODE" expression="row1.COMPANY_CODE " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="KILOMETER" expression="row1.KILOMETER " type="id_BigDecimal" nullable="true" operator="="/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="ID_JOUR" type="id_BigDecimal"/>
-        <mapperTableEntries name="DT_JOUR" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DT_JOUR" expression="row1.END_DATE " type="id_Date" nullable="true" operator="="/>
         <mapperTableEntries name="NB_MOIS" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="NB_ANNEE" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="NB_SEMESTRE" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="NB_TRIMESTRE" type="id_BigDecimal" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="CUSTOMER_ID" type="id_String" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="row4" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="CUSTOMER_ID" expression="row1.CUSTOMER_ID " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="FIRST_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="MAIDEN_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="LAST_NAME" type="id_String" nullable="true"/>
@@ -868,8 +874,8 @@
         <mapperTableEntries name="CLIENT_TYPE_CODE" type="id_String" nullable="true"/>
         <mapperTableEntries name="NAME_OF_MANAGER" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="OBJECT_ID" type="id_String" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="row5" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="OBJECT_ID" expression="row1.OBJECT_ID " type="id_String" nullable="true"/>
         <mapperTableEntries name="BRAND_CODE" type="id_String" nullable="true"/>
         <mapperTableEntries name="RANGE_CODE" type="id_String" nullable="true"/>
         <mapperTableEntries name="REGISTRATION_NUMBER" type="id_String" nullable="true"/>
@@ -892,314 +898,13 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="760" posY="240">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Output" show="false"/>
-    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="1" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
+  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="120" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TEXT" name="LABEL" value="__configuration.dataSet.tableName__"/>
-    <elementParameter field="TACOKIT_GUESS_SCHEMA" name="configuration.dataSet.schema:Guess Schema_configuration.dataSet.schema" value=""/>
-    <elementParameter field="TECHNICAL" name="configuration.dataSet.schema:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataSet.schema:REPOSITORY_SCHEMA_TYPE" value="_08r9kCtMEfC1gb9COxFZIA - FACT_CONTRAT" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
-    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver">
-      <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
-    </elementParameter>
-    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH1&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:fRO6h4I8KavudVVX0ji/8315+OO0c+xMzwklFp730DTXwAiVWEyDGYk92q4="/>
-    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
-    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="&quot;BASIC&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
-    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="&quot;FACT_CONTRAT&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
-    <elementParameter field="CHECK" name="configuration.clearData" value="false"/>
-    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
-    <elementParameter field="CHECK" name="configuration.createTableIfNotExists" value="false" show="false"/>
-    <elementParameter field="TEXT" name="configuration.varcharLength" value="-1" show="false"/>
-    <elementParameter field="TABLE" name="configuration.keysForCreateTableAndDML.keys" show="false"/>
-    <elementParameter field="TABLE" name="configuration.keysForDML.keys" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.sortStrategy" value="COMPOUND" show="false"/>
-    <elementParameter field="TABLE" name="configuration.sortKeys" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.distributionStrategy" value="AUTO" show="false"/>
-    <elementParameter field="TABLE" name="configuration.distributionKeys" show="false"/>
-    <elementParameter field="TABLE" name="configuration.ignoreUpdate" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
-    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
-    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
-    <elementParameter field="TABLE" name="configuration.additionalColumns"/>
-    <elementParameter field="CHECK" name="configuration.useFieldOptions" value="false"/>
-    <elementParameter field="TABLE" name="configuration.fieldOptions" show="false">
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="FUNDING_BASE_HT" id="0"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="1"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="2"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="3"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="4"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CAPITAL_CONTRIBUTION_HT" id="5"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="6"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="7"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="8"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="9"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="GARENTEE_DEPOSIT" id="10"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="11"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="12"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="13"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="14"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MONTANT_PREMIER_PAIEMENT_HT" id="15"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="16"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="17"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="18"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="19"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="LITIGATION_FEE_HT" id="20"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="21"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="22"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="23"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="24"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="LITIGATION_FEE_WITH_TAX" id="25"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="26"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="27"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="28"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="29"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="LITIGATION_PENALTIES_HT" id="30"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="31"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="32"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="33"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="34"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TAX_FEES_ON_LITIGATION_PENALTIES" id="35"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="36"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="37"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="38"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="39"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="LITIGATION_PENALTIES_WITH_TAX" id="40"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="41"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="42"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="43"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="44"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MONTANT_TOTAL_FINANCE_HT" id="45"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="46"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="47"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="48"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="49"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MONTANT_TOTAL_FINANCE_WITH_TAX" id="50"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="51"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="52"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="53"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="54"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MONTANT_CONTRIB_PERSO_CLIENT_HT" id="55"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="56"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="57"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="58"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="59"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PRIME_IMPORTEUR" id="60"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="61"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="62"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="63"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="64"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TAUX_INTERET_NOMINAL" id="65"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="66"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="67"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="68"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="69"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="INITIAL_RATE" id="70"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="71"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="72"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="73"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="74"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TAUX_INTERET_TESE" id="75"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="76"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="77"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="78"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="79"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TAUX_INTERET_TESL" id="80"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="81"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="82"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="83"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="84"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="VAT_RATE" id="85"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="86"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="87"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="88"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="89"/>
-      <elementValue elementRef="configuration.fieldOptions[].columnName" value="IMPORTER_BONUS" id="90"/>
-      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="91"/>
-      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="92"/>
-      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="93"/>
-      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="94"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="configuration.debugQuery" value="false"/>
-    <elementParameter field="CHECK" name="configuration.useBatch" value="true"/>
-    <elementParameter field="TEXT" name="configuration.batchSize" value="10000"/>
-    <elementParameter field="CHECK" name="configuration.useQueryTimeout" value="false"/>
-    <elementParameter field="TEXT" name="configuration.queryTimeout" value="30" show="false"/>
-    <elementParameter field="CHECK" name="configuration.rewriteBatchedStatements" value="true" show="false"/>
-    <elementParameter field="CHECK" name="configuration.useOriginColumnName" value="true" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
-    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
-    <metadata connector="FLOW" label="FACT_CONTRAT" name="tDBOutput_1">
-      <column comment="" key="false" length="17" name="FUNDING_BASE_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="CAPITAL_CONTRIBUTION_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="GARENTEE_DEPOSIT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="MONTANT_PREMIER_PAIEMENT_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="LITIGATION_FEE_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="LITIGATION_FEE_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="LITIGATION_PENALTIES_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="TAX_FEES_ON_LITIGATION_PENALTIES" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="LITIGATION_PENALTIES_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="MONTANT_TOTAL_FINANCE_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="MONTANT_TOTAL_FINANCE_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="MONTANT_CONTRIB_PERSO_CLIENT_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="PRIME_IMPORTEUR" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="0" name="TAUX_INTERET_NOMINAL" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="0" name="INITIAL_RATE" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="0" name="TAUX_INTERET_TESE" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="0" name="TAUX_INTERET_TESL" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="0" name="VAT_RATE" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="IMPORTER_BONUS" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-    </metadata>
-    <metadata connector="LOOKUP" name="LOOKUP"/>
-    <metadata connector="MERGE" name="MERGE"/>
-    <metadata connector="reject" label="FACT_CONTRAT" name="reject">
-      <column comment="" key="false" length="17" name="FUNDING_BASE_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="CAPITAL_CONTRIBUTION_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="GARENTEE_DEPOSIT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="MONTANT_PREMIER_PAIEMENT_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="LITIGATION_FEE_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="LITIGATION_FEE_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="LITIGATION_PENALTIES_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="TAX_FEES_ON_LITIGATION_PENALTIES" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="LITIGATION_PENALTIES_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="MONTANT_TOTAL_FINANCE_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="MONTANT_TOTAL_FINANCE_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="MONTANT_CONTRIB_PERSO_CLIENT_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="PRIME_IMPORTEUR" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="0" name="TAUX_INTERET_NOMINAL" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="0" name="INITIAL_RATE" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="0" name="TAUX_INTERET_TESE" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="0" name="TAUX_INTERET_TESL" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="0" name="VAT_RATE" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="17" name="IMPORTER_BONUS" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="120" posY="240">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Input" show="false"/>
-    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="2" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="__configuration.dataSet.tableName__"/>
@@ -1282,7 +987,6 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
     <metadata connector="FLOW" label="DIM_CONTRACT" name="tDBInput_2">
       <column comment="" key="false" length="12" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -1348,20 +1052,11 @@
   </node>
   <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="120" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Input" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="2" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value=""/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="__configuration.dataSet.tableName__"/>
@@ -1420,7 +1115,6 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
     <metadata connector="FLOW" label="DIM_DATE" name="tDBInput_3">
       <column comment="" key="true" length="38" name="ID_JOUR" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -1450,20 +1144,11 @@
   </node>
   <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="200" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Input" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="2" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value=""/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="__configuration.dataSet.tableName__"/>
@@ -1552,7 +1237,6 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
     <metadata connector="FLOW" label="DIM_CUSTOMER" name="tDBInput_4">
       <column comment="" key="false" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -1627,20 +1311,11 @@
   </node>
   <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="400" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_5" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Input" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="2" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value=""/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="__configuration.dataSet.tableName__"/>
@@ -1727,7 +1402,6 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
     <metadata connector="FLOW" label="DIM_OBJECT" name="tDBInput_5">
       <column comment="" key="false" length="30" name="OBJECT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -1797,12 +1471,345 @@
       <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="720" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Output" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="1" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="__configuration.dataSet.tableName__"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver">
+      <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
+    </elementParameter>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH1&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:j/FU8FzAFiN45QEMB/R+c1howvyuWppAMEVZvX1xB4Cyf0330qnpsMQ30VY="/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="&quot;BASIC&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="&quot;FACT_CONTRAT&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
+    <elementParameter field="CHECK" name="configuration.clearData" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.createTableIfNotExists" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.varcharLength" value="-1" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForCreateTableAndDML.keys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForDML.keys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.sortStrategy" value="COMPOUND" show="false"/>
+    <elementParameter field="TABLE" name="configuration.sortKeys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.distributionStrategy" value="AUTO" show="false"/>
+    <elementParameter field="TABLE" name="configuration.distributionKeys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.ignoreUpdate" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
+    <elementParameter field="TABLE" name="configuration.additionalColumns"/>
+    <elementParameter field="CHECK" name="configuration.useFieldOptions" value="false"/>
+    <elementParameter field="TABLE" name="configuration.fieldOptions" show="false">
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CONTRACT_ID" id="0"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="1"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="2"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="3"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="4"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CUSTOMER_ID" id="5"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="6"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="7"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="8"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="9"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="OBJECT_ID" id="10"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="11"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="12"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="13"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="14"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ID_JOUR" id="15"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="16"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="17"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="18"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="19"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="FUNDING_BASE_HT" id="20"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="21"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="22"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="23"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="24"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CAPITAL_CONTRIBUTION_HT" id="25"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="26"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="27"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="28"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="29"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="GARENTEE_DEPOSIT" id="30"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="31"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="32"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="33"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="34"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MONTANT_PREMIER_PAIEMENT_HT" id="35"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="36"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="37"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="38"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="39"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="LITIGATION_FEE_HT" id="40"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="41"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="42"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="43"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="44"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="LITIGATION_FEE_WITH_TAX" id="45"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="46"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="47"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="48"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="49"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="LITIGATION_PENALTIES_HT" id="50"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="51"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="52"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="53"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="54"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TAX_FEES_ON_LITIGATION_PENALTIES" id="55"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="56"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="57"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="58"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="59"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="LITIGATION_PENALTIES_WITH_TAX" id="60"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="61"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="62"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="63"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="64"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MONTANT_TOTAL_FINANCE_HT" id="65"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="66"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="67"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="68"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="69"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MONTANT_TOTAL_FINANCE_WITH_TAX" id="70"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="71"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="72"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="73"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="74"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MONTANT_CONTRIB_PERSO_CLIENT_HT" id="75"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="76"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="77"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="78"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="79"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PRIME_IMPORTEUR" id="80"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="81"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="82"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="83"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="84"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TAUX_INTERET_NOMINAL" id="85"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="86"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="87"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="88"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="89"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="INITIAL_RATE" id="90"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="91"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="92"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="93"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="94"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TAUX_INTERET_TESE" id="95"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="96"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="97"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="98"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="99"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TAUX_INTERET_TESL" id="100"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="101"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="102"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="103"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="104"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="VAT_RATE" id="105"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="106"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="107"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="108"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="109"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="IMPORTER_BONUS" id="110"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="111"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="112"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="113"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="114"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.debugQuery" value="false"/>
+    <elementParameter field="CHECK" name="configuration.useBatch" value="true"/>
+    <elementParameter field="TEXT" name="configuration.batchSize" value="10000"/>
+    <elementParameter field="CHECK" name="configuration.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.queryTimeout" value="30" show="false"/>
+    <elementParameter field="CHECK" name="configuration.rewriteBatchedStatements" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useOriginColumnName" value="true" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
+    <metadata connector="FLOW" label="FACT_CONTRAT" name="tDBOutput_2">
+      <column comment="" key="true" length="12" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="30" name="OBJECT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="38" name="ID_JOUR" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="FUNDING_BASE_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="CAPITAL_CONTRIBUTION_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="GARENTEE_DEPOSIT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="MONTANT_PREMIER_PAIEMENT_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="LITIGATION_FEE_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="LITIGATION_FEE_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="LITIGATION_PENALTIES_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="TAX_FEES_ON_LITIGATION_PENALTIES" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="LITIGATION_PENALTIES_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="MONTANT_TOTAL_FINANCE_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="MONTANT_TOTAL_FINANCE_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="MONTANT_CONTRIB_PERSO_CLIENT_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="PRIME_IMPORTEUR" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="TAUX_INTERET_NOMINAL" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="INITIAL_RATE" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="TAUX_INTERET_TESE" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="TAUX_INTERET_TESL" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="VAT_RATE" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="IMPORTER_BONUS" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="reject" label="FACT_CONTRAT" name="reject">
+      <column comment="" key="true" length="12" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="30" name="OBJECT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="38" name="ID_JOUR" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="FUNDING_BASE_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="CAPITAL_CONTRIBUTION_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="GARENTEE_DEPOSIT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="MONTANT_PREMIER_PAIEMENT_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="LITIGATION_FEE_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="LITIGATION_FEE_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="LITIGATION_PENALTIES_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="TAX_FEES_ON_LITIGATION_PENALTIES" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="LITIGATION_PENALTIES_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="MONTANT_TOTAL_FINANCE_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="MONTANT_TOTAL_FINANCE_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="MONTANT_CONTRIB_PERSO_CLIENT_HT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="PRIME_IMPORTEUR" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="TAUX_INTERET_NOMINAL" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="INITIAL_RATE" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="TAUX_INTERET_TESE" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="TAUX_INTERET_TESL" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="VAT_RATE" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="IMPORTER_BONUS" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="fact_contrat" lineStyle="0" metaname="fact_contrat" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+  <connection connectorName="FLOW" label="fact_contrat" lineStyle="0" metaname="fact_contrat" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="fact_contrat" show="false"/>
