@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:DbConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/connection">
-  <connection xmi:id="f1debae4-548b-44b5-8b48-c5506f309b9d" id="f1debae4-548b-44b5-8b48-c5506f309b9d" label="Snowflake_Connection" name="Snowflake_Connection" version="0.1" type="JDBC">
-    <DbConnection url="jdbc:snowflake://PTTGBJG-RI77688.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=PFE_WAREHOUSE&amp;db=BANQUE&amp;schema=PFE" dbType="Snowflake" driverClass="net.snowflake.client.jdbc.SnowflakeDriver" username="OUMAYMADEBBICH1" password="enc:system.encryption.key.v1:1d91f359d6b148fe966afd07c6ddf690">
+  <connection xmi:id="_08r9kCtMEfC1gb9COxFZIA" id="_08r9kCtMEfC1gb9COxFZIA" label="Snowflake_Connection" name="Snowflake_Connection" version="0.1" type="JDBC">
+    <DbConnection url=""jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&warehouse=COMPUTE_WH&db=BANQUE&schema=PFE"" dbType="Snowflake" driverClass="net.snowflake.client.jdbc.SnowflakeDriver" username="OUMAYMADEBBICH1" password="enc:system.encryption.key.v1:45cb00729da84ecc9f5d0bc9c21578ab">
       <driverTable name="drivers">
         <drivers path="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar"/>
       </driverTable>
     </DbConnection>
+    <schema xmi:id="4396026b-f4dc-4b6e-8ac4-4927b7ee8a23" name="snowflake_schema_0.1" label="snowflake_schema_0.1">
+            <column name="STATUS_OF_EKIP_CONTRACT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="CONTRACT_ID" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ORDER_NUMBER" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DATE_OF_STATUS_CHANGE" type="id_Date" length="-1" nullable="true" usefulColumn="true"/>
+      <column name="EXTRACTION_DATE" type="id_Date" length="-1" nullable="true" usefulColumn="true"/>
+      <column name="USER" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DESCRIPTION" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="RECORDMODE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+    </schema>
   </connection>
 </talendfile:DbConnection>

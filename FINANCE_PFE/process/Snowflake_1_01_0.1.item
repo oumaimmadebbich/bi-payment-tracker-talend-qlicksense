@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:DbConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/connection">
+  <connection xmi:id="_e96e9c951cfe474480" id="_e96e9c951cfe474480" label="Snowflake_1_0.1" name="Snowflake_1_0.1" version="0.1" type="JDBC">
+    <DbConnection url="&quot;jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;" dbType="Snowflake" driverClass="net.snowflake.client.jdbc.SnowflakeDriver" username="OUMAYMADEBBICH1" password="enc:system.encryption.key.v1:036ea77492944daba142b0e4bd744637">
+      <driverTable name="drivers">
+        <drivers path="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar"/>
+      </driverTable>
+    </DbConnection>
+    <schema xmi:id="b59e7fa6-ae37-4616-b648-0f581d710f48" name="snowflake_schema_1_0.1" label="snowflake_schema_1_0.1">
+            <column name="NUM_FACTURE_EXTERNE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFRINLID" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DM_EXDATE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFRLINID" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTFRPBEG" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTFRPEND" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFRSUBLB" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AFRNOTAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AFRYETAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AFRTAXAM" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AFRBATAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="CURRENCY" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="RECORDMODE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+    </schema>
+  </connection>
+</talendfile:DbConnection>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:FileMetadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/file">
+  <connection xmi:id="_ef846581435c4bad8b" id="_ef846581435c4bad8b" label="ppllll" name="ppllll" version="0.1" type="Excel">
+    <FileConnection allSheets="true" encoding="UTF-8" fieldSeparatorValue=";" firstColumn="1" footer="0" header="1" limitValue="">
+      <filePath>D:\Data\ppllll.xlsx</filePath>
+      <sheetName>Sheet1</sheetName>
+    </FileConnection>
+    <schema xmi:id="126071c5-c3d7-4ce9-b33a-5017bf454f97" name="test_0.1" label="test_0.1">
+      <column name="PAIEMENT_ID" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KEKCONTR" type="id_String" length="18" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KFRBILNR" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KFREKCUST" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="NCFRPYTNR" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTVALIDFR" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTVALIDTO" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTDUE" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="CH_ON" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="CRM_BEGDAT" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="CRM_ENDDAT" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTEKBBAG" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="TPEKPERIO" type="id_String" length="6" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKPERIOD" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="CURRENCY" type="id_String" length="4" nullable="true" precision="0" usefulColumn="true"/>
+<column name="AEKRPAY" type="id_Double" length="18" nullable="true" precision="2" usefulColumn="true"/>
+<column name="AEKINTP" type="id_Double" length="18" nullable="true" precision="2" usefulColumn="true"/>
+<column name="RECORDMODE" type="id_String" length="1" nullable="true" precision="0" usefulColumn="true"/>
+<column name="ATPRESHT" type="id_Double" length="18" nullable="true" precision="2" usefulColumn="true"/>
+<column name="TXNOMNEW" type="id_Double" length="18" nullable="true" precision="2" usefulColumn="true"/>
+<column name="AMTLOYHT" type="id_Double" length="18" nullable="true" precision="2" usefulColumn="true"/>
+<column name="AEKREPAY" type="id_Double" length="18" nullable="true" precision="2" usefulColumn="true"/>
+    </schema>
+  </connection>
+</talendfile:FileMetadata>

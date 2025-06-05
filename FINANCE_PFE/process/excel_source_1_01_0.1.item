@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:FileMetadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/file">
+  <connection xmi:id="_2e2e8a63a8304dbf94" id="_2e2e8a63a8304dbf94" label="dataset_1_0.1" name="excel_source_1_0.1" version="0.1" type="Excel">
+    <FileConnection allSheets="true" encoding="UTF-8" fieldSeparatorValue=";" firstColumn="1" footer="0" header="1" limitValue="">
+      <filePath>D:/Data/ekoinvit.xlsx</filePath>
+      <sheetName>Sheet1</sheetName>
+    </FileConnection>
+    <schema xmi:id="81832390-b93f-40c3-9842-ae2dac0c8ce8" name="schema_1_0.1" label="schema_1_0.1">
+            <column name="KFRBILNR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFRINLID" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DM_EXDATE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFRLINID" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTFRPBEG" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTFRPEND" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFRSUBLB" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AFRNOTAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AFRYETAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AFRTAXAM" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AFRBATAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="CURRENCY" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="RECORDMODE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+    </schema>
+  </connection>
+</talendfile:FileMetadata>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <context name="Default"/>
+  <parameters>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+  </parameters>
+  <node componentName="tFileInputExcel" posX="160" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="C:/Users/Admin/Downloads/kontrr.xlsx"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="UTF-8"/>
+    <elementParameter field="TEXT" name="LABEL" value="ma"/>
+    <metadata connector="FLOW" name="tFileInputExcel_1">
+            <column name="KEKCONTR" type="id_String" length="255" nullable="true" />
+      <column name="DTVALIDFR" type="id_String" length="255" nullable="true" />
+      <column name="DTVALIDTO" type="id_String" length="255" nullable="true" />
+      <column name="CREATEDON" type="id_String" length="255" nullable="true" />
+      <column name="CRM_ENDDAT" type="id_String" length="255" nullable="true" />
+      <column name="DTEKAPROD" type="id_String" length="255" nullable="true" />
+      <column name="DTEKDPROD" type="id_String" length="255" nullable="true" />
+      <column name="DTEKFPROD" type="id_String" length="255" nullable="true" />
+      <column name="DTCANCON" type="id_String" length="255" nullable="true" />
+      <column name="DTACCEPT" type="id_String" length="255" nullable="true" />
+      <column name="DTEKBBAG" type="id_String" length="255" nullable="true" />
+      <column name="DTEKDCORB" type="id_String" length="255" nullable="true" />
+      <column name="DTCANCLI" type="id_String" length="255" nullable="true" />
+      <column name="EKCTPCD" type="id_String" length="255" nullable="true" />
+      <column name="EKNETCOD" type="id_String" length="255" nullable="true" />
+      <column name="EKPRDTCO" type="id_String" length="255" nullable="true" />
+      <column name="KEKOCNTR" type="id_String" length="255" nullable="true" />
+      <column name="RECORDMODE" type="id_String" length="255" nullable="true" />
+      <column name="KFREKCUST" type="id_Integer" length="15" nullable="true" />
+      <column name="KFRPAYR" type="id_Integer" length="15" nullable="true" />
+      <column name="SEKCONTR" type="id_String" length="255" nullable="true" />
+      <column name="FEKCONTR" type="id_String" length="255" nullable="true" />
+      <column name="FEKPBDFL" type="id_String" length="255" nullable="true" />
+      <column name="FEKSPCON" type="id_String" length="255" nullable="true" />
+      <column name="KEKOBJECT" type="id_String" length="255" nullable="true" />
+      <column name="KEKPROV" type="id_String" length="255" nullable="true" />
+      <column name="KEKPURCHS" type="id_String" length="255" nullable="true" />
+      <column name="KEKREPN" type="id_String" length="255" nullable="true" />
+      <column name="KEKSALESM" type="id_String" length="255" nullable="true" />
+      <column name="KEKDRIVER" type="id_String" length="255" nullable="true" />
+      <column name="EKFRPLED" type="id_String" length="255" nullable="true" />
+      <column name="FLASTVER" type="id_Integer" length="15" nullable="true" />
+      <column name="KEKADDRE" type="id_String" length="255" nullable="true" />
+      <column name="KFREKCS2T" type="id_Double" length="18" nullable="true" />
+      <column name="KFREKCST2" type="id_Double" length="18" nullable="true" />
+      <column name="FFRVWBANK" type="id_Double" length="18" nullable="true" />
+      <column name="FFRVWFI" type="id_Double" length="18" nullable="true" />
+      <column name="SEKCOSTI" type="id_String" length="255" nullable="true" />
+      <column name="DEKURAD" type="id_Double" length="18" nullable="true" />
+      <column name="KFRCOMP" type="id_Integer" length="15" nullable="true" />
+      <column name="LOGSYS" type="id_String" length="255" nullable="true" />
+      <column name="FBSDOUBT" type="id_String" length="255" nullable="true" />
+      <column name="DEPINCHAR" type="id_String" length="255" nullable="true" />
+      <column name="KEKBARCC" type="id_String" length="255" nullable="true" />
+      <column name="KEKBARFIC" type="id_String" length="255" nullable="true" />
+      <column name="KEKBARTPC" type="id_String" length="255" nullable="true" />
+      <column name="PKMISSORI" type="id_String" length="255" nullable="true" />
+      <column name="TPEKENTCR" type="id_String" length="255" nullable="true" />
+      <column name="KZNEUWGW" type="id_String" length="255" nullable="true" />
+      <column name="KCONTMAN" type="id_String" length="255" nullable="true" />
+      <column name="KFRPROD" type="id_String" length="255" nullable="true" />
+      <column name="KEKCONTR2" type="id_String" length="255" nullable="true" />
+      <column name="KEKNADDR" type="id_String" length="255" nullable="true" />
+      <column name="KEKOCNTR2" type="id_String" length="255" nullable="true" />
+      <column name="EKRIBNR" type="id_Integer" length="15" nullable="true" />
+      <column name="TIME" type="id_String" length="255" nullable="true" />
+      <column name="CCEKOPT" type="id_String" length="255" nullable="true" />
+      <column name="DURATION" type="id_Integer" length="15" nullable="true" />
+      <column name="CALDAY" type="id_String" length="255" nullable="true" />
+      <column name="DUR_UNIT" type="id_String" length="255" nullable="true" />
+      <column name="CURRENCY" type="id_String" length="255" nullable="true" />
+      <column name="PCEKVATRT" type="id_Double" length="18" nullable="true" />
+      <column name="PCEKINTER" type="id_Double" length="18" nullable="true" />
+      <column name="PCEKINEFF" type="id_Double" length="18" nullable="true" />
+      <column name="PCEKINSE" type="id_Double" length="18" nullable="true" />
+      <column name="PCEKINSL" type="id_Double" length="18" nullable="true" />
+      <column name="AEKFUNB" type="id_Double" length="18" nullable="true" />
+      <column name="AEKCAPC" type="id_Double" length="18" nullable="true" />
+      <column name="AEKFPAY" type="id_Double" length="18" nullable="true" />
+      <column name="AEKOPFEE" type="id_Double" length="18" nullable="true" />
+      <column name="AEKGADEP" type="id_Double" length="18" nullable="true" />
+      <column name="AEKBYBACK" type="id_Double" length="18" nullable="true" />
+      <column name="AIBFINT" type="id_Double" length="18" nullable="true" />
+      <column name="AFRFINHT" type="id_Double" length="18" nullable="true" />
+      <column name="ABNFINHT" type="id_Double" length="18" nullable="true" />
+      <column name="AFRAPPORT" type="id_Double" length="18" nullable="true" />
+      <column name="ABASELOC" type="id_Double" length="18" nullable="true" />
+      <column name="ABSCOLES" type="id_Double" length="18" nullable="true" />
+      <column name="AEKPART" type="id_Double" length="18" nullable="true" />
+      <column name="ALFNOTAX" type="id_String" length="255" nullable="true" />
+      <column name="ALIFETAX" type="id_String" length="255" nullable="true" />
+      <column name="ALFYETAX" type="id_String" length="255" nullable="true" />
+      <column name="ALPENTAX" type="id_String" length="255" nullable="true" />
+      <column name="ALIPETAX" type="id_String" length="255" nullable="true" />
+      <column name="ALPEYTAX" type="id_String" length="255" nullable="true" />
+      <column name="ABFINTTC" type="id_Double" length="18" nullable="true" />
+      <column name="AEKPTIMP" type="id_Double" length="18" nullable="true" />
+      <column name="KABDEAL" type="id_String" length="255" nullable="true" />
+      <column name="KEKAVNT" type="id_String" length="255" nullable="true" />
+      <column name="KILOMETER" type="id_Integer" length="15" nullable="true" />
+    </metadata>
+  </node>
+  <node componentName="tMap" posX="360" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1"/>
+    <metadata connector="FLOW" name="CONTRAT_1">
+            <column name="CONTRACTID" type="id_String" length="255" nullable="true" />
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <outputTables name="CONTRAT_1">
+                <mapperTableEntries name="CONTRACTID" expression="row1.KEKCONTR" type="id_String" length="255" nullable="true" />
+      </outputTables>
+      <inputTables name="row1">
+              <mapperTableEntries name="KEKCONTR" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="DTVALIDFR" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="DTVALIDTO" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="CREATEDON" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="CRM_ENDDAT" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="DTEKAPROD" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="DTEKDPROD" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="DTEKFPROD" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="DTCANCON" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="DTACCEPT" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="DTEKBBAG" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="DTEKDCORB" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="DTCANCLI" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="EKCTPCD" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="EKNETCOD" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="EKPRDTCO" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KEKOCNTR" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="RECORDMODE" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KFREKCUST" type="id_Integer" length="15" nullable="true" />
+      <mapperTableEntries name="KFRPAYR" type="id_Integer" length="15" nullable="true" />
+      <mapperTableEntries name="SEKCONTR" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="FEKCONTR" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="FEKPBDFL" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="FEKSPCON" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KEKOBJECT" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KEKPROV" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KEKPURCHS" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KEKREPN" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KEKSALESM" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KEKDRIVER" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="EKFRPLED" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="FLASTVER" type="id_Integer" length="15" nullable="true" />
+      <mapperTableEntries name="KEKADDRE" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KFREKCS2T" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="KFREKCST2" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="FFRVWBANK" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="FFRVWFI" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="SEKCOSTI" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="DEKURAD" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="KFRCOMP" type="id_Integer" length="15" nullable="true" />
+      <mapperTableEntries name="LOGSYS" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="FBSDOUBT" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="DEPINCHAR" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KEKBARCC" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KEKBARFIC" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KEKBARTPC" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="PKMISSORI" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="TPEKENTCR" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KZNEUWGW" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KCONTMAN" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KFRPROD" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KEKCONTR2" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KEKNADDR" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KEKOCNTR2" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="EKRIBNR" type="id_Integer" length="15" nullable="true" />
+      <mapperTableEntries name="TIME" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="CCEKOPT" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="DURATION" type="id_Integer" length="15" nullable="true" />
+      <mapperTableEntries name="CALDAY" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="DUR_UNIT" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="CURRENCY" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="PCEKVATRT" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="PCEKINTER" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="PCEKINEFF" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="PCEKINSE" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="PCEKINSL" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="AEKFUNB" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="AEKCAPC" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="AEKFPAY" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="AEKOPFEE" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="AEKGADEP" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="AEKBYBACK" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="AIBFINT" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="AFRFINHT" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="ABNFINHT" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="AFRAPPORT" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="ABASELOC" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="ABSCOLES" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="AEKPART" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="ALFNOTAX" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="ALIFETAX" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="ALFYETAX" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="ALPENTAX" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="ALIPETAX" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="ALPEYTAX" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="ABFINTTC" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="AEKPTIMP" type="id_Double" length="18" nullable="true" />
+      <mapperTableEntries name="KABDEAL" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KEKAVNT" type="id_String" length="255" nullable="true" />
+      <mapperTableEntries name="KILOMETER" type="id_Integer" length="15" nullable="true" />
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="JDBCOutput" posX="520" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="OUMAYMADEBBICH1"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="Adem123456789@"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
+    <elementParameter field="CHECK" name="configuration.useBatch" value="true"/>
+    <elementParameter field="TEXT" name="configuration.batchSize" value="10000"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+            <column name="CONTRACTID" type="id_String" length="255" nullable="true" />
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" source="tFileInputExcel_1" target="tMap_1"/>
+  <connection connectorName="FLOW" label="CONTRAT_1" source="tMap_1" target="tDBOutput_1"/>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1"/>
+  </subjob>
+</talendfile:ProcessType>

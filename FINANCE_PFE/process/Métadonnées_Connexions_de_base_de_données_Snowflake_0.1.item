@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:DbConnection xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:talendfile="http://www.talend.org/metadata/connection"
+    xmlns:context="http://www.talend.org/context">
+    
+    <context:Context xmi:id="_ctx_cdc43263a31240c6b6d9499b0891d907" name="SnowflakeContext">
+        <context:contextParameter name="ACCOUNT" value="VSKIQIR-UE58575"/>
+        <context:contextParameter name="USER" value="OUMAYMADEBBICH1"/>
+        <context:contextParameter name="PASSWORD" value=""/>
+        <context:contextParameter name="WAREHOUSE" value="COMPUTE_WH"/>
+        <context:contextParameter name="DATABASE" value="BANQUE"/>
+        <context:contextParameter name="SCHEMA" value="PFE"/>
+        <context:contextParameter name="ROLE" value="ACCOUNTADMIN"/>
+    </context:Context>
+
+    <connection xmi:id="_d8ec691e713448e4a3"
+        contextId="SnowflakeContext"
+        id="_d8ec691e713448e4a3"
+        label="Snowflake_0.1"
+        name="Métadonnées/Connexions de base de données/Snowflake_0.1"
+        version="0.1"
+        type="SNOWFLAKE">
+        
+        <parameters>
+            <parameter name="account" value="${ACCOUNT}"/>
+            <parameter name="userName" value="${USER}"/>
+            <parameter name="password" value="${PASSWORD}"/>
+            <parameter name="warehouse" value="${WAREHOUSE}"/>
+            <parameter name="database" value="${DATABASE}"/>
+            <parameter name="schema" value="${SCHEMA}"/>
+            <parameter name="role" value="${ROLE}"/>
+        </parameters>
+        
+        <schema xmi:id="schema_e933d192396c4cb69956dcdeb89c00b5" name="snowflake_schema_0.1">
+      <column name="STATUS_OF_EKIP_CONTRACT" type="id_String" length="4" nullable="true" precision="0" />
+      <column name="CONTRACT_ID" type="id_String" length="12" nullable="true" precision="0" />
+      <column name="ORDER_NUMBER" type="id_String" length="10" nullable="true" precision="0" />
+      <column name="DATE_OF_STATUS_CHANGE" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="EXTRACTION_DATE" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="USER" type="id_String" length="60" nullable="true" precision="0" />
+      <column name="DESCRIPTION" type="id_String" length="100" nullable="true" precision="0" />
+        </schema>
+        
+    </connection>
+</talendfile:DbConnection>

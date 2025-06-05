@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:FileMetadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/file">
-  <connection xmi:id="_UuS20Db6EfClObiKVWYyZA" id="_UuS20Db6EfClObiKVWYyZA" label="status 0.1" name="status 0.1" version="0.1" type="Excel">
+  <connection xmi:id="_UuS20Db6EfClObiKVWYyZA" id="_UuS20Db6EfClObiKVWYyZA" label="status_0.1" name="status_0.1" version="0.1" type="Excel">
     <FileConnection allSheets="true" encoding="UTF-8" fieldSeparatorValue=";" firstColumn="1" footer="0" header="1" limitValue="">
       <filePath>D:/Data/status.xlsx</filePath>
       <sheetName>Sheet1</sheetName>
     </FileConnection>
-    <schema xmi:id="365c7231-9117-4da6-9c48-e0abd2ae540f" name="metadata" label="metadata">
-            <column name="SEKCONTR" type="id_String" length="4" nullable="true" usefulColumn="true" pattern="dd-MM-yyyy"/>
-      <column name="KEKCONTR" type="id_String" length="12" nullable="true" usefulColumn="true" pattern="dd-MM-yyyy"/>
-      <column name="KFRORDNR" type="id_String" length="10" nullable="true" usefulColumn="true" pattern="dd-MM-yyyy"/>
-      <column name="DTSTATCHG" type="id_Date" length="-1" nullable="true" usefulColumn="true" pattern="dd/MM/yyyy"/>
-      <column name="DM_EXDATE" type="id_Date" length="-1" nullable="true" usefulColumn="true" pattern="dd/MM/yyyy"/>
-      <column name="RECORDMODE" type="id_String" length="0" nullable="true" usefulColumn="true" pattern="dd-MM-yyyy"/>
-      <column name="DSFRUSER" type="id_String" length="21" nullable="true" usefulColumn="true" pattern="dd-MM-yyyy"/>
-      <column name="DESCRIPTION" type="id_String" length="39" nullable="true" usefulColumn="true" pattern="dd-MM-yyyy"/>
+    <schema xmi:id="8d7d1755-6347-4290-809e-53cd2725d87e" name="status_schema_0.1" label="status_schema_0.1">
+            <column name="SEKCONTR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKCONTR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFRORDNR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTSTATCHG" type="id_Date" length="-1" nullable="true" usefulColumn="true"/>
+      <column name="DM_EXDATE" type="id_Date" length="-1" nullable="true" usefulColumn="true"/>
+      <column name="RECORDMODE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DSFRUSER" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DESCRIPTION" type="id_String" length="255" nullable="true" usefulColumn="true"/>
     </schema>
   </connection>
 </talendfile:FileMetadata>

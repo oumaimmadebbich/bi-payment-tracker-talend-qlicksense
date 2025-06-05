@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:FileMetadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/file">
+  <connection xmi:id="_312422f3820b4470b8" id="_312422f3820b4470b8" label="ekoinvit" name="ekoinvit" version="0.1" type="Excel">
+    <FileConnection allSheets="true" encoding="UTF-8" fieldSeparatorValue=";" firstColumn="1" footer="0" header="1" limitValue="">
+      <filePath>D:\Data\ekoinvit.xlsx</filePath>
+      <sheetName>Sheet1</sheetName>
+    </FileConnection>
+    <schema xmi:id="44fb3ee8-b41a-437d-ac3d-079879822823" name="test_0.1" label="test_0.1">
+      <column name="KFRBILNR" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KFRINLID" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DM_EXDATE" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KFRLINID" type="id_String" length="6" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTFRPBEG" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTFRPEND" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KFRSUBLB" type="id_String" length="6" nullable="true" precision="0" usefulColumn="true"/>
+<column name="AFRNOTAX" type="id_Double" length="18" nullable="true" precision="2" usefulColumn="true"/>
+<column name="AFRYETAX" type="id_Double" length="18" nullable="true" precision="2" usefulColumn="true"/>
+<column name="AFRTAXAM" type="id_Double" length="18" nullable="true" precision="2" usefulColumn="true"/>
+<column name="AFRBATAX" type="id_Double" length="18" nullable="true" precision="2" usefulColumn="true"/>
+<column name="CURRENCY" type="id_String" length="4" nullable="true" precision="0" usefulColumn="true"/>
+<column name="RECORDMODE" type="id_String" length="255" nullable="true" precision="0" usefulColumn="true"/>
+    </schema>
+  </connection>
+</talendfile:FileMetadata>

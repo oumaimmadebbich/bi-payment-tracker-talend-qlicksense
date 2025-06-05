@@ -1,18 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-        <talendfile:DbConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" 
-          xmlns:talendfile="http://www.talend.org/metadata/connection">
-          <connection xmi:id="_08r9kCtMEfC1gb9COxFZIA" dbType="Snowflake">
-            <DbConnection driverClass="net.snowflake.client.jdbc.SnowflakeDriver"
-              url=""jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&warehouse=COMPUTE_WH&db=BANQUE&schema=PFE""
-              username="OUMAYMADEBBICH1"
-              password="enc:system.encryption.key.v1:ea75aa3a2e934cbea5f3c006a7bd4c2b">
-              <driverTable name="drivers">
-                <drivers path="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar"/>
-              </driverTable>
-            </DbConnection>
-            <schema name="SA_CONTRACT">
-              <column name="KEKCONTR" type="id_String"/><column name="DTVALIDFR" type="id_String"/><column name="DTVALIDTO" type="id_String"/><column name="CREATEDON" type="id_String"/><column name="CRM_ENDDAT" type="id_String"/><column name="DTEKAPROD" type="id_String"/><column name="DTEKDPROD" type="id_String"/><column name="DTEKFPROD" type="id_String"/><column name="DTCANCON" type="id_String"/><column name="DTACCEPT" type="id_String"/><column name="DTEKBBAG" type="id_String"/><column name="DTEKDCORB" type="id_String"/><column name="DTCANCLI" type="id_String"/><column name="EKCTPCD" type="id_String"/><column name="EKNETCOD" type="id_String"/><column name="EKPRDTCO" type="id_String"/><column name="KEKOCNTR" type="id_String"/><column name="RECORDMODE" type="id_String"/><column name="KFREKCUST" type="id_String"/><column name="KFRPAYR" type="id_String"/><column name="SEKCONTR" type="id_String"/><column name="FEKCONTR" type="id_String"/><column name="FEKPBDFL" type="id_String"/><column name="FEKSPCON" type="id_String"/><column name="KEKOBJECT" type="id_String"/><column name="KEKPROV" type="id_String"/><column name="KEKPURCHS" type="id_String"/><column name="KEKREPN" type="id_String"/><column name="KEKSALESM" type="id_String"/><column name="KEKDRIVER" type="id_String"/><column name="EKFRPLED" type="id_String"/><column name="FLASTVER" type="id_String"/><column name="KEKADDRE" type="id_String"/><column name="KFREKCS2T" type="id_String"/><column name="KFREKCST2" type="id_String"/><column name="FFRVWBANK" type="id_String"/><column name="FFRVWFI" type="id_String"/><column name="SEKCOSTI" type="id_String"/><column name="DEKURAD" type="id_String"/><column name="KFRCOMP" type="id_String"/><column name="LOGSYS" type="id_String"/><column name="FBSDOUBT" type="id_String"/><column name="DEPINCHAR" type="id_String"/><column name="KEKBARCC" type="id_String"/><column name="KEKBARFIC" type="id_String"/><column name="KEKBARTPC" type="id_String"/><column name="PKMISSORI" type="id_String"/><column name="TPEKENTCR" type="id_String"/><column name="KZNEUWGW" type="id_String"/><column name="KCONTMAN" type="id_String"/><column name="KFRPROD" type="id_String"/><column name="KEKCONTR2" type="id_String"/><column name="KEKNADDR" type="id_String"/><column name="KEKOCNTR2" type="id_String"/><column name="EKRIBNR" type="id_String"/><column name="TIME" type="id_String"/><column name="CCEKOPT" type="id_String"/><column name="DURATION" type="id_String"/><column name="CALDAY" type="id_String"/><column name="DUR_UNIT" type="id_String"/><column name="CURRENCY" type="id_String"/><column name="PCEKVATRT" type="id_String"/><column name="PCEKINTER" type="id_String"/><column name="PCEKINEFF" type="id_String"/><column name="PCEKINSE" type="id_String"/><column name="PCEKINSL" type="id_String"/><column name="AEKFUNB" type="id_String"/><column name="AEKCAPC" type="id_String"/><column name="AEKFPAY" type="id_String"/><column name="AEKOPFEE" type="id_String"/><column name="AEKGADEP" type="id_String"/><column name="AEKBYBACK" type="id_String"/><column name="AIBFINT" type="id_String"/><column name="AFRFINHT" type="id_String"/><column name="ABNFINHT" type="id_String"/><column name="AFRAPPORT" type="id_String"/><column name="ABASELOC" type="id_String"/><column name="ABSCOLES" type="id_String"/><column name="AEKPART" type="id_String"/><column name="ALFNOTAX" type="id_String"/><column name="ALIFETAX" type="id_String"/><column name="ALFYETAX" type="id_String"/><column name="ALPENTAX" type="id_String"/><column name="ALIPETAX" type="id_String"/><column name="ALPEYTAX" type="id_String"/><column name="ABFINTTC" type="id_String"/><column name="AEKPTIMP" type="id_String"/><column name="KABDEAL" type="id_String"/><column name="KEKAVNT" type="id_String"/><column name="KILOMETER" type="id_String"/>
-            </schema>
-          </connection>
-        </talendfile:DbConnection>
-              
+<talendfile:DbConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/connection">
+  <connection xmi:id="_08r9kCtMEfC1gb9COxFZIA" id="_08r9kCtMEfC1gb9COxFZIA" label="JDBC (JDBC)/Snowflake" name="JDBC (JDBC)/Snowflake" version="0.1" type="JDBC">
+    <DbConnection url=""jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&warehouse=COMPUTE_WH&db=BANQUE&schema=PFE"" dbType="Snowflake" driverClass="net.snowflake.client.jdbc.SnowflakeDriver" username="OUMAYMADEBBICH1" password="enc:system.encryption.key.v1:a98184dd69e5498ea974582a35d4ee3a">
+      <driverTable name="drivers">
+        <drivers path="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar"/>
+      </driverTable>
+    </DbConnection>
+    <schema xmi:id="cf76dc9e-0d58-4f05-b494-00c2aba470bf" name="snowflake_schema_0.1" label="snowflake_schema_0.1">
+            <column name="KEKCONTR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTVALIDFR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTVALIDTO" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="CREATEDON" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="CRM_ENDDAT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTEKAPROD" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTEKDPROD" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTEKFPROD" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTCANCON" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTACCEPT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTEKBBAG" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTEKDCORB" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DTCANCLI" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="EKCTPCD" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="EKNETCOD" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="EKPRDTCO" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKOCNTR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="RECORDMODE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFREKCUST" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFRPAYR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="SEKCONTR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="FEKCONTR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="FEKPBDFL" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="FEKSPCON" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKOBJECT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKPROV" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKPURCHS" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKREPN" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKSALESM" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKDRIVER" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="EKFRPLED" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="FLASTVER" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKADDRE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFREKCS2T" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFREKCST2" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="FFRVWBANK" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="FFRVWFI" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="SEKCOSTI" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DEKURAD" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFRCOMP" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="LOGSYS" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="FBSDOUBT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DEPINCHAR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKBARCC" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKBARFIC" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKBARTPC" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="PKMISSORI" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="TPEKENTCR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KZNEUWGW" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KCONTMAN" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KFRPROD" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKCONTR2" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKNADDR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKOCNTR2" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="EKRIBNR" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="TIME" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="CCEKOPT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DURATION" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="CALDAY" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="DUR_UNIT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="CURRENCY" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="PCEKVATRT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="PCEKINTER" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="PCEKINEFF" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="PCEKINSE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="PCEKINSL" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKFUNB" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKCAPC" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKFPAY" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKOPFEE" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKGADEP" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKBYBACK" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AIBFINT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AFRFINHT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ABNFINHT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AFRAPPORT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ABASELOC" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ABSCOLES" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKPART" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ALFNOTAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ALIFETAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ALFYETAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ALPENTAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ALIPETAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ALPEYTAX" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="ABFINTTC" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="AEKPTIMP" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KABDEAL" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KEKAVNT" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+      <column name="KILOMETER" type="id_String" length="255" nullable="true" usefulColumn="true"/>
+    </schema>
+  </connection>
+</talendfile:DbConnection>

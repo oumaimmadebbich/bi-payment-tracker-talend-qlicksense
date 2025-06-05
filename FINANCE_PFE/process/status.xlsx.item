@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:FileMetadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/file">
+  <connection xmi:id="_4155fd786b354f91aa" id="_4155fd786b354f91aa" label="status.xlsx" name="status.xlsx" version="0.1" type="Excel">
+    <FileConnection allSheets="true" encoding="UTF-8" fieldSeparatorValue=";" firstColumn="1" footer="0" header="1" limitValue="">
+      <filePath>D:\Data\status.xlsx</filePath>
+      <sheetName>Sheet1</sheetName>
+    </FileConnection>
+    <schema xmi:id="27b7a0a9-2521-4866-8073-3b87d3012c57" name="test_0.1" label="test_0.1">
+      <column name="SEKCONTR" type="id_String" length="6" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KEKCONTR" type="id_String" length="18" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KFRORDNR" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTSTATCHG" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DM_EXDATE" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="RECORDMODE" type="id_String" length="255" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DSFRUSER" type="id_String" length="37" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DESCRIPTION" type="id_String" length="58" nullable="true" precision="0" usefulColumn="true"/>
+    </schema>
+  </connection>
+</talendfile:FileMetadata>
