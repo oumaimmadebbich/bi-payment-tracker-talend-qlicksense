@@ -44,7 +44,7 @@
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="."/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
-            <elementValue elementRef="SCHEMA_COLUMN" value="SEKCONTR" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEKCONTR" id="0"/>
       <elementValue elementRef="TRIM" value="false" id="1"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="KEKCONTR" id="2"/>
       <elementValue elementRef="TRIM" value="false" id="3"/>
@@ -73,7 +73,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
-            <column comment="" key="false" length="6" name="SEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="SEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="KEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="KFRORDNR" nullable="true" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="DTSTATCHG" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
@@ -83,7 +83,7 @@
       <column comment="" key="false" length="58" name="DESCRIPTION" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-            <column comment="" key="false" length="6" name="SEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="SEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="KEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="KFRORDNR" nullable="true" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="DTSTATCHG" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
@@ -105,11 +105,11 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="CONTRAT_1" name="CONTRAT_1">
-            <column comment="" key="false" length="6" name="STATUS_OF_EKIP_CONTRACT" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="STATUS_OF_EKIP_CONTRACT" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="CONTRACT_ID" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="ORDER_NUMBER" nullable="true" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="DATE_OF_STATUS_CHANGE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="EXTRACTION_DATE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="DATE_OF_STATUS_CHANGE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="EXTRACTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="37" name="USER" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="58" name="DESCRIPTION" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -117,31 +117,31 @@
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="CONTRAT_1">
-                <mapperTableEntries name="STATUS_OF_EKIP_CONTRACT" expression="row1.SEKCONTR" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="ORDER_NUMBER" expression="row1.KFRORDNR" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DATE_OF_STATUS_CHANGE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTSTATCHG)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DM_EXDATE)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="USER" expression="row1.DSFRUSER" type="id_String" length="37" precision="0" nullable="true" />
-        <mapperTableEntries name="DESCRIPTION" expression="row1.DESCRIPTION" type="id_String" length="58" precision="0" nullable="true" />
-        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DM_EXDATE)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DM_EXDATE)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DM_EXDATE)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="ORDER_NUMBER" expression="row1.KFRORDNR" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="DESCRIPTION" expression="row1.DESCRIPTION" type="id_String" length="58" precision="0" nullable="true" />
+        <mapperTableEntries name="STATUS_OF_EKIP_CONTRACT" expression="row1.SEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ORDER_NUMBER" expression="row1.KFRORDNR" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DATE_OF_STATUS_CHANGE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTSTATCHG)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DM_EXDATE)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="USER" expression="row1.DSFRUSER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DESCRIPTION" expression="row1.DESCRIPTION" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DM_EXDATE)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DM_EXDATE)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DM_EXDATE)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ORDER_NUMBER" expression="row1.KFRORDNR" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DESCRIPTION" expression="row1.DESCRIPTION" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-                <mapperTableEntries name="SEKCONTR" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="KFRORDNR" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DTSTATCHG" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DM_EXDATE" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="RECORDMODE" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="DSFRUSER" type="id_String" length="37" precision="0" nullable="true" />
-        <mapperTableEntries name="DESCRIPTION" type="id_String" length="58" precision="0" nullable="true" />
+        <mapperTableEntries name="SEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KFRORDNR" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DTSTATCHG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DM_EXDATE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RECORDMODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DSFRUSER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DESCRIPTION" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -184,16 +184,30 @@
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_d14d9e979db1454ea2 - snowflake_schema_0.1" show="false"/>
     <metadata connector="FLOW" label="SA_STATUUUS" name="tDBOutput_1">
-            <column comment="" key="false" length="6" name="STATUS_OF_EKIP_CONTRACT" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="ORDER_NUMBER" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="DATE_OF_STATUS_CHANGE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="EXTRACTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="37" name="USER" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="58" name="DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
+      <column comment="" key="false" length="6" name="STATUS_OF_EKIP_CONTRACT" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="ORDER_NUMBER" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="DATE_OF_STATUS_CHANGE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="EXTRACTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="37" name="USER" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="58" name="DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
     </metadata>
     <metadata connector="reject" label="SA_STATUUUS_reject" name="reject">
-            <column comment="" key="false" length="6" name="STATUS_OF_EKIP_CONTRACT" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="STATUS_OF_EKIP_CONTRACT" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="ORDER_NUMBER" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="DATE_OF_STATUS_CHANGE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"/>
@@ -202,7 +216,6 @@
       <column comment="" key="false" length="58" name="DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
-
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_1">

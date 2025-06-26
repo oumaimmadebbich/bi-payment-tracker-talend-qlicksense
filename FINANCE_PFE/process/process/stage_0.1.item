@@ -44,7 +44,7 @@
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="."/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
-            <elementValue elementRef="SCHEMA_COLUMN" value="KEKCONTR" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKCONTR" id="0"/>
       <elementValue elementRef="TRIM" value="false" id="1"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DTVALIDFR" id="2"/>
       <elementValue elementRef="TRIM" value="false" id="3"/>
@@ -239,7 +239,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
-            <column comment="" key="false" length="255" name="KEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="KEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="DTVALIDFR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="DTVALIDTO" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="CREATEDON" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
@@ -332,7 +332,7 @@
       <column comment="" key="false" length="15" name="KILOMETER" nullable="true" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-            <column comment="" key="false" length="255" name="KEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="KEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="DTVALIDFR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="DTVALIDTO" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="CREATEDON" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
@@ -437,19 +437,19 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="CONTRAT_1" name="CONTRAT_1">
-            <column comment="" key="false" length="255" name="CONTRACT_ID" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="VALID_FROM_DATE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="VALID_TO_DATE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="RECORD_CREATION_DATE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="END_DATE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="ACCOUNTANCY_PRODUCTION_DATE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="DEFINITIVE_PRODUCTION_DATE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="FIRST_PRODUCTION_DATE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="CANCELLATION_DATE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="ACCEPTANCE_DATE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="BUY_BACK_AGREEMENT_DATE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="ARRIVAL_CORBEILLE_DATE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="LITIGATION_CANCELLATION_DATE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CONTRACT_ID" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="VALID_FROM_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="VALID_TO_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="RECORD_CREATION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="END_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ACCOUNTANCY_PRODUCTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="DEFINITIVE_PRODUCTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="FIRST_PRODUCTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CANCELLATION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ACCEPTANCE_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="BUY_BACK_AGREEMENT_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ARRIVAL_CORBEILLE_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="LITIGATION_CANCELLATION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="6" name="CATEGORY_CODE" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="6" name="NETWORK_CODE" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="ORIGINAL_CONTRACT_ID" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
@@ -495,7 +495,7 @@
       <column comment="" key="false" length="34" name="RIB_NUMBER" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="NUMBER_OF_OPTIONS" nullable="true" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="DURATION" nullable="true" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="CALENDAR_DAY" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CALENDAR_DAY" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="DURATION_UNIT" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="CURRENCY" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="VAT_RATE" nullable="true" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -533,207 +533,207 @@
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="CONTRAT_1">
-                <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="DESCRIPTION" expression="row1.DESCRIPTION" type="id_String" length="58" precision="0" nullable="true" />
-        <mapperTableEntries name="OBJECT_ID" expression="row1.KEKOBJECT" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="CURRENCY" expression="row1.CURRENCY" type="id_String" length="4" precision="0" nullable="true" />
-        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="CURRENCY" expression="row1.CURRENCY" type="id_String" length="4" precision="0" nullable="true" />
-        <mapperTableEntries name="CUSTOMER_ID" expression="row1.KFREKCUST" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="END_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.CRM_ENDDAT)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="CURRENCY" expression="row1.CURRENCY" type="id_String" length="4" precision="0" nullable="true" />
-        <mapperTableEntries name="CUSTOMER_ID" expression="row1.KFREKCUST" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="CUSTOMER_ID" expression="row1.KFREKCUST" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="END_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.CRM_ENDDAT)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="VW_BANK" expression="row1.FFRVWBANK" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="VW_FINANCE" expression="row1.FFRVWFI" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="COMPANY_CODE" expression="row1.KFRCOMP" type="id_String" length="13" precision="0" nullable="true" />
-        <mapperTableEntries name="CURRENCY" expression="row1.CURRENCY" type="id_String" length="4" precision="0" nullable="true" />
-        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="VALID_FROM_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTVALIDFR)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="VALID_TO_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTVALIDTO)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="RECORD_CREATION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.CREATEDON)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="END_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.CRM_ENDDAT)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="ACCOUNTANCY_PRODUCTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTEKAPROD)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="DEFINITIVE_PRODUCTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTEKDPROD)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="FIRST_PRODUCTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTEKFPROD)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="CANCELLATION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTCANCON)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="ACCEPTANCE_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTACCEPT)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="BUY_BACK_AGREEMENT_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTEKBBAG)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="ARRIVAL_CORBEILLE_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTEKDCORB)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="LITIGATION_CANCELLATION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTCANCLI)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="CATEGORY_CODE" expression="row1.EKCTPCD" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="NETWORK_CODE" expression="row1.EKNETCOD" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="ORIGINAL_CONTRACT_ID" expression="row1.KEKOCNTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="RECORD_MODE" expression="row1.RECORDMODE" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="PRODUCT_TYPE_CODE" expression="row1.EKPRDTCO" type="id_Date" length="6" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="CUSTOMER_ID" expression="row1.KFREKCUST" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="PAYER_ID" expression="row1.KFRPAYR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="STATUS_ID" expression="row1.SEKCONTR" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="DESCRIPTION" expression="row1.DESCRIPTION" type="id_String" length="58" precision="0" nullable="true" />
-        <mapperTableEntries name="CONTRACT_RECEIVED" expression="row1.FEKCONRE" type="id_String" length="1" precision="0" nullable="true" />
-        <mapperTableEntries name="PRE_BAD_DEBT" expression="row1.FEKPBDFL" type="id_String" length="1" precision="0" nullable="true" />
-        <mapperTableEntries name="SPECIAL_CONTRACT" expression="row1.FEKSPCON" type="id_String" length="1" precision="0" nullable="true" />
-        <mapperTableEntries name="OBJECT_ID" expression="row1.KEKOBJECT" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="PROVIDER_ID" expression="row1.KEKPROV" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="RACHETEUR_ID" expression="row1.KEKPURCHS" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="REPRENEUR_ID" expression="row1.KEKREPN" type="id_String" length="13" precision="0" nullable="true" />
-        <mapperTableEntries name="SALES_PERSON_ID" expression="row1.KEKSALESM" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DRIVER_ID" expression="row1.KEKDRIVER" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="PLEDGE_CODE" expression="row1.EKFRPLED" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="LAST_CONTRACT_VERSION" expression="row1.FLASTVER" type="id_String" length="1" precision="0" nullable="true" />
-        <mapperTableEntries name="CUSTOMER_2_TYPE" expression="row1.KFREKCS2T" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="VW_BANK" expression="row1.FFRVWBANK" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="VW_FINANCE" expression="row1.FFRVWFI" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="CONTRACT_GROUPING_STATUS" expression="row1.SEKCOSTI" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="DURATION_DAYS" expression="row1.DEKURAD" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="COMPANY_CODE" expression="row1.KFRCOMP" type="id_String" length="13" precision="0" nullable="true" />
-        <mapperTableEntries name="SOURCE_SYSTEM" expression="row1.LOGSYS" type="id_String" length="10" precision="0" nullable="true" />
-        <mapperTableEntries name="DOUBTFUL_FLAG" expression="row1.FBSDOUBT" type="id_String" length="1" precision="0" nullable="true" />
-        <mapperTableEntries name="DEPARTMENT_IN_CHARGE" expression="row1.DEPINCHAR" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="COMMERCIAL_BAREMS" expression="row1.KEKBARCC" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="FINANCIAL_BAREMS" expression="row1.KEKBARFIC" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="BAREM_TYPE_CODE" expression="row1.KEKBARTPC" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="MISSING_ORIGINALS" expression="row1.PKMISSORI" type="id_String" length="1" precision="0" nullable="true" />
-        <mapperTableEntries name="CORBEILLE_CODE" expression="row1.TPEKENTCR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="NEW_OR_USED_VEHICLE_FLAG" expression="row1.KZNEUWGW" type="id_String" length="1" precision="0" nullable="true" />
-        <mapperTableEntries name="CONTRACT_MANAGER_NAME" expression="row1.KCONTMAN" type="id_String" length="61" precision="0" nullable="true" />
-        <mapperTableEntries name="NATURE_CODE" expression="row1.KFRPROD" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="CONTRACT_ID_2" expression="row1.KEKCONTR2" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="EKIP_ADDRESS_NUMBER" expression="row1.KEKNADDR" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="ORIGINAL_CONTRACT_ID_2" expression="row1.KEKCONTR2" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="RIB_NUMBER" expression="row1.EKRIBNR" type="id_String" length="34" precision="0" nullable="true" />
-        <mapperTableEntries name="NUMBER_OF_OPTIONS" expression="row1.CCEKOPT" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DURATION" expression="row1.DURATION" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="CALENDAR_DAY" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.CALDAY)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="DURATION_UNIT" expression="row1.DUR_UNIT" type="id_String" length="4" precision="0" nullable="true" />
-        <mapperTableEntries name="CURRENCY" expression="row1.CURRENCY" type="id_String" length="4" precision="0" nullable="true" />
-        <mapperTableEntries name="VAT_RATE" expression="row1.PCEKVATRT" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="NOMINAL_INTEREST_RATE" expression="row1.PCEKINTER" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="EFFECTIVE_INTEREST_RATE" expression="row1.PCEKINEFF" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="YEARLY_GLOBAL_INITIAL_RATE" expression="row1.PCEKINEFY" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="TESE_INTEREST_RATE" expression="row1.PCEKINSE" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="TESL_INTEREST_RATE" expression="row1.PCEKINSL" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="FUNDING_BASE" expression="row1.AEKFUNB" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="CAPITAL_CONTRIBUTION" expression="row1.AEKCAPC" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="FIRST_PAYMENT_VAT_EX" expression="row1.AEKFPAY" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="OPENING_FEES" expression="row1.AEKOPFEE" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="GUARANTEE_DEPOSIT" expression="row1.AEKGADEP" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="BUY_BACK_AMOUNT_VAT_EX" expression="row1.AEKBYBACK" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="FINANCED_AMOUNT_VAT_1" expression="row1.AIBFINT" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="FINANCED_AMOUNT_VAT_2" expression="row1.AFRFINHT" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="VEHICLE_PURCHASE_PRICE_VAT_1" expression="row1.ABNFINHT" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="OWN_CONTRIBUTION_AMOUNT" expression="row1.AFRAPPORT" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="FUNDING_BASE_TAX_FRANCE" expression="row1.ABASELOC" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="COLLATERAL_ESTIMATED" expression="row1.ABSCOLES" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="IMPORTER_BONUS_VAT_1" expression="row1.AEKPART" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="LITIGATION_FEE_WITHOUT_TAX" expression="row1.ALFNOTAX" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="LITIGATION_FEE_TAX" expression="row1.ALIFETAX" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="LITIGATION_FEE_WITH_TAX" expression="row1.ALFYETAX" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="LITIGATION_PENALTIES" expression="row1.ALPENTAX" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="LITIGATION_PENALTIES_TAX" expression="row1.ALIPETAX" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="LITIGATION_PENALTIES_VAT_IN" expression="row1.ALPEYTAX" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="VEHICLE_PURCHASE_PRICE_VAT_2" expression="row1.ABFINTTC" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="IMPORTER_BONUS_VAT_2" expression="row1.AEKPTIMP" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="ABS_DEAL" expression="row1.KABDEAL" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="VERSION_CODE" expression="row1.KEKAVNT" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="KILOMETER" expression="row1.KILOMETER" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="ADDRESSEE_ID" expression="" type="id_String" length="10" precision="0" nullable="true" />
-        <mapperTableEntries name="CUSTOMER_2_ID" expression="" type="id_String" length="10" precision="0" nullable="true" />
+        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DESCRIPTION" expression="row1.DESCRIPTION" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OBJECT_ID" expression="row1.KEKOBJECT" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CURRENCY" expression="row1.CURRENCY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CURRENCY" expression="row1.CURRENCY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUSTOMER_ID" expression="row1.KFREKCUST" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="END_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.CRM_ENDDAT)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CURRENCY" expression="row1.CURRENCY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUSTOMER_ID" expression="row1.KFREKCUST" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUSTOMER_ID" expression="row1.KFREKCUST" type="id_String" nullable="true"/>
+        <mapperTableEntries name="END_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.CRM_ENDDAT)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="VW_BANK" expression="row1.FFRVWBANK" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="VW_FINANCE" expression="row1.FFRVWFI" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="COMPANY_CODE" expression="row1.KFRCOMP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CURRENCY" expression="row1.CURRENCY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_ID" expression="row1.KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VALID_FROM_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTVALIDFR)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="VALID_TO_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTVALIDTO)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="RECORD_CREATION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.CREATEDON)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="END_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.CRM_ENDDAT)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ACCOUNTANCY_PRODUCTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTEKAPROD)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DEFINITIVE_PRODUCTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTEKDPROD)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="FIRST_PRODUCTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTEKFPROD)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CANCELLATION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTCANCON)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ACCEPTANCE_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTACCEPT)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BUY_BACK_AGREEMENT_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTEKBBAG)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ARRIVAL_CORBEILLE_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTEKDCORB)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LITIGATION_CANCELLATION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.DTCANCLI)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CATEGORY_CODE" expression="row1.EKCTPCD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NETWORK_CODE" expression="row1.EKNETCOD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ORIGINAL_CONTRACT_ID" expression="row1.KEKOCNTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RECORD_MODE" expression="row1.RECORDMODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRODUCT_TYPE_CODE" expression="row1.EKPRDTCO" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CUSTOMER_ID" expression="row1.KFREKCUST" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PAYER_ID" expression="row1.KFRPAYR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="STATUS_ID" expression="row1.SEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DESCRIPTION" expression="row1.DESCRIPTION" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_RECEIVED" expression="row1.FEKCONRE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRE_BAD_DEBT" expression="row1.FEKPBDFL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SPECIAL_CONTRACT" expression="row1.FEKSPCON" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OBJECT_ID" expression="row1.KEKOBJECT" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PROVIDER_ID" expression="row1.KEKPROV" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="RACHETEUR_ID" expression="row1.KEKPURCHS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="REPRENEUR_ID" expression="row1.KEKREPN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SALES_PERSON_ID" expression="row1.KEKSALESM" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DRIVER_ID" expression="row1.KEKDRIVER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PLEDGE_CODE" expression="row1.EKFRPLED" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LAST_CONTRACT_VERSION" expression="row1.FLASTVER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUSTOMER_2_TYPE" expression="row1.KFREKCS2T" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VW_BANK" expression="row1.FFRVWBANK" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="VW_FINANCE" expression="row1.FFRVWFI" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_GROUPING_STATUS" expression="row1.SEKCOSTI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DURATION_DAYS" expression="row1.DEKURAD" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="COMPANY_CODE" expression="row1.KFRCOMP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SOURCE_SYSTEM" expression="row1.LOGSYS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DOUBTFUL_FLAG" expression="row1.FBSDOUBT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DEPARTMENT_IN_CHARGE" expression="row1.DEPINCHAR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COMMERCIAL_BAREMS" expression="row1.KEKBARCC" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="FINANCIAL_BAREMS" expression="row1.KEKBARFIC" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="BAREM_TYPE_CODE" expression="row1.KEKBARTPC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MISSING_ORIGINALS" expression="row1.PKMISSORI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CORBEILLE_CODE" expression="row1.TPEKENTCR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NEW_OR_USED_VEHICLE_FLAG" expression="row1.KZNEUWGW" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_MANAGER_NAME" expression="row1.KCONTMAN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NATURE_CODE" expression="row1.KFRPROD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_ID_2" expression="row1.KEKCONTR2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EKIP_ADDRESS_NUMBER" expression="row1.KEKNADDR" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ORIGINAL_CONTRACT_ID_2" expression="row1.KEKCONTR2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RIB_NUMBER" expression="row1.EKRIBNR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NUMBER_OF_OPTIONS" expression="row1.CCEKOPT" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DURATION" expression="row1.DURATION" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CALENDAR_DAY" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.CALDAY)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DURATION_UNIT" expression="row1.DUR_UNIT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CURRENCY" expression="row1.CURRENCY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VAT_RATE" expression="row1.PCEKVATRT" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NOMINAL_INTEREST_RATE" expression="row1.PCEKINTER" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="EFFECTIVE_INTEREST_RATE" expression="row1.PCEKINEFF" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="YEARLY_GLOBAL_INITIAL_RATE" expression="row1.PCEKINEFY" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="TESE_INTEREST_RATE" expression="row1.PCEKINSE" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="TESL_INTEREST_RATE" expression="row1.PCEKINSL" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="FUNDING_BASE" expression="row1.AEKFUNB" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="CAPITAL_CONTRIBUTION" expression="row1.AEKCAPC" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="FIRST_PAYMENT_VAT_EX" expression="row1.AEKFPAY" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="OPENING_FEES" expression="row1.AEKOPFEE" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GUARANTEE_DEPOSIT" expression="row1.AEKGADEP" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="BUY_BACK_AMOUNT_VAT_EX" expression="row1.AEKBYBACK" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="FINANCED_AMOUNT_VAT_1" expression="row1.AIBFINT" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="FINANCED_AMOUNT_VAT_2" expression="row1.AFRFINHT" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="VEHICLE_PURCHASE_PRICE_VAT_1" expression="row1.ABNFINHT" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="OWN_CONTRIBUTION_AMOUNT" expression="row1.AFRAPPORT" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="FUNDING_BASE_TAX_FRANCE" expression="row1.ABASELOC" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="COLLATERAL_ESTIMATED" expression="row1.ABSCOLES" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="IMPORTER_BONUS_VAT_1" expression="row1.AEKPART" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="LITIGATION_FEE_WITHOUT_TAX" expression="row1.ALFNOTAX" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="LITIGATION_FEE_TAX" expression="row1.ALIFETAX" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="LITIGATION_FEE_WITH_TAX" expression="row1.ALFYETAX" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="LITIGATION_PENALTIES" expression="row1.ALPENTAX" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="LITIGATION_PENALTIES_TAX" expression="row1.ALIPETAX" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="LITIGATION_PENALTIES_VAT_IN" expression="row1.ALPEYTAX" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="VEHICLE_PURCHASE_PRICE_VAT_2" expression="row1.ABFINTTC" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="IMPORTER_BONUS_VAT_2" expression="row1.AEKPTIMP" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ABS_DEAL" expression="row1.KABDEAL" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="VERSION_CODE" expression="row1.KEKAVNT" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="KILOMETER" expression="row1.KILOMETER" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ADDRESSEE_ID" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUSTOMER_2_ID" expression="" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-                <mapperTableEntries name="KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="DTVALIDFR" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DTVALIDTO" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="CREATEDON" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="CRM_ENDDAT" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DTEKAPROD" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DTEKDPROD" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DTEKFPROD" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DTCANCON" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DTACCEPT" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DTEKBBAG" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DTEKDCORB" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DTCANCLI" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="EKCTPCD" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="EKNETCOD" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKOCNTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="RECORDMODE" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="EKPRDTCO" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="KFREKCUST" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="KFRPAYR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="SEKCONTR" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="DESCRIPTION" type="id_String" length="58" precision="0" nullable="true" />
-        <mapperTableEntries name="FEKCONRE" type="id_String" length="1" precision="0" nullable="true" />
-        <mapperTableEntries name="FEKPBDFL" type="id_String" length="1" precision="0" nullable="true" />
-        <mapperTableEntries name="FEKSPCON" type="id_String" length="1" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKOBJECT" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKPROV" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKPURCHS" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKREPN" type="id_String" length="13" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKSALESM" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKDRIVER" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="EKFRPLED" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="FLASTVER" type="id_String" length="1" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKADDRE" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="KFREKCS2T" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="KFREKCST2" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="FFRVWBANK" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="FFRVWFI" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="SEKCOSTI" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="DEKURAD" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="KFRCOMP" type="id_String" length="13" precision="0" nullable="true" />
-        <mapperTableEntries name="LOGSYS" type="id_String" length="10" precision="0" nullable="true" />
-        <mapperTableEntries name="FBSDOUBT" type="id_String" length="1" precision="0" nullable="true" />
-        <mapperTableEntries name="DEPINCHAR" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKBARCC" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="KEKBARFIC" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="KEKBARTPC" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="PKMISSORI" type="id_String" length="1" precision="0" nullable="true" />
-        <mapperTableEntries name="TPEKENTCR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="KZNEUWGW" type="id_String" length="1" precision="0" nullable="true" />
-        <mapperTableEntries name="KCONTMAN" type="id_String" length="61" precision="0" nullable="true" />
-        <mapperTableEntries name="KFRPROD" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKCONTR2" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKNADDR" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKOCNTR2" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="EKRIBNR" type="id_String" length="34" precision="0" nullable="true" />
-        <mapperTableEntries name="CCEKOPT" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DURATION" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="CALDAY" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DUR_UNIT" type="id_String" length="4" precision="0" nullable="true" />
-        <mapperTableEntries name="CURRENCY" type="id_String" length="4" precision="0" nullable="true" />
-        <mapperTableEntries name="PCEKVATRT" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="PCEKINTER" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="PCEKINEFF" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="PCEKINEFY" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="PCEKINSE" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="PCEKINSL" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="AEKFUNB" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="AEKCAPC" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="AEKFPAY" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="AEKOPFEE" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="AEKGADEP" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="AEKBYBACK" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="AIBFINT" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="AFRFINHT" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="ABNFINHT" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="AFRAPPORT" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="ABASELOC" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="ABSCOLES" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="AEKPART" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="ALFNOTAX" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="ALIFETAX" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="ALFYETAX" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="ALPENTAX" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="ALIPETAX" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="ALPEYTAX" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="ABFINTTC" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="AEKPTIMP" type="id_Double" length="18" precision="2" nullable="true" />
-        <mapperTableEntries name="KABDEAL" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKAVNT" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="KILOMETER" type="id_Integer" length="15" precision="0" nullable="true" />
+        <mapperTableEntries name="KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DTVALIDFR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DTVALIDTO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CREATEDON" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CRM_ENDDAT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DTEKAPROD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DTEKDPROD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DTEKFPROD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DTCANCON" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DTACCEPT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DTEKBBAG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DTEKDCORB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DTCANCLI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EKCTPCD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EKNETCOD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KEKOCNTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RECORDMODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EKPRDTCO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KFREKCUST" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KFRPAYR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DESCRIPTION" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FEKCONRE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FEKPBDFL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FEKSPCON" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KEKOBJECT" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="KEKPROV" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="KEKPURCHS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KEKREPN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KEKSALESM" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="KEKDRIVER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EKFRPLED" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FLASTVER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KEKADDRE" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="KFREKCS2T" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KFREKCST2" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="FFRVWBANK" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FFRVWFI" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="SEKCOSTI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DEKURAD" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="KFRCOMP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LOGSYS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FBSDOUBT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DEPINCHAR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KEKBARCC" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="KEKBARFIC" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="KEKBARTPC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PKMISSORI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TPEKENTCR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KZNEUWGW" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KCONTMAN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KFRPROD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KEKCONTR2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KEKNADDR" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="KEKOCNTR2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EKRIBNR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CCEKOPT" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DURATION" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CALDAY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DUR_UNIT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CURRENCY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PCEKVATRT" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PCEKINTER" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="PCEKINEFF" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="PCEKINEFY" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="PCEKINSE" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="PCEKINSL" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="AEKFUNB" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="AEKCAPC" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="AEKFPAY" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="AEKOPFEE" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="AEKGADEP" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="AEKBYBACK" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="AIBFINT" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="AFRFINHT" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ABNFINHT" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="AFRAPPORT" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ABASELOC" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ABSCOLES" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="AEKPART" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ALFNOTAX" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ALIFETAX" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ALFYETAX" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ALPENTAX" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ALIPETAX" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ALPEYTAX" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ABFINTTC" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="AEKPTIMP" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="KABDEAL" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="KEKAVNT" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="KILOMETER" type="id_Integer" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -776,100 +776,282 @@
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_e4000ee75b6748d88f - snowflake_schema_0.1" show="false"/>
     <metadata connector="FLOW" label="SA_CONTRACT" name="tDBOutput_1">
-            <column comment="" key="false" length="255" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="VALID_FROM_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="VALID_TO_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="RECORD_CREATION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="END_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="ACCOUNTANCY_PRODUCTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="DEFINITIVE_PRODUCTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="FIRST_PRODUCTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="CANCELLATION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="ACCEPTANCE_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="BUY_BACK_AGREEMENT_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="ARRIVAL_CORBEILLE_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="LITIGATION_CANCELLATION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="6" name="CATEGORY_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="6" name="NETWORK_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="ORIGINAL_CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="RECORD_MODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="4" name="PRODUCT_TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="PAYER_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="6" name="STATUS_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="58" name="DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="1" name="CONTRACT_RECEIVED" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="1" name="PRE_BAD_DEBT" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="1" name="SPECIAL_CONTRACT" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="OBJECT_ID" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="PROVIDER_ID" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="RACHETEUR_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="13" name="REPRENEUR_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="SALES_PERSON_ID" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="DRIVER_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="6" name="PLEDGE_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="1" name="LAST_CONTRACT_VERSION" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="10" name="ADDRESSEE_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="6" name="CUSTOMER_2_TYPE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="10" name="CUSTOMER_2_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="VW_BANK" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="VW_FINANCE" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="6" name="CONTRACT_GROUPING_STATUS" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="DURATION_DAYS" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="13" name="COMPANY_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="10" name="SOURCE_SYSTEM" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="1" name="DOUBTFUL_FLAG" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="6" name="DEPARTMENT_IN_CHARGE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="COMMERCIAL_BAREMS" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="FINANCIAL_BAREMS" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="6" name="BAREM_TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="1" name="MISSING_ORIGINALS" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="CORBEILLE_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="1" name="NEW_OR_USED_VEHICLE_FLAG" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="61" name="CONTRACT_MANAGER_NAME" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="6" name="NATURE_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="CONTRACT_ID_2" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="EKIP_ADDRESS_NUMBER" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="ORIGINAL_CONTRACT_ID_2" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="34" name="RIB_NUMBER" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="NUMBER_OF_OPTIONS" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="DURATION" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="CALENDAR_DAY" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="4" name="DURATION_UNIT" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="4" name="CURRENCY" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="VAT_RATE" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="NOMINAL_INTEREST_RATE" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="EFFECTIVE_INTEREST_RATE" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="YEARLY_GLOBAL_INITIAL_RATE" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="TESE_INTEREST_RATE" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="TESL_INTEREST_RATE" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="FUNDING_BASE" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="CAPITAL_CONTRIBUTION" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="FIRST_PAYMENT_VAT_EX" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="OPENING_FEES" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="GUARANTEE_DEPOSIT" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="BUY_BACK_AMOUNT_VAT_EX" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="FINANCED_AMOUNT_VAT_1" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="FINANCED_AMOUNT_VAT_2" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="VEHICLE_PURCHASE_PRICE_VAT_1" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="OWN_CONTRIBUTION_AMOUNT" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="FUNDING_BASE_TAX_FRANCE" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="COLLATERAL_ESTIMATED" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="IMPORTER_BONUS_VAT_1" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="LITIGATION_FEE_WITHOUT_TAX" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="LITIGATION_FEE_TAX" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="LITIGATION_FEE_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="LITIGATION_PENALTIES" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="LITIGATION_PENALTIES_TAX" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="LITIGATION_PENALTIES_VAT_IN" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="VEHICLE_PURCHASE_PRICE_VAT_2" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="18" name="IMPORTER_BONUS_VAT_2" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="ABS_DEAL" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="VERSION_CODE" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="KILOMETER" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
+      <column comment="" key="false" length="255" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="VALID_FROM_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="VALID_TO_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="RECORD_CREATION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="END_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ACCOUNTANCY_PRODUCTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="DEFINITIVE_PRODUCTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="FIRST_PRODUCTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CANCELLATION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ACCEPTANCE_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="BUY_BACK_AGREEMENT_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ARRIVAL_CORBEILLE_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LITIGATION_CANCELLATION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="CATEGORY_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="NETWORK_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ORIGINAL_CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="RECORD_MODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="PRODUCT_TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="PAYER_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="STATUS_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="58" name="DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="CONTRACT_RECEIVED" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="PRE_BAD_DEBT" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="SPECIAL_CONTRACT" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="OBJECT_ID" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="PROVIDER_ID" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="RACHETEUR_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="REPRENEUR_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="SALES_PERSON_ID" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="DRIVER_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="PLEDGE_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="LAST_CONTRACT_VERSION" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ADDRESSEE_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="CUSTOMER_2_TYPE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CUSTOMER_2_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="VW_BANK" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="VW_FINANCE" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="CONTRACT_GROUPING_STATUS" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="DURATION_DAYS" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="COMPANY_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SOURCE_SYSTEM" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="DOUBTFUL_FLAG" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="DEPARTMENT_IN_CHARGE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="COMMERCIAL_BAREMS" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="FINANCIAL_BAREMS" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="BAREM_TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="MISSING_ORIGINALS" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CORBEILLE_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="NEW_OR_USED_VEHICLE_FLAG" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="61" name="CONTRACT_MANAGER_NAME" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="NATURE_CODE" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CONTRACT_ID_2" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="EKIP_ADDRESS_NUMBER" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ORIGINAL_CONTRACT_ID_2" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="34" name="RIB_NUMBER" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="NUMBER_OF_OPTIONS" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="DURATION" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CALENDAR_DAY" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="DURATION_UNIT" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="CURRENCY" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="VAT_RATE" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="NOMINAL_INTEREST_RATE" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="EFFECTIVE_INTEREST_RATE" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="YEARLY_GLOBAL_INITIAL_RATE" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="TESE_INTEREST_RATE" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="TESL_INTEREST_RATE" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="FUNDING_BASE" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="CAPITAL_CONTRIBUTION" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="FIRST_PAYMENT_VAT_EX" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="OPENING_FEES" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="GUARANTEE_DEPOSIT" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="BUY_BACK_AMOUNT_VAT_EX" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="FINANCED_AMOUNT_VAT_1" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="FINANCED_AMOUNT_VAT_2" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="VEHICLE_PURCHASE_PRICE_VAT_1" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="OWN_CONTRIBUTION_AMOUNT" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="FUNDING_BASE_TAX_FRANCE" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="COLLATERAL_ESTIMATED" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="IMPORTER_BONUS_VAT_1" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="LITIGATION_FEE_WITHOUT_TAX" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="LITIGATION_FEE_TAX" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="LITIGATION_FEE_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="LITIGATION_PENALTIES" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="LITIGATION_PENALTIES_TAX" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="LITIGATION_PENALTIES_VAT_IN" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="VEHICLE_PURCHASE_PRICE_VAT_2" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="IMPORTER_BONUS_VAT_2" nullable="true" pattern="" precision="2" sourceType="id_Double" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="ABS_DEAL" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="VERSION_CODE" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="KILOMETER" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
     </metadata>
     <metadata connector="reject" label="SA_CONTRACT_reject" name="reject">
-            <column comment="" key="false" length="255" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="VALID_FROM_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="VALID_TO_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="RECORD_CREATION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"/>
@@ -962,7 +1144,6 @@
       <column comment="" key="false" length="15" name="KILOMETER" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
-
     </metadata>
   </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="350">
@@ -992,7 +1173,7 @@
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="."/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
-            <elementValue elementRef="SCHEMA_COLUMN" value="SEKCONTR" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEKCONTR" id="0"/>
       <elementValue elementRef="TRIM" value="false" id="1"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="KEKCONTR" id="2"/>
       <elementValue elementRef="TRIM" value="false" id="3"/>
@@ -1021,7 +1202,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_2">
-            <column comment="" key="false" length="6" name="SEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="SEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="KEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="KFRORDNR" nullable="true" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="DTSTATCHG" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
@@ -1031,7 +1212,7 @@
       <column comment="" key="false" length="58" name="DESCRIPTION" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-            <column comment="" key="false" length="6" name="SEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="SEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="KEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="KFRORDNR" nullable="true" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="DTSTATCHG" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
@@ -1053,11 +1234,11 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="CONTRAT_2" name="CONTRAT_2">
-            <column comment="" key="false" length="6" name="STATUS_OF_EKIP_CONTRACT" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="STATUS_OF_EKIP_CONTRACT" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="CONTRACT_ID" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="ORDER_NUMBER" nullable="true" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="DATE_OF_STATUS_CHANGE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="EXTRACTION_DATE" nullable="true" precision="0" type="id_Date" pattern="yyyy-MM-dd" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="DATE_OF_STATUS_CHANGE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="EXTRACTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="37" name="USER" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="58" name="DESCRIPTION" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -1065,31 +1246,31 @@
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="CONTRAT_2">
-                <mapperTableEntries name="STATUS_OF_EKIP_CONTRACT" expression="row2.SEKCONTR" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="CONTRACT_ID" expression="row2.KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="ORDER_NUMBER" expression="row2.KFRORDNR" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DATE_OF_STATUS_CHANGE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.DTSTATCHG)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.DM_EXDATE)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="USER" expression="row2.DSFRUSER" type="id_String" length="37" precision="0" nullable="true" />
-        <mapperTableEntries name="DESCRIPTION" expression="row2.DESCRIPTION" type="id_String" length="58" precision="0" nullable="true" />
-        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.DM_EXDATE)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.DM_EXDATE)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.DM_EXDATE)" type="id_Date" length="15" precision="0" nullable="true" pattern="dd/MM/yyyy" />
-        <mapperTableEntries name="CONTRACT_ID" expression="row2.KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="ORDER_NUMBER" expression="row2.KFRORDNR" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="CONTRACT_ID" expression="row2.KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="CONTRACT_ID" expression="row2.KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="DESCRIPTION" expression="row2.DESCRIPTION" type="id_String" length="58" precision="0" nullable="true" />
+        <mapperTableEntries name="STATUS_OF_EKIP_CONTRACT" expression="row2.SEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_ID" expression="row2.KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ORDER_NUMBER" expression="row2.KFRORDNR" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DATE_OF_STATUS_CHANGE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.DTSTATCHG)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.DM_EXDATE)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="USER" expression="row2.DSFRUSER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DESCRIPTION" expression="row2.DESCRIPTION" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.DM_EXDATE)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.DM_EXDATE)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EXTRACTION_DATE" expression="TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.DM_EXDATE)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_ID" expression="row2.KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ORDER_NUMBER" expression="row2.KFRORDNR" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_ID" expression="row2.KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_ID" expression="row2.KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DESCRIPTION" expression="row2.DESCRIPTION" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-                <mapperTableEntries name="SEKCONTR" type="id_String" length="6" precision="0" nullable="true" />
-        <mapperTableEntries name="KEKCONTR" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="KFRORDNR" type="id_Integer" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DTSTATCHG" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="DM_EXDATE" type="id_String" length="15" precision="0" nullable="true" />
-        <mapperTableEntries name="RECORDMODE" type="id_String" length="255" precision="0" nullable="true" />
-        <mapperTableEntries name="DSFRUSER" type="id_String" length="37" precision="0" nullable="true" />
-        <mapperTableEntries name="DESCRIPTION" type="id_String" length="58" precision="0" nullable="true" />
+        <mapperTableEntries name="SEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KFRORDNR" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DTSTATCHG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DM_EXDATE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RECORDMODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DSFRUSER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DESCRIPTION" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -1132,16 +1313,30 @@
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_c4dd958647cd4db98b - snowflake_schema_0.1" show="false"/>
     <metadata connector="FLOW" label="SA_STATUUUS" name="tDBOutput_2">
-            <column comment="" key="false" length="6" name="STATUS_OF_EKIP_CONTRACT" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="15" name="ORDER_NUMBER" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="DATE_OF_STATUS_CHANGE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="255" name="EXTRACTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="37" name="USER" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
-      <column comment="" key="false" length="58" name="DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"><additionalField key="Comment" value=""/></column>
+      <column comment="" key="false" length="6" name="STATUS_OF_EKIP_CONTRACT" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="ORDER_NUMBER" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="DATE_OF_STATUS_CHANGE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="EXTRACTION_DATE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="37" name="USER" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="58" name="DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
     </metadata>
     <metadata connector="reject" label="SA_STATUUUS_reject" name="reject">
-            <column comment="" key="false" length="6" name="STATUS_OF_EKIP_CONTRACT" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="STATUS_OF_EKIP_CONTRACT" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="ORDER_NUMBER" nullable="true" pattern="" precision="0" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="DATE_OF_STATUS_CHANGE" nullable="true" pattern="yyyy-MM-dd" precision="0" sourceType="id_Date" type="id_Date" usefulColumn="true"/>
@@ -1150,7 +1345,6 @@
       <column comment="" key="false" length="58" name="DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="id_String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
-
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_1">
