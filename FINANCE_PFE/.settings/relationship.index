@@ -1685,6 +1685,37 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_CjGSoFAdEfCP9LngaCpRrw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_08r9kCtMEfC1gb9COxFZIA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_08r9kCtMEfC1gb9COxFZIA - DIM_CONTRACT",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_08r9kCtMEfC1gb9COxFZIA - DIM_CUSTOMER",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_08r9kCtMEfC1gb9COxFZIA - DIM_FACTURE",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_08r9kCtMEfC1gb9COxFZIA - SA_FACTURES_EXTERNES",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_08r9kCtMEfC1gb9COxFZIA - SA_FACTURES_INTERNES",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_Eno5sDdlEfClPvNHGsiXgg",
     "version" : "0.1",
     "type" : "job"
