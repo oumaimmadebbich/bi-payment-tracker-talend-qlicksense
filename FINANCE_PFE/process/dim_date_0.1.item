@@ -104,18 +104,9 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="120">
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="120">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#xA;context.nbJours=(int)TalendDate.diffDate(context.fin_date, context.start_date, &quot;dd&quot;)+1;&#xA;context.start_dateExecution=TalendDate.getCurrentDate();&#xA;&#xA;System.out.println(&quot;--------------------------------------------------------------&quot;);&#xA;System.out.println(&quot;Début de la generation du calendrier: &quot;+ TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,context.start_dateExecution));"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_1"/>
   </node>
   <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
@@ -226,7 +217,7 @@
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://UYKYMDU-DT38274.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
@@ -234,8 +225,8 @@
       <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
     </elementParameter>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH1&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:exf+WfSscf7qZnvEBoAmGStzCb7L5gwXb5j+018OVpxxQwBGwJexI3AATto="/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:Hb8/vmq1FqxcIKCdIrmIs205yBGPEzfZdmTUHjrp12gyQkQm4Vr2ciPu+Zs="/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
@@ -349,6 +340,14 @@
       <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#xA;context.nbJours=(int)TalendDate.diffDate(context.fin_date, context.start_date, &quot;dd&quot;)+1;&#xA;context.start_dateExecution=TalendDate.getCurrentDate();&#xA;&#xA;System.out.println(&quot;--------------------------------------------------------------&quot;);&#xA;System.out.println(&quot;Début de la generation du calendrier: &quot;+ TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,context.start_dateExecution));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_1">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
@@ -369,13 +368,20 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
   </connection>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="CHECK" name="SUBJOB_DISPLAYED" value="false" show="false"/>
   </subjob>
 </talendfile:ProcessType>

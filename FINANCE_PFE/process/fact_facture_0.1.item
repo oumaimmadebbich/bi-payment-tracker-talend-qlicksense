@@ -4,7 +4,7 @@
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="80" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -115,7 +115,7 @@
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://UYKYMDU-DT38274.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
@@ -123,8 +123,8 @@
       <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
     </elementParameter>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH1&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:FekzAjInTIVTjlEFIpUvuD8i72akwdMrWwjVxE7hyQu0Fvsb6a0lRTzQfmc="/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:5FReWItUaZYgdIaTmHc+nKB5uzWdTHoQc9wqZUj3wWrPNVh19WtiaaNJavA="/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
@@ -289,22 +289,22 @@
       <column comment="" key="false" length="15" name="CATEGORIE_AFFAIRE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="AMOUNT_WITHOUT_TAX_OF_MOVEMENT_RECORDED" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="17" name="AMOUNT_WITHOUT_TAX_OF_MOVEMENT_RECORDED" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="AMOUNT_OF_TAX_FOR_THE_MOVEMENTS_RECORDED" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="255" name="AMOUNT_OF_TAX_FOR_THE_MOVEMENTS_RECORDED" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="AMOUNT_WITH_TAX_OF_MOVEMENTS_RECORDED" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="17" name="AMOUNT_WITH_TAX_OF_MOVEMENTS_RECORDED" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="AMOUNT_OF_TAX_FOR_BALANCE" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="17" name="AMOUNT_OF_TAX_FOR_BALANCE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="BALANCE_OF_MOV_RECORDED_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="17" name="BALANCE_OF_MOV_RECORDED_WITH_TAX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="NOMINAL_DEBT_BALANCE_WITHOUT_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="17" name="NOMINAL_DEBT_BALANCE_WITHOUT_TAX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="3" name="CURRENCY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -432,12 +432,12 @@
         <mapperTableEntries name="CURRENCY_CODE" type="id_String" nullable="true"/>
         <mapperTableEntries name="INTERNAL_ID_OF_THE_CONTRACT" type="id_String" nullable="true"/>
         <mapperTableEntries name="CATEGORIE_AFFAIRE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AMOUNT_WITHOUT_TAX_OF_MOVEMENT_RECORDED" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="AMOUNT_OF_TAX_FOR_THE_MOVEMENTS_RECORDED" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="AMOUNT_WITH_TAX_OF_MOVEMENTS_RECORDED" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="AMOUNT_OF_TAX_FOR_BALANCE" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="BALANCE_OF_MOV_RECORDED_WITH_TAX" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="NOMINAL_DEBT_BALANCE_WITHOUT_TAX" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AMOUNT_WITHOUT_TAX_OF_MOVEMENT_RECORDED" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AMOUNT_OF_TAX_FOR_THE_MOVEMENTS_RECORDED" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AMOUNT_WITH_TAX_OF_MOVEMENTS_RECORDED" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AMOUNT_OF_TAX_FOR_BALANCE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BALANCE_OF_MOV_RECORDED_WITH_TAX" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOMINAL_DEBT_BALANCE_WITHOUT_TAX" type="id_String" nullable="true"/>
         <mapperTableEntries name="CURRENCY" type="id_String" nullable="true"/>
         <mapperTableEntries name="CUSTOMER_ID" type="id_String" nullable="true"/>
       </inputTables>
@@ -449,10 +449,10 @@
         <mapperTableEntries name="DATE_BEGINNING_OF_PERIOD" type="id_Date" nullable="true"/>
         <mapperTableEntries name="DATE_END_OF_PERIOD" type="id_Date" nullable="true"/>
         <mapperTableEntries name="SUB_FAMILY_LINE_OF_THE_BILL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AMOUNT_WITHOUT_TAX" expression="" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="AMOUNT_WITH_TAX" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="TAX_AMOUNT" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="BALANCE_WITH_TAX" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="AMOUNT_WITHOUT_TAX" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AMOUNT_WITH_TAX" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TAX_AMOUNT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BALANCE_WITH_TAX" type="id_String" nullable="true"/>
         <mapperTableEntries name="CURRENCY" expression="row1.CURRENCY " type="id_String" nullable="true" operator="="/>
       </inputTables>
     </nodeData>
@@ -473,7 +473,7 @@
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://UYKYMDU-DT38274.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
@@ -481,8 +481,8 @@
       <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
     </elementParameter>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH1&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:DFv2hIUGfvFbI/cOgYrCnbfusuystvHwApVnp8/m08M0rYqAPOMO9bNnetw="/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:cDtaP7K/F+6+OMqjweYMom5whgX0uGNZKr/8qk0yu7vOYg8+ig0502+/q0A="/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
@@ -556,16 +556,16 @@
       <column comment="" key="false" length="4" name="SUB_FAMILY_LINE_OF_THE_BILL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="38" name="AMOUNT_WITHOUT_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="38" name="AMOUNT_WITHOUT_TAX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="38" name="AMOUNT_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="38" name="AMOUNT_WITH_TAX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="38" name="TAX_AMOUNT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="38" name="TAX_AMOUNT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="38" name="BALANCE_WITH_TAX" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="38" name="BALANCE_WITH_TAX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="5" name="CURRENCY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -685,6 +685,8 @@
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="CUSTOMER_ID" expression="out1.CUSTOMER_ID " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="DATE_VALID_FROM" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DATE_VALID_TO" type="id_Date" nullable="true"/>
         <mapperTableEntries name="FIRST_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="MAIDEN_NAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="LAST_NAME" type="id_String" nullable="true"/>
@@ -716,6 +718,8 @@
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="FACTURE_ID" expression="out1.NUM_FACTURE_EXTERNE " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="DATE_VALID_FROM" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DATE_VALID_TO" type="id_Date" nullable="true"/>
         <mapperTableEntries name="NAME_OF_THE_BILL" type="id_String" nullable="true"/>
         <mapperTableEntries name="BILL_FAMILY_CODE" type="id_String" nullable="true"/>
         <mapperTableEntries name="THIRD_PARTY_CHARGED" type="id_String" nullable="true"/>
@@ -734,6 +738,8 @@
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="CONTRACT_ID" expression="out1.CONTRACT_ID " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="VALID_FROM_DATE" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="VALID_TO_DATE" type="id_Date" nullable="true"/>
         <mapperTableEntries name="LAST_CONTRACT_VERSION" type="id_String" nullable="true"/>
         <mapperTableEntries name="STATUS_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="DESCRIPTION" type="id_String" nullable="true"/>
@@ -747,7 +753,7 @@
         <mapperTableEntries name="CONTRACT_RECEIVED" type="id_String" nullable="true"/>
         <mapperTableEntries name="DOUBTFUL_FLAG" type="id_String" nullable="true"/>
         <mapperTableEntries name="VERSION_CODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COLLATERAL_ESTIMATED" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="COLLATERAL_ESTIMATED" type="id_String" nullable="true"/>
         <mapperTableEntries name="NETWORK_CODE" type="id_String" nullable="true"/>
         <mapperTableEntries name="COMPANY_CODE" type="id_String" nullable="true"/>
         <mapperTableEntries name="KILOMETER" type="id_BigDecimal" nullable="true"/>
@@ -770,7 +776,7 @@
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://UYKYMDU-DT38274.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
@@ -778,8 +784,8 @@
       <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
     </elementParameter>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH1&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:Up8F4kJ2+FdqAsFQnJZaPXSaBTaG3YOTq58+u1CeUWqrXug8w/XR9OmVT/M="/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:OAOpY+7osrlMCDyLaGCC1qgvvGfjsaKGnOW78TTKl/cFOTCSS9LH2kObLvo="/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
@@ -798,46 +804,50 @@
     <elementParameter field="TABLE" name="configuration.config.columnTrims">
       <elementValue elementRef="configuration.config.columnTrims[].column" value="CUSTOMER_ID" id="0"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="1"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="FIRST_NAME" id="2"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="DATE_VALID_FROM" id="2"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="3"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="MAIDEN_NAME" id="4"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="DATE_VALID_TO" id="4"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="5"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="LAST_NAME" id="6"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="FIRST_NAME" id="6"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="7"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="SEX" id="8"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="MAIDEN_NAME" id="8"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="9"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="BIRTHDAY" id="10"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="LAST_NAME" id="10"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="11"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="COUNTRY" id="12"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SEX" id="12"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="13"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="CITY" id="14"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="BIRTHDAY" id="14"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="15"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="EMAIL_ADDRESS" id="16"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="COUNTRY" id="16"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="17"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="MOBILE_NUMBER" id="18"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CITY" id="18"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="19"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="SOCIAL_SECURITY_CODE" id="20"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="EMAIL_ADDRESS" id="20"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="21"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="MATRIMONIAL_STATUS_CODE" id="22"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="MOBILE_NUMBER" id="22"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="23"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="SIRET_NUMBER" id="24"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SOCIAL_SECURITY_CODE" id="24"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="25"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="REVENUES" id="26"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="MATRIMONIAL_STATUS_CODE" id="26"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="27"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="CHARGES" id="28"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SIRET_NUMBER" id="28"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="29"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="ADDITIONAL_REVENUES" id="30"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="REVENUES" id="30"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="31"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="START_DATE" id="32"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CHARGES" id="32"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="33"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="END_DATE" id="34"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ADDITIONAL_REVENUES" id="34"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="35"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="BASEL_CLASSIFICATION" id="36"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="START_DATE" id="36"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="37"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="CLIENT_TYPE_CODE" id="38"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="END_DATE" id="38"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="39"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="NAME_OF_MANAGER" id="40"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="BASEL_CLASSIFICATION" id="40"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="41"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CLIENT_TYPE_CODE" id="42"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="43"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="NAME_OF_MANAGER" id="44"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="45"/>
     </elementParameter>
     <elementParameter field="CHECK" name="configuration.config.enableMapping" value="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.config.mapping" value="MYSQL" show="false"/>
@@ -851,6 +861,12 @@
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
     <metadata connector="FLOW" label="DIM_CUSTOMER" name="tDBInput_9">
       <column comment="" key="false" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DATE_VALID_FROM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DATE_VALID_TO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="60" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -934,7 +950,7 @@
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://UYKYMDU-DT38274.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
@@ -942,8 +958,8 @@
       <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
     </elementParameter>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH1&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:szuw0Xgo7b1u30WUfF27i2/JWDoetfQb8sRlFL+ozDtXiAwkD3/JTvuwyns="/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:4xHlajch8Ph783aWl7FjN//uJn4jCF2MOL/VhYXT1zaXeszpAU42vKS/krU="/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
@@ -1026,7 +1042,7 @@
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://UYKYMDU-DT38274.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
@@ -1034,8 +1050,8 @@
       <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
     </elementParameter>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH1&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:wguZdgth9zeGp+PdnYsN3s8UYkcZDNGHMgWVMJLDtWSeDnezyxSskXwmdfU="/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:w0ajzE6G7Ar1vByE5fczG6SMSBbUciu2HzCPxe35gwT+1cMUG0E9Ol/pB/c="/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
@@ -1054,36 +1070,40 @@
     <elementParameter field="TABLE" name="configuration.config.columnTrims">
       <elementValue elementRef="configuration.config.columnTrims[].column" value="FACTURE_ID" id="0"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="1"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="NAME_OF_THE_BILL" id="2"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="DATE_VALID_FROM" id="2"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="3"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="BILL_FAMILY_CODE" id="4"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="DATE_VALID_TO" id="4"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="5"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="THIRD_PARTY_CHARGED" id="6"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="NAME_OF_THE_BILL" id="6"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="7"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="ORDER_NUMBER" id="8"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="BILL_FAMILY_CODE" id="8"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="9"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="CATEGORIE_AFFAIRE" id="10"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="THIRD_PARTY_CHARGED" id="10"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="11"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="DATE_OF_INSTALLMENT" id="12"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ORDER_NUMBER" id="12"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="13"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="FLAG_INCIDENT" id="14"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CATEGORIE_AFFAIRE" id="14"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="15"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="ACCOUNTING_DATE" id="16"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="DATE_OF_INSTALLMENT" id="16"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="17"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="CURRENCY_CODE" id="18"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="FLAG_INCIDENT" id="18"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="19"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="DUE_DATE" id="20"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ACCOUNTING_DATE" id="20"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="21"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="CODE_STATUS_OF_MOVEMENT" id="22"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CURRENCY_CODE" id="22"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="23"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="BUSINESS_PARTNER_ROLE" id="24"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="DUE_DATE" id="24"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="25"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="BENEFICIARY" id="26"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CODE_STATUS_OF_MOVEMENT" id="26"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="27"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="FLAG_UNPAID" id="28"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="BUSINESS_PARTNER_ROLE" id="28"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="29"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="PAYMENT_CODE" id="30"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="BENEFICIARY" id="30"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="31"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="FLAG_UNPAID" id="32"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="33"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PAYMENT_CODE" id="34"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="35"/>
     </elementParameter>
     <elementParameter field="CHECK" name="configuration.config.enableMapping" value="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.config.mapping" value="MYSQL" show="false"/>
@@ -1097,6 +1117,12 @@
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
     <metadata connector="FLOW" label="DIM_FACTURE" name="tDBInput_11">
       <column comment="" key="false" length="10" name="FACTURE_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DATE_VALID_FROM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DATE_VALID_TO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="60" name="NAME_OF_THE_BILL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1168,7 +1194,7 @@
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://UYKYMDU-DT38274.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
@@ -1176,8 +1202,8 @@
       <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
     </elementParameter>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH1&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:KEYFRn5wvMEK2Gs4P3k87SGV3sf9coUfgVygD0q+EH5cmcnOjjZoVjfO8ys="/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:DT3hSK05+7UF4EszVblxoQJZPAFkJFtkryo03jxNKs3jZ26WMjl8R86t/UI="/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
@@ -1196,40 +1222,44 @@
     <elementParameter field="TABLE" name="configuration.config.columnTrims">
       <elementValue elementRef="configuration.config.columnTrims[].column" value="CONTRACT_ID" id="0"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="1"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="LAST_CONTRACT_VERSION" id="2"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="VALID_FROM_DATE" id="2"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="3"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="STATUS_ID" id="4"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="VALID_TO_DATE" id="4"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="5"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="DESCRIPTION" id="6"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="LAST_CONTRACT_VERSION" id="6"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="7"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="RECORD_CREATION_DATE" id="8"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="STATUS_ID" id="8"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="9"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="END_DATE" id="10"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="DESCRIPTION" id="10"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="11"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="FIRST_PRODUCTION_DATE" id="12"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="RECORD_CREATION_DATE" id="12"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="13"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="ACCOUNTANCY_PRODUCTION_DATE" id="14"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="END_DATE" id="14"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="15"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="PRODUCT_TYPE_CODE" id="16"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="FIRST_PRODUCTION_DATE" id="16"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="17"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="PRE_BAD_DEBT" id="18"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ACCOUNTANCY_PRODUCTION_DATE" id="18"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="19"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="SPECIAL_CONTRACT" id="20"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PRODUCT_TYPE_CODE" id="20"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="21"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="CONTRACT_RECEIVED" id="22"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PRE_BAD_DEBT" id="22"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="23"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="DOUBTFUL_FLAG" id="24"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SPECIAL_CONTRACT" id="24"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="25"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="VERSION_CODE" id="26"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CONTRACT_RECEIVED" id="26"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="27"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="COLLATERAL_ESTIMATED" id="28"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="DOUBTFUL_FLAG" id="28"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="29"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="NETWORK_CODE" id="30"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="VERSION_CODE" id="30"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="31"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="COMPANY_CODE" id="32"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="COLLATERAL_ESTIMATED" id="32"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="33"/>
-      <elementValue elementRef="configuration.config.columnTrims[].column" value="KILOMETER" id="34"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="NETWORK_CODE" id="34"/>
       <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="35"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="COMPANY_CODE" id="36"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="37"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="KILOMETER" id="38"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="39"/>
     </elementParameter>
     <elementParameter field="CHECK" name="configuration.config.enableMapping" value="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.config.mapping" value="MYSQL" show="false"/>
@@ -1243,6 +1273,12 @@
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
     <metadata connector="FLOW" label="DIM_CONTRACT" name="tDBInput_12">
       <column comment="" key="false" length="12" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="VALID_FROM_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="VALID_TO_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="4" name="LAST_CONTRACT_VERSION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1284,7 +1320,7 @@
       <column comment="" key="false" length="2" name="VERSION_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="17" name="COLLATERAL_ESTIMATED" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="40" name="COLLATERAL_ESTIMATED" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="4" name="NETWORK_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1317,7 +1353,7 @@
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://UYKYMDU-DT38274.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
@@ -1325,8 +1361,8 @@
       <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
     </elementParameter>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH1&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:9ajVPLsY5ZAqz0pRbdpTdG7RME6qpBTfS+cHwTiKJls62yeNgKrjqUoqrDI="/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:yj91mOa0KhuahAYMOzXfUuVa2O2A27qftDc0683NdQXDAkjot7kqjwB4U1o="/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
@@ -1597,5 +1633,7 @@
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
 </talendfile:ProcessType>

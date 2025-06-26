@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:FileMetadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/file">
+  <connection xmi:id="_e4c7a1571f9f46f6ad" id="_e4c7a1571f9f46f6ad" label="customer" name="customer" version="0.1" type="Excel">
+    <FileConnection allSheets="true" encoding="UTF-8" fieldSeparatorValue=";" firstColumn="1" footer="0" header="1" limitValue="">
+      <filePath>D:\Data\customer.xlsx</filePath>
+      <sheetName>Sheet1</sheetName>
+    </FileConnection>
+    <schema xmi:id="092bcc9d-772e-4902-8f8e-e94a2447ec3a" name="test_0.1" label="test_0.1">
+      <column name="KFREKCUST" type="id_String" length="255" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTVALIDFR" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTVALIDTO" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="CRM_BEGDAT" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="CRM_ENDDAT" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="BIRTHDAY_libs" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTSTCOIM" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTENCOIM" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTFOUND" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="SURNAME" type="id_String" length="30" nullable="true" precision="0" usefulColumn="true"/>
+<column name="FIRSTNAME" type="id_String" length="28" nullable="true" precision="0" usefulColumn="true"/>
+<column name="SEX" type="id_String" length="1" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKQCODE" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKPTCODE" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="FFRVWBANK" type="id_String" length="1" nullable="true" precision="0" usefulColumn="true"/>
+<column name="FFRVWFI" type="id_String" length="1" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKSIREN" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKSIRET" type="id_String" length="255" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKMNAME" type="id_String" length="43" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKCCODE" type="id_String" length="9" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKCSCODE" type="id_String" length="6" nullable="true" precision="0" usefulColumn="true"/>
+<column name="FEKOWN" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="SEKSTMAT" type="id_String" length="1" nullable="true" precision="0" usefulColumn="true"/>
+<column name="HC_CHILDNO" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKPHONENR" type="id_String" length="255" nullable="true" precision="0" usefulColumn="true"/>
+<column name="FAX_NUM" type="id_String" length="255" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EMAIL" type="id_String" length="43" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKMOBILE" type="id_String" length="255" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKMAIDN" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KFREKCS1T" type="id_String" length="6" nullable="true" precision="0" usefulColumn="true"/>
+<column name="FRSSCOD" type="id_String" length="24" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KFRCOMP" type="id_String" length="13" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KFRAPE" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KSFFINGP" type="id_String" length="19" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KBSCUCLAS" type="id_String" length="1" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKBRAND" type="id_String" length="6" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KBUSINTYP" type="id_String" length="6" nullable="true" precision="0" usefulColumn="true"/>
+<column name="QEKCHILD" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKJCODE" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="COUNTRY" type="id_String" length="13" nullable="true" precision="0" usefulColumn="true"/>
+<column name="LOCITYB" type="id_String" length="31" nullable="true" precision="0" usefulColumn="true"/>
+<column name="AEKREV" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="AEKAREV" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="AEKCHARG" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKSEN" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="CKNOEMPLO" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="CURRENCY" type="id_String" length="4" nullable="true" precision="0" usefulColumn="true"/>
+    </schema>
+  </connection>
+</talendfile:FileMetadata>

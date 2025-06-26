@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:DbConnection xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:talendfile="http://www.talend.org/metadata/connection"
+    xmlns:context="http://www.talend.org/context">
+    
+    <context:Context xmi:id="_ctx_357a3e97437440df94298c17852089c9" name="SnowflakeContext">
+        <context:contextParameter name="ACCOUNT" value="VSKIQIR-UE58575"/>
+        <context:contextParameter name="USER" value="OUMAYMADEBBICH1"/>
+        <context:contextParameter name="PASSWORD" value=""/>
+        <context:contextParameter name="WAREHOUSE" value="COMPUTE_WH"/>
+        <context:contextParameter name="DATABASE" value="BANQUE"/>
+        <context:contextParameter name="SCHEMA" value="PFE"/>
+        <context:contextParameter name="ROLE" value="ACCOUNTADMIN"/>
+    </context:Context>
+
+    <connection xmi:id="_abaf5574369546ce86"
+        contextId="SnowflakeContext"
+        id="_abaf5574369546ce86"
+        label="Snowflake_0.1"
+        name="Métadonnées/Connexions de base de données/Snowflake_0.1"
+        version="0.1"
+        type="SNOWFLAKE">
+        
+        <parameters>
+            <parameter name="account" value="${ACCOUNT}"/>
+            <parameter name="userName" value="${USER}"/>
+            <parameter name="password" value="${PASSWORD}"/>
+            <parameter name="warehouse" value="${WAREHOUSE}"/>
+            <parameter name="database" value="${DATABASE}"/>
+            <parameter name="schema" value="${SCHEMA}"/>
+            <parameter name="role" value="${ROLE}"/>
+        </parameters>
+        
+        <schema xmi:id="schema_0e18800bd2604dbf84f37911092ac039" name="snowflake_schema_0.1">
+      <column name="CONTRACT_ID" type="id_String" length="255" nullable="true" precision="0" />
+      <column name="VALID_FROM_DATE" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="VALID_TO_DATE" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="RECORD_CREATION_DATE" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="END_DATE" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="ACCOUNTANCY_PRODUCTION_DATE" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="DEFINITIVE_PRODUCTION_DATE" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="FIRST_PRODUCTION_DATE" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="CANCELLATION_DATE" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="ACCEPTANCE_DATE" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="BUY_BACK_AGREEMENT_DATE" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="ARRIVAL_CORBEILLE_DATE" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="LITIGATION_CANCELLATION_DATE" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="CATEGORY_CODE" type="id_String" length="6" nullable="true" precision="0" />
+      <column name="NETWORK_CODE" type="id_String" length="6" nullable="true" precision="0" />
+      <column name="ORIGINAL_CONTRACT_ID" type="id_String" length="255" nullable="true" precision="0" />
+      <column name="RECORD_MODE" type="id_String" length="255" nullable="true" precision="0" />
+      <column name="PRODUCT_TYPE_CODE" type="id_String" length="4" nullable="true" precision="0" />
+      <column name="CUSTOMER_ID" type="id_String" length="255" nullable="true" precision="0" />
+      <column name="PAYER_ID" type="id_String" length="255" nullable="true" precision="0" />
+      <column name="STATUS_ID" type="id_String" length="6" nullable="true" precision="0" />
+      <column name="DESCRIPTION" type="id_String" length="58" nullable="true" precision="0" />
+      <column name="CONTRACT_RECEIVED" type="id_String" length="1" nullable="true" precision="0" />
+      <column name="PRE_BAD_DEBT" type="id_String" length="1" nullable="true" precision="0" />
+      <column name="SPECIAL_CONTRACT" type="id_String" length="1" nullable="true" precision="0" />
+      <column name="OBJECT_ID" type="id_Integer" length="15" nullable="true" precision="0" />
+      <column name="PROVIDER_ID" type="id_Integer" length="15" nullable="true" precision="0" />
+      <column name="RACHETEUR_ID" type="id_String" length="255" nullable="true" precision="0" />
+      <column name="REPRENEUR_ID" type="id_String" length="13" nullable="true" precision="0" />
+      <column name="SALES_PERSON_ID" type="id_Integer" length="15" nullable="true" precision="0" />
+      <column name="DRIVER_ID" type="id_String" length="255" nullable="true" precision="0" />
+      <column name="PLEDGE_CODE" type="id_String" length="6" nullable="true" precision="0" />
+      <column name="LAST_CONTRACT_VERSION" type="id_String" length="1" nullable="true" precision="0" />
+      <column name="ADDRESSEE_ID" type="id_String" length="10" nullable="true" precision="0" />
+      <column name="CUSTOMER_2_TYPE" type="id_String" length="6" nullable="true" precision="0" />
+      <column name="CUSTOMER_2_ID" type="id_String" length="10" nullable="true" precision="0" />
+      <column name="VW_BANK" type="id_Integer" length="15" nullable="true" precision="0" />
+      <column name="VW_FINANCE" type="id_Integer" length="15" nullable="true" precision="0" />
+      <column name="CONTRACT_GROUPING_STATUS" type="id_String" length="6" nullable="true" precision="0" />
+      <column name="DURATION_DAYS" type="id_Integer" length="15" nullable="true" precision="0" />
+      <column name="COMPANY_CODE" type="id_String" length="13" nullable="true" precision="0" />
+      <column name="SOURCE_SYSTEM" type="id_String" length="10" nullable="true" precision="0" />
+      <column name="DOUBTFUL_FLAG" type="id_String" length="1" nullable="true" precision="0" />
+      <column name="DEPARTMENT_IN_CHARGE" type="id_String" length="6" nullable="true" precision="0" />
+      <column name="COMMERCIAL_BAREMS" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="FINANCIAL_BAREMS" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="BAREM_TYPE_CODE" type="id_String" length="6" nullable="true" precision="0" />
+      <column name="MISSING_ORIGINALS" type="id_String" length="1" nullable="true" precision="0" />
+      <column name="CORBEILLE_CODE" type="id_String" length="255" nullable="true" precision="0" />
+      <column name="NEW_OR_USED_VEHICLE_FLAG" type="id_String" length="1" nullable="true" precision="0" />
+      <column name="CONTRACT_MANAGER_NAME" type="id_String" length="61" nullable="true" precision="0" />
+      <column name="NATURE_CODE" type="id_String" length="6" nullable="true" precision="0" />
+      <column name="CONTRACT_ID_2" type="id_String" length="255" nullable="true" precision="0" />
+      <column name="EKIP_ADDRESS_NUMBER" type="id_Integer" length="15" nullable="true" precision="0" />
+      <column name="ORIGINAL_CONTRACT_ID_2" type="id_String" length="255" nullable="true" precision="0" />
+      <column name="RIB_NUMBER" type="id_String" length="34" nullable="true" precision="0" />
+      <column name="NUMBER_OF_OPTIONS" type="id_Integer" length="15" nullable="true" precision="0" />
+      <column name="DURATION" type="id_Integer" length="15" nullable="true" precision="0" />
+      <column name="CALENDAR_DAY" type="id_Date" length="255" nullable="true" precision="0" pattern="yyyy-MM-dd" />
+      <column name="DURATION_UNIT" type="id_String" length="4" nullable="true" precision="0" />
+      <column name="CURRENCY" type="id_String" length="4" nullable="true" precision="0" />
+      <column name="VAT_RATE" type="id_Integer" length="15" nullable="true" precision="0" />
+      <column name="NOMINAL_INTEREST_RATE" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="EFFECTIVE_INTEREST_RATE" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="YEARLY_GLOBAL_INITIAL_RATE" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="TESE_INTEREST_RATE" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="TESL_INTEREST_RATE" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="FUNDING_BASE" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="CAPITAL_CONTRIBUTION" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="FIRST_PAYMENT_VAT_EX" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="OPENING_FEES" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="GUARANTEE_DEPOSIT" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="BUY_BACK_AMOUNT_VAT_EX" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="FINANCED_AMOUNT_VAT_1" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="FINANCED_AMOUNT_VAT_2" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="VEHICLE_PURCHASE_PRICE_VAT_1" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="OWN_CONTRIBUTION_AMOUNT" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="FUNDING_BASE_TAX_FRANCE" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="COLLATERAL_ESTIMATED" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="IMPORTER_BONUS_VAT_1" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="LITIGATION_FEE_WITHOUT_TAX" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="LITIGATION_FEE_TAX" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="LITIGATION_FEE_WITH_TAX" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="LITIGATION_PENALTIES" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="LITIGATION_PENALTIES_TAX" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="LITIGATION_PENALTIES_VAT_IN" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="VEHICLE_PURCHASE_PRICE_VAT_2" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="IMPORTER_BONUS_VAT_2" type="id_Double" length="18" nullable="true" precision="2" />
+      <column name="ABS_DEAL" type="id_Integer" length="15" nullable="true" precision="0" />
+      <column name="VERSION_CODE" type="id_Integer" length="15" nullable="true" precision="0" />
+      <column name="KILOMETER" type="id_Integer" length="15" nullable="true" precision="0" />
+        </schema>
+        
+    </connection>
+</talendfile:DbConnection>

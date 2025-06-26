@@ -229,7 +229,7 @@
       <column comment="" key="false" length="100" name="DESCRIPTION" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="CONTRAT_1">
         <mapperTableEntries name="STATUS_OF_EKIP_CONTRACT" expression="row1.SEKCONTR" type="id_String" nullable="true"/>
@@ -255,8 +255,6 @@
   <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="520" posY="200">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_8bdd941f6b9f465493 - SA_STATUUUS"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
@@ -276,7 +274,7 @@
     <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="BASIC" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
-    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="SA_STATUUUS"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value=""/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
     <elementParameter field="CHECK" name="configuration.clearData" value="false"/>
     <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
@@ -377,6 +375,7 @@
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
 </talendfile:ProcessType>

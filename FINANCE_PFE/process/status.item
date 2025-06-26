@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:FileMetadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/file">
-  <connection xmi:id="_8311f2004ca44a4ea8" id="_8311f2004ca44a4ea8" label="status" name="status" version="0.1" type="Excel">
+  <connection xmi:id="_9e881b62cbe045e5a9" id="_9e881b62cbe045e5a9" label="status" name="status" version="0.1" type="Excel">
     <FileConnection allSheets="true" encoding="UTF-8" fieldSeparatorValue=";" firstColumn="1" footer="0" header="1" limitValue="">
       <filePath>D:\Data\status.xlsx</filePath>
       <sheetName>Sheet1</sheetName>
     </FileConnection>
-    <schema xmi:id="b858db2d-c25a-475f-9141-e1699458f1e7" name="test_0.1" label="test_0.1">
+    <schema xmi:id="f36c408f-8fa0-4e43-9b32-9eb81257f4e0" name="test_0.1" label="test_0.1">
       <column name="SEKCONTR" type="id_String" length="6" nullable="true" precision="0" usefulColumn="true"/>
-<column name="KEKCONTR" type="id_String" length="18" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KEKCONTR" type="id_String" length="255" nullable="true" precision="0" usefulColumn="true"/>
 <column name="KFRORDNR" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
 <column name="DTSTATCHG" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
 <column name="DM_EXDATE" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>

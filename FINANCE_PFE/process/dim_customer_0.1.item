@@ -99,22 +99,13 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="120" posY="240">
+  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="120" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Input" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="2" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value=""/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="__configuration.dataSet.tableName__"/>
@@ -124,7 +115,7 @@
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://UYKYMDU-DT38274.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
@@ -132,8 +123,8 @@
       <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
     </elementParameter>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH1&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:Cl2+IBPF4buB7sshOQ7A5Dk/NAWYe8f5w0q/jioKCJtg19HegL1qq3a+vVw="/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:CKkgOcYT1cnylNf7/QrfJmBufEYXdMsSHR6dDL5dbVfcw43bjCWT8dZPlIY="/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
@@ -255,7 +246,6 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
     <metadata connector="FLOW" label="SA_CUSTOMER" name="tDBInput_1">
       <column comment="" key="false" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -406,7 +396,7 @@
       <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="240">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="// === Replace null in MAIDEN_NAME and CITY ===&#xA;String[] fakeMaidenNames = {&#xA;    &quot;Anderson&quot;, &quot;Taylor&quot;, &quot;Morgan&quot;, &quot;Hughes&quot;, &quot;Bennett&quot;,&#xA;    &quot;Ramirez&quot;, &quot;Mitchell&quot;, &quot;Gonzalez&quot;, &quot;Lopez&quot;, &quot;Perry&quot;&#xA;};&#xA;&#xA;String[] fakeCities = {&#xA;    &quot;Springfield&quot;, &quot;Riverside&quot;, &quot;Fairview&quot;, &quot;Madison&quot;, &quot;Georgetown&quot;,&#xA;    &quot;Franklin&quot;, &quot;Greenville&quot;, &quot;Clinton&quot;, &quot;Dayton&quot;, &quot;Ashland&quot;&#xA;};&#xA;&#xA;String generatedMaidenName = fakeMaidenNames[(int)(Math.random() * fakeMaidenNames.length)];&#xA;String generatedCity = fakeCities[(int)(Math.random() * fakeCities.length)];&#xA;&#xA;output_row.MAIDEN_NAME = (input_row.MAIDEN_NAME != null) ? input_row.MAIDEN_NAME : generatedMaidenName;&#xA;output_row.CITY = (input_row.CITY != null) ? input_row.CITY : generatedCity;&#xA;&#xA;// === Weighted manager assignment ===&#xA;// Managers repeated to increase their likelihood&#xA;String[] managers = {&#xA;    &quot;Alice Johnson&quot;, &quot;Bob Smith&quot;, &quot;Bob Smith&quot;, &quot;Charlie Brown&quot;,&#xA;    &quot;Diana Miller&quot;, &quot;Eve Davis&quot;, &quot;Eve Davis&quot;, &quot;Eve Davis&quot;,&#xA;    &quot;Frank Harris&quot;, &quot;Grace Thompson&quot;, &quot;Grace Thompson&quot;, &quot;Grace Thompson&quot;,&#xA;    &quot;Henry Walker&quot;, &quot;Henry Walker&quot;,&#xA;    &quot;Isabella Moore&quot;, &quot;Jack White&quot;, &quot;Jack White&quot;,&#xA;    &quot;Karen Lewis&quot;, &quot;Karen Lewis&quot;, &quot;Karen Lewis&quot;, &quot;Karen Lewis&quot;,&#xA;    &quot;Liam Scott&quot;, &quot;Liam Scott&quot;, &quot;Liam Scott&quot;, &quot;Liam Scott&quot;, &quot;Liam Scott&quot;,&#xA;    &quot;Mona Turner&quot;, &quot;Noah Young&quot;, &quot;Noah Young&quot;, &quot;Olivia Hall&quot;,&#xA;    &quot;Paul Allen&quot;, &quot;Paul Allen&quot;, &quot;Quincy Wright&quot;, &quot;Rachel King&quot;,&#xA;    &quot;Samuel Green&quot;, &quot;Tina Adams&quot;, &quot;Umar Baker&quot;,&#xA;    &quot;Vera Nelson&quot;, &quot;Walter Carter&quot;, &quot;Xena Price&quot;,&#xA;    &quot;Yasmine Reed&quot;, &quot;Zack Foster&quot;&#xA;};&#xA;&#xA;output_row.NAME_OF_MANAGER = managers[(int)(Math.random() * managers.length)];&#xA;&#xA;// === Copy remaining fields ===&#xA;output_row.CUSTOMER_ID = input_row.CUSTOMER_ID;&#xA;output_row.FIRST_NAME = input_row.FIRST_NAME;&#xA;output_row.LAST_NAME = input_row.LAST_NAME;&#xA;output_row.SEX = input_row.SEX;&#xA;output_row.BIRTHDAY = input_row.BIRTHDAY;&#xA;output_row.COUNTRY = input_row.COUNTRY;&#xA;output_row.EMAIL_ADDRESS = input_row.EMAIL_ADDRESS;&#xA;output_row.MOBILE_NUMBER = input_row.MOBILE_NUMBER;&#xA;output_row.SOCIAL_SECURITY_CODE = input_row.SOCIAL_SECURITY_CODE;&#xA;output_row.MATRIMONIAL_STATUS_CODE = input_row.MATRIMONIAL_STATUS_CODE;&#xA;output_row.SIRET_NUMBER = input_row.SIRET_NUMBER;&#xA;output_row.REVENUES = input_row.REVENUES;&#xA;output_row.CHARGES = input_row.CHARGES;&#xA;output_row.ADDITIONAL_REVENUES = input_row.ADDITIONAL_REVENUES;&#xA;output_row.START_DATE = input_row.START_DATE;&#xA;output_row.END_DATE = input_row.END_DATE;&#xA;output_row.BASEL_CLASSIFICATION = input_row.BASEL_CLASSIFICATION;&#xA;output_row.CLIENT_TYPE_CODE = input_row.CLIENT_TYPE_CODE;&#xA;"/>
@@ -556,7 +546,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="240">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
@@ -637,7 +627,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="dim_customer">
         <mapperTableEntries name="CUSTOMER_ID" expression="row2.CUSTOMER_ID " type="id_String" nullable="true"/>
@@ -713,19 +703,10 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="240">
+  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Output" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="1" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -735,7 +716,7 @@
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://VSKIQIR-UE58575.snowflakecomputing.com/?user=OUMAYMADEBBICH1&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://UYKYMDU-DT38274.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
     <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
@@ -743,8 +724,8 @@
       <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
     </elementParameter>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH1&quot;"/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:J+tW9LkuxXmZF/8wgT2s7S+BuBM0nmXFXTD9zj1lX7q1FyKtP3iGjhTFrts="/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:u9FQIsent5NpX5YHU/pP2MwQEVpV8LAxukQHQBydfWiMUnMd9EF+ArhuCzs="/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
@@ -888,7 +869,6 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
     <metadata connector="FLOW" label="DIM_CUSTOMER" name="tDBOutput_1">
       <column comment="" key="true" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -1024,6 +1004,961 @@
       <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="120" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Input" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="2" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="__configuration.dataSet.tableName__"/>
+    <elementParameter field="TACOKIT_GUESS_SCHEMA" name="configuration.dataSet.schema:Guess Schema_configuration.dataSet.schema" value=""/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.schema:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.schema:REPOSITORY_SCHEMA_TYPE" value="_08r9kCtMEfC1gb9COxFZIA - SA_CUSTOMER" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://UYKYMDU-DT38274.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver">
+      <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
+    </elementParameter>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:nMHuvIKyb7Lnzhe0vV4m89oR7auz8wV5IYR3zKWVwnlphs5qD4XYJW8lONA="/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="&quot;BASIC&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="&quot;SA_CUSTOMER&quot;"/>
+    <elementParameter field="MEMO_SQL" name="configuration.dataSet.sqlQuery" value="&quot;SELECT &#xA;  PFE.SA_CUSTOMER.CUSTOMER_ID, &#xA;  PFE.SA_CUSTOMER.DATE_VALID_FROM, &#xA;  PFE.SA_CUSTOMER.DATE_VALID_TO, &#xA;  PFE.SA_CUSTOMER.START_DATE, &#xA;  PFE.SA_CUSTOMER.END_DATE, &#xA;  PFE.SA_CUSTOMER.BIRTHDAY, &#xA;  PFE.SA_CUSTOMER.CONTRACT_IMPORTER_START, &#xA;  PFE.SA_CUSTOMER.CONTRACT_IMPORTER_END, &#xA;  PFE.SA_CUSTOMER.FOUNDATION_DATE, &#xA;  PFE.SA_CUSTOMER.LAST_NAME, &#xA;  PFE.SA_CUSTOMER.FIRST_NAME, &#xA;  PFE.SA_CUSTOMER.SEX, &#xA;  PFE.SA_CUSTOMER.QUALITY_CODE, &#xA;  PFE.SA_CUSTOMER.PERSON_TYPE_CODE, &#xA;  PFE.SA_CUSTOMER.VW_BANK, &#xA;  PFE.SA_CUSTOMER.VW_FINANCE, &#xA;  PFE.SA_CUSTOMER.SIREN_NUMBER, &#xA;  PFE.SA_CUSTOMER.SIRET_NUMBER, &#xA;  PFE.SA_CUSTOMER.NAME_OF_MANAGER, &#xA;  PFE.SA_CUSTOMER.REGION_CODE, &#xA;  PFE.SA_CUSTOMER.CLASSIFICATION_CODE, &#xA;  PFE.SA_CUSTOMER.OWNER_FLAG, &#xA;  PFE.SA_CUSTOMER.MATRIMONIAL_STATUS_CODE, &#xA;  PFE.SA_CUSTOMER.NUMBER_OF_CHILDREN, &#xA;  PFE.SA_CUSTOMER.PHONE_NUMBER, &#xA;  PFE.SA_CUSTOMER.FAX_NUMBER, &#xA;  PFE.SA_CUSTOMER.EMAIL_ADDRESS, &#xA;  PFE.SA_CUSTOMER.MOBILE_NUMBER, &#xA;  PFE.SA_CUSTOMER.MAIDEN_NAME, &#xA;  PFE.SA_CUSTOMER.CLIENT_TYPE_CODE, &#xA;  PFE.SA_CUSTOMER.SOCIAL_SECURITY_CODE, &#xA;  PFE.SA_CUSTOMER.COMPANY_CODE, &#xA;  PFE.SA_CUSTOMER.APE_CODE, &#xA;  PFE.SA_CUSTOMER.FINANCIAL_GROUP, &#xA;  PFE.SA_CUSTOMER.BASEL_CLASSIFICATION, &#xA;  PFE.SA_CUSTOMER.BRAND_CODE, &#xA;  PFE.SA_CUSTOMER.BUSINESS_TYPE, &#xA;  PFE.SA_CUSTOMER.JOB_CODE, &#xA;  PFE.SA_CUSTOMER.NUMBER_CHILDREN, &#xA;  PFE.SA_CUSTOMER.COUNTRY, &#xA;  PFE.SA_CUSTOMER.CITY, &#xA;  PFE.SA_CUSTOMER.REVENUES, &#xA;  PFE.SA_CUSTOMER.ADDITIONAL_REVENUES, &#xA;  PFE.SA_CUSTOMER.CHARGES, &#xA;  PFE.SA_CUSTOMER.JOB_SENIORITY, &#xA;  PFE.SA_CUSTOMER.NUMBER_OF_EMPLOYEES, &#xA;  PFE.SA_CUSTOMER.CURRENCY&#xA;FROM PFE.SA_CUSTOMER&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useCursor" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.cursorSize" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.trimAllStringOrCharColumns" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.columnTrims">
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CUSTOMER_ID" id="0"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="1"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="DATE_VALID_FROM" id="2"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="3"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="DATE_VALID_TO" id="4"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="5"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="START_DATE" id="6"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="7"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="END_DATE" id="8"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="9"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="BIRTHDAY" id="10"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="11"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CONTRACT_IMPORTER_START" id="12"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="13"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CONTRACT_IMPORTER_END" id="14"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="15"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="FOUNDATION_DATE" id="16"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="17"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="LAST_NAME" id="18"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="19"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="FIRST_NAME" id="20"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="21"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SEX" id="22"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="23"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="QUALITY_CODE" id="24"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="25"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PERSON_TYPE_CODE" id="26"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="27"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="VW_BANK" id="28"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="29"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="VW_FINANCE" id="30"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="31"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SIREN_NUMBER" id="32"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="33"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SIRET_NUMBER" id="34"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="35"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="NAME_OF_MANAGER" id="36"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="37"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="REGION_CODE" id="38"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="39"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CLASSIFICATION_CODE" id="40"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="41"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="OWNER_FLAG" id="42"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="43"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="MATRIMONIAL_STATUS_CODE" id="44"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="45"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="NUMBER_OF_CHILDREN" id="46"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="47"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="PHONE_NUMBER" id="48"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="49"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="FAX_NUMBER" id="50"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="51"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="EMAIL_ADDRESS" id="52"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="53"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="MOBILE_NUMBER" id="54"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="55"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="MAIDEN_NAME" id="56"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="57"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CLIENT_TYPE_CODE" id="58"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="59"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="SOCIAL_SECURITY_CODE" id="60"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="61"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="COMPANY_CODE" id="62"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="63"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="APE_CODE" id="64"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="65"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="FINANCIAL_GROUP" id="66"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="67"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="BASEL_CLASSIFICATION" id="68"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="69"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="BRAND_CODE" id="70"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="71"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="BUSINESS_TYPE" id="72"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="73"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="JOB_CODE" id="74"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="75"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="NUMBER_CHILDREN" id="76"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="77"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="COUNTRY" id="78"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="79"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CITY" id="80"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="81"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="REVENUES" id="82"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="83"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="ADDITIONAL_REVENUES" id="84"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="85"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CHARGES" id="86"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="87"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="JOB_SENIORITY" id="88"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="89"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="NUMBER_OF_EMPLOYEES" id="90"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="91"/>
+      <elementValue elementRef="configuration.config.columnTrims[].column" value="CURRENCY" id="92"/>
+      <elementValue elementRef="configuration.config.columnTrims[].trim" value="false" id="93"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.config.enableMapping" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.config.mapping" value="MYSQL" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.allowSpecialName" value="true"/>
+    <elementParameter field="CHECK" name="configuration.config.usePreparedStatement" value="false"/>
+    <elementParameter field="TABLE" name="configuration.config.preparedStatementParameters" show="false"/>
+    <elementParameter field="CHECK" name="configuration.config.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.config.queryTimeout" value="30" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
+    <metadata connector="FLOW" label="SA_CUSTOMER" name="tDBInput_2">
+      <column comment="" key="false" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DATE_VALID_FROM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DATE_VALID_TO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="START_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="END_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="BIRTHDAY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="CONTRACT_IMPORTER_START" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="CONTRACT_IMPORTER_END" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="FOUNDATION_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="QUALITY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="PERSON_TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="VW_BANK" nullable="true" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="VW_FINANCE" nullable="true" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="14" name="SIREN_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="14" name="SIRET_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="NAME_OF_MANAGER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="REGION_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="CLASSIFICATION_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="OWNER_FLAG" nullable="true" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="MATRIMONIAL_STATUS_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="NUMBER_OF_CHILDREN" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="PHONE_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="FAX_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="EMAIL_ADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="MOBILE_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="MAIDEN_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="CLIENT_TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="SOCIAL_SECURITY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="COMPANY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="APE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="FINANCIAL_GROUP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="BASEL_CLASSIFICATION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="BRAND_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="BUSINESS_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="JOB_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="NUMBER_CHILDREN" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="COUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="CITY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="REVENUES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="ADDITIONAL_REVENUES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="CHARGES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="JOB_SENIORITY" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="NUMBER_OF_EMPLOYEES" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="CURRENCY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// VARCHAR fields: replace null with &quot;-&quot;&#xA;output_row.CUSTOMER_ID = input_row.CUSTOMER_ID != null ? input_row.CUSTOMER_ID : &quot;-&quot;;&#xA;output_row.FIRST_NAME = input_row.FIRST_NAME != null ? input_row.FIRST_NAME : &quot;-&quot;;&#xA;output_row.MAIDEN_NAME = input_row.MAIDEN_NAME != null ? input_row.MAIDEN_NAME : &quot;-&quot;;&#xA;output_row.LAST_NAME = input_row.LAST_NAME != null ? input_row.LAST_NAME : &quot;-&quot;;&#xA;output_row.SEX = input_row.SEX != null ? input_row.SEX : &quot;-&quot;;&#xA;output_row.COUNTRY = input_row.COUNTRY != null ? input_row.COUNTRY : &quot;-&quot;;&#xA;output_row.CITY = input_row.CITY != null ? input_row.CITY : &quot;-&quot;;&#xA;output_row.EMAIL_ADDRESS = input_row.EMAIL_ADDRESS != null ? input_row.EMAIL_ADDRESS : &quot;-&quot;;&#xA;output_row.MOBILE_NUMBER = input_row.MOBILE_NUMBER != null ? input_row.MOBILE_NUMBER : &quot;-&quot;;&#xA;output_row.SOCIAL_SECURITY_CODE = input_row.SOCIAL_SECURITY_CODE != null ? input_row.SOCIAL_SECURITY_CODE : &quot;-&quot;;&#xA;output_row.MATRIMONIAL_STATUS_CODE = input_row.MATRIMONIAL_STATUS_CODE != null ? input_row.MATRIMONIAL_STATUS_CODE : &quot;-&quot;;&#xA;output_row.SIRET_NUMBER = input_row.SIRET_NUMBER != null ? input_row.SIRET_NUMBER : &quot;-&quot;;&#xA;output_row.BASEL_CLASSIFICATION = input_row.BASEL_CLASSIFICATION != null ? input_row.BASEL_CLASSIFICATION : &quot;-&quot;;&#xA;output_row.CLIENT_TYPE_CODE = input_row.CLIENT_TYPE_CODE != null ? input_row.CLIENT_TYPE_CODE : &quot;-&quot;;&#xA;output_row.NAME_OF_MANAGER = input_row.NAME_OF_MANAGER != null ? input_row.NAME_OF_MANAGER : &quot;-&quot;;&#xA;&#xA;// FLOAT fields: replace null with 0.0 to match FLOAT type&#xA;output_row.REVENUES = input_row.REVENUES != null ? input_row.REVENUES : 0.0;&#xA;output_row.CHARGES = input_row.CHARGES != null ? input_row.CHARGES : 0.0;&#xA;output_row.ADDITIONAL_REVENUES = input_row.ADDITIONAL_REVENUES != null ? input_row.ADDITIONAL_REVENUES : 0.0;&#xA;&#xA;// DATE fields: keep null (or use a default date if required)&#xA;output_row.DATE_VALID_FROM = input_row.DATE_VALID_FROM != null ? input_row.DATE_VALID_FROM : null;&#xA;output_row.DATE_VALID_TO = input_row.DATE_VALID_TO != null ? input_row.DATE_VALID_TO : null;&#xA;output_row.BIRTHDAY = input_row.BIRTHDAY != null ? input_row.BIRTHDAY : null;&#xA;output_row.START_DATE = input_row.START_DATE != null ? input_row.START_DATE : null;&#xA;output_row.END_DATE = input_row.END_DATE != null ? input_row.END_DATE : null;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SA_CUSTOMER" name="tJavaRow_2">
+      <column comment="" key="false" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DATE_VALID_FROM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DATE_VALID_TO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="START_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="END_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="BIRTHDAY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="CONTRACT_IMPORTER_START" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="CONTRACT_IMPORTER_END" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="FOUNDATION_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="QUALITY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="PERSON_TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="VW_BANK" nullable="true" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="VW_FINANCE" nullable="true" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="14" name="SIREN_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="14" name="SIRET_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="NAME_OF_MANAGER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="REGION_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="CLASSIFICATION_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="OWNER_FLAG" nullable="true" pattern="" precision="0" sourceType="BOOLEAN" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="MATRIMONIAL_STATUS_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="NUMBER_OF_CHILDREN" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="PHONE_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="FAX_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="EMAIL_ADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="MOBILE_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="MAIDEN_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="CLIENT_TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="SOCIAL_SECURITY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="COMPANY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="APE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="FINANCIAL_GROUP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="BASEL_CLASSIFICATION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="BRAND_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="BUSINESS_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="JOB_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="NUMBER_CHILDREN" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="COUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="CITY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="REVENUES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="ADDITIONAL_REVENUES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="CHARGES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="JOB_SENIORITY" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="NUMBER_OF_EMPLOYEES" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="CURRENCY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="440" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_MN_D0DcUEfClObiKVWYyZA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DIM_CUSTOMER" name="dim_cust">
+      <column comment="" key="true" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DATE_VALID_FROM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DATE_VALID_TO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="MAIDEN_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="BIRTHDAY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="COUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="CITY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="EMAIL_ADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="MOBILE_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="SOCIAL_SECURITY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="MATRIMONIAL_STATUS_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="14" name="SIRET_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="REVENUES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="CHARGES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="ADDITIONAL_REVENUES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="START_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="END_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="BASEL_CLASSIFICATION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="CLIENT_TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="NAME_OF_MANAGER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="dim_cust">
+        <mapperTableEntries name="CUSTOMER_ID" expression="row4.CUSTOMER_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATE_VALID_FROM" expression="row4.DATE_VALID_FROM " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DATE_VALID_TO" expression="row4.DATE_VALID_TO " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="FIRST_NAME" expression="row4.FIRST_NAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MAIDEN_NAME" expression="row4.MAIDEN_NAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LAST_NAME" expression="row4.LAST_NAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SEX" expression="row4.SEX " type="id_String" nullable="true"/>
+        <mapperTableEntries name="BIRTHDAY" expression="row4.BIRTHDAY " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="COUNTRY" expression="row4.COUNTRY " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CITY" expression="row4.CITY " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EMAIL_ADDRESS" expression="row4.EMAIL_ADDRESS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MOBILE_NUMBER" expression="row4.MOBILE_NUMBER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SOCIAL_SECURITY_CODE" expression="row4.SOCIAL_SECURITY_CODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MATRIMONIAL_STATUS_CODE" expression="row4.MATRIMONIAL_STATUS_CODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SIRET_NUMBER" expression="row4.SIRET_NUMBER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REVENUES" expression="row4.REVENUES " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="CHARGES" expression="row4.CHARGES " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ADDITIONAL_REVENUES" expression="row4.ADDITIONAL_REVENUES " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="START_DATE" expression="row4.START_DATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="END_DATE" expression="row4.END_DATE " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BASEL_CLASSIFICATION" expression="row4.BASEL_CLASSIFICATION " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CLIENT_TYPE_CODE" expression="row4.CLIENT_TYPE_CODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME_OF_MANAGER" expression="row4.NAME_OF_MANAGER " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="CUSTOMER_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATE_VALID_FROM" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DATE_VALID_TO" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="START_DATE" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="END_DATE" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="BIRTHDAY" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_IMPORTER_START" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CONTRACT_IMPORTER_END" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="FOUNDATION_DATE" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LAST_NAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIRST_NAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SEX" type="id_String" nullable="true"/>
+        <mapperTableEntries name="QUALITY_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PERSON_TYPE_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VW_BANK" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="VW_FINANCE" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="SIREN_NUMBER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SIRET_NUMBER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NAME_OF_MANAGER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="REGION_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CLASSIFICATION_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OWNER_FLAG" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="MATRIMONIAL_STATUS_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NUMBER_OF_CHILDREN" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="PHONE_NUMBER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FAX_NUMBER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EMAIL_ADDRESS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MOBILE_NUMBER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MAIDEN_NAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CLIENT_TYPE_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SOCIAL_SECURITY_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COMPANY_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="APE_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FINANCIAL_GROUP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BASEL_CLASSIFICATION" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BRAND_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BUSINESS_TYPE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="JOB_CODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NUMBER_CHILDREN" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="COUNTRY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CITY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="REVENUES" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="ADDITIONAL_REVENUES" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="CHARGES" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="JOB_SENIORITY" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="NUMBER_OF_EMPLOYEES" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="CURRENCY" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="600" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Output" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="1" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="__configuration.dataSet.tableName__"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://UYKYMDU-DT38274.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver">
+      <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
+    </elementParameter>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:2LhVcjqAi7x4DJohVTCH/bQaU1uCVBQ/u0kXdYpYT/YYEchN7KdXSjocrI0="/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="&quot;BASIC&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="&quot;DIM_CUSTOMER&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
+    <elementParameter field="CHECK" name="configuration.clearData" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.createTableIfNotExists" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.varcharLength" value="-1" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForCreateTableAndDML.keys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForDML.keys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.sortStrategy" value="COMPOUND" show="false"/>
+    <elementParameter field="TABLE" name="configuration.sortKeys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.distributionStrategy" value="AUTO" show="false"/>
+    <elementParameter field="TABLE" name="configuration.distributionKeys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.ignoreUpdate" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
+    <elementParameter field="TABLE" name="configuration.additionalColumns"/>
+    <elementParameter field="CHECK" name="configuration.useFieldOptions" value="false"/>
+    <elementParameter field="TABLE" name="configuration.fieldOptions" show="false">
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CUSTOMER_ID" id="0"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="1"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="2"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="3"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="4"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DATE_VALID_FROM" id="5"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="6"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="7"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="8"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="9"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DATE_VALID_TO" id="10"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="11"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="12"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="13"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="14"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="FIRST_NAME" id="15"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="16"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="17"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="18"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="19"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MAIDEN_NAME" id="20"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="21"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="22"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="23"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="24"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="LAST_NAME" id="25"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="26"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="27"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="28"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="29"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="SEX" id="30"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="31"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="32"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="33"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="34"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="BIRTHDAY" id="35"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="36"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="37"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="38"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="39"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="COUNTRY" id="40"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="41"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="42"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="43"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="44"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CITY" id="45"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="46"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="47"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="48"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="49"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="EMAIL_ADDRESS" id="50"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="51"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="52"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="53"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="54"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MOBILE_NUMBER" id="55"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="56"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="57"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="58"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="59"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="SOCIAL_SECURITY_CODE" id="60"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="61"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="62"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="63"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="64"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="MATRIMONIAL_STATUS_CODE" id="65"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="66"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="67"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="68"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="69"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="SIRET_NUMBER" id="70"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="71"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="72"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="73"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="74"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="REVENUES" id="75"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="76"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="77"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="78"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="79"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CHARGES" id="80"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="81"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="82"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="83"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="84"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ADDITIONAL_REVENUES" id="85"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="86"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="87"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="88"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="89"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="START_DATE" id="90"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="91"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="92"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="93"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="94"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="END_DATE" id="95"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="96"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="97"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="98"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="99"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="BASEL_CLASSIFICATION" id="100"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="101"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="102"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="103"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="104"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CLIENT_TYPE_CODE" id="105"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="106"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="107"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="108"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="109"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="NAME_OF_MANAGER" id="110"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="111"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="112"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="113"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="114"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.debugQuery" value="false"/>
+    <elementParameter field="CHECK" name="configuration.useBatch" value="true"/>
+    <elementParameter field="TEXT" name="configuration.batchSize" value="10000"/>
+    <elementParameter field="CHECK" name="configuration.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.queryTimeout" value="30" show="false"/>
+    <elementParameter field="CHECK" name="configuration.rewriteBatchedStatements" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useOriginColumnName" value="true" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
+    <metadata connector="FLOW" label="DIM_CUSTOMER" name="tDBOutput_2">
+      <column comment="" key="true" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DATE_VALID_FROM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DATE_VALID_TO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="MAIDEN_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="BIRTHDAY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="COUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="CITY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="EMAIL_ADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="MOBILE_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="SOCIAL_SECURITY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="MATRIMONIAL_STATUS_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="14" name="SIRET_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="REVENUES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="CHARGES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="ADDITIONAL_REVENUES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="START_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="END_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="BASEL_CLASSIFICATION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="CLIENT_TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="NAME_OF_MANAGER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="reject" label="DIM_CUSTOMER" name="reject">
+      <column comment="" key="true" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DATE_VALID_FROM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="DATE_VALID_TO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="MAIDEN_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="BIRTHDAY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="COUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="CITY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="EMAIL_ADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="MOBILE_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="SOCIAL_SECURITY_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="MATRIMONIAL_STATUS_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="14" name="SIRET_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="REVENUES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="CHARGES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="ADDITIONAL_REVENUES" nullable="true" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="START_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="END_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="BASEL_CLASSIFICATION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="CLIENT_TYPE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="NAME_OF_MANAGER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
@@ -1039,7 +1974,172 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="dim_customer" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tJavaRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="MATRIMONIAL_STATUS_CODE" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADDITIONAL_REVENUES" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="OWNER_FLAG" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="MOBILE_NUMBER" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="SEX" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHARGES" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="END_DATE" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CLIENT_TYPE_CODE" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="LAST_NAME" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="FIRST_NAME" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      <elementValue elementRef="TRACE_COLUMN" value="NAME_OF_MANAGER" id="30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
+      <elementValue elementRef="TRACE_COLUMN" value="BASEL_CLASSIFICATION" id="33"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="34"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="35"/>
+      <elementValue elementRef="TRACE_COLUMN" value="VW_FINANCE" id="36"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="37"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="38"/>
+      <elementValue elementRef="TRACE_COLUMN" value="JOB_CODE" id="39"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="40"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="41"/>
+      <elementValue elementRef="TRACE_COLUMN" value="EMAIL_ADDRESS" id="42"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="43"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="44"/>
+      <elementValue elementRef="TRACE_COLUMN" value="BRAND_CODE" id="45"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="46"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="47"/>
+      <elementValue elementRef="TRACE_COLUMN" value="COUNTRY" id="48"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="49"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="50"/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_VALID_FROM" id="51"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="52"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="53"/>
+      <elementValue elementRef="TRACE_COLUMN" value="BUSINESS_TYPE" id="54"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="55"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="56"/>
+      <elementValue elementRef="TRACE_COLUMN" value="FOUNDATION_DATE" id="57"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="58"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="59"/>
+      <elementValue elementRef="TRACE_COLUMN" value="MAIDEN_NAME" id="60"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="61"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="62"/>
+      <elementValue elementRef="TRACE_COLUMN" value="COMPANY_CODE" id="63"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="64"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="65"/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUALITY_CODE" id="66"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="67"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="68"/>
+      <elementValue elementRef="TRACE_COLUMN" value="SIRET_NUMBER" id="69"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="70"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="71"/>
+      <elementValue elementRef="TRACE_COLUMN" value="SIREN_NUMBER" id="72"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="73"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="74"/>
+      <elementValue elementRef="TRACE_COLUMN" value="SOCIAL_SECURITY_CODE" id="75"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="76"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="77"/>
+      <elementValue elementRef="TRACE_COLUMN" value="VW_BANK" id="78"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="79"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="80"/>
+      <elementValue elementRef="TRACE_COLUMN" value="BIRTHDAY" id="81"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="82"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="83"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERSON_TYPE_CODE" id="84"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="85"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="86"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CURRENCY" id="87"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="88"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="89"/>
+      <elementValue elementRef="TRACE_COLUMN" value="APE_CODE" id="90"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="91"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="92"/>
+      <elementValue elementRef="TRACE_COLUMN" value="REGION_CODE" id="93"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="94"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="95"/>
+      <elementValue elementRef="TRACE_COLUMN" value="NUMBER_OF_CHILDREN" id="96"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="97"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="98"/>
+      <elementValue elementRef="TRACE_COLUMN" value="NUMBER_CHILDREN" id="99"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="100"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="101"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUSTOMER_ID" id="102"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="103"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="104"/>
+      <elementValue elementRef="TRACE_COLUMN" value="FINANCIAL_GROUP" id="105"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="106"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="107"/>
+      <elementValue elementRef="TRACE_COLUMN" value="START_DATE" id="108"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="109"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="110"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CONTRACT_IMPORTER_START" id="111"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="112"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="113"/>
+      <elementValue elementRef="TRACE_COLUMN" value="FAX_NUMBER" id="114"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="115"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="116"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CITY" id="117"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="118"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="119"/>
+      <elementValue elementRef="TRACE_COLUMN" value="REVENUES" id="120"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="121"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="122"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CONTRACT_IMPORTER_END" id="123"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="124"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="125"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CLASSIFICATION_CODE" id="126"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="127"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="128"/>
+      <elementValue elementRef="TRACE_COLUMN" value="NUMBER_OF_EMPLOYEES" id="129"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="130"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="131"/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_VALID_TO" id="132"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="133"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="134"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PHONE_NUMBER" id="135"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="136"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="137"/>
+      <elementValue elementRef="TRACE_COLUMN" value="JOB_SENIORITY" id="138"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="139"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="140"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="dim_cust" lineStyle="0" metaname="dim_cust" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="dim_cust" show="false"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
 </talendfile:ProcessType>
