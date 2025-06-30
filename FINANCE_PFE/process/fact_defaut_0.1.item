@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:HbpV5Lj1PFloEPjqARr/bdves2g9MF8HoiljnBxU" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/Be0+FxCVoxg3/Zbovol+HwWNiJZNCieZJuUqcdl" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="JDBCRow" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="160" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Row" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI1Jvdw" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="1" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.schema:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.schema:REPOSITORY_SCHEMA_TYPE" value="_08r9kCtMEfC1gb9COxFZIA - FACT_DEFAUT" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://UYKYMDU-DT38274.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver">
+      <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
+    </elementParameter>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:aEjwa4FtqiM9AZw/PPxXnyhhbJ+esU/ZGyk2VxSAiod5GcOQwYJQV1xvwdM="/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="&quot;BASIC&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="FACT_DEFAUT"/>
+    <elementParameter field="MEMO_SQL" name="configuration.dataSet.sqlQuery" value="&quot;CREATE OR REPLACE TABLE BANQUE.PFE.fact_defaut AS&#xD;&#xA;WITH ReportingDate_CTE AS (&#xD;&#xA;  SELECT DT_JOUR AS ReportingDate&#xD;&#xA;  FROM BANQUE.PFE.DIM_DATE&#xD;&#xA;  WHERE DT_JOUR = TO_DATE('2019-01-08', 'YYYY-MM-DD')&#xD;&#xA;),&#xD;&#xA;BASE_CONTRACTS AS (&#xD;&#xA;  SELECT &#xD;&#xA;    dc.CONTRACT_ID,&#xD;&#xA;    dc.PRODUCT_TYPE_CODE AS CATEGORY_CODE,&#xD;&#xA;    dc.\&quot;STATUS_ID\&quot; AS CONTRACTSTATUS,&#xD;&#xA;    dc.VALID_FROM_DATE,&#xD;&#xA;    sc.DURATION,&#xD;&#xA;    p.PAYMENT_NUMBER,&#xD;&#xA;    dp.DATE_VALID_FROM AS DTVALIDFR,&#xD;&#xA;    dp.DATE_VALID_TO AS DTVALIDTO,&#xD;&#xA;    dp.DATE_DUE AS DTDUE,&#xD;&#xA;    dp.LEASING_CASH_FLOW AS CASHFLOW,&#xD;&#xA;    dp.INTEREST_AMOUNT AS INTERAM,&#xD;&#xA;    p.REMAINING_PAYMENT_AMOUNT AS REMAINPAYAM,&#xD;&#xA;    fe.NUM_FACTURE_EXTERNE AS EXTINVOICE,&#xD;&#xA;    fe.BALANCE_OF_MOV_RECORDED_WITH_TAX AS BALANCEWTAX,&#xD;&#xA;    df.FLAG_INCIDENT,&#xD;&#xA;    fe.DIRECTION_FLOW_INDICATOR AS DIRFLOW,&#xD;&#xA;    df.BUSINESS_PARTNER_ROLE,&#xD;&#xA;    df.DUE_DATE,&#xD;&#xA;    df.DATE_OF_INSTALLMENT AS INSTALLDATE&#xD;&#xA;  FROM BANQUE.PFE.DIM_CONTRACT dc&#xD;&#xA;  LEFT JOIN BANQUE.PFE.SA_CONTRACT sc ON dc.CONTRACT_ID = sc.CONTRACT_ID&#xD;&#xA;  JOIN BANQUE.PFE.SA_PAIEMENT p ON dc.CONTRACT_ID = p.CONTRACT_ID&#xD;&#xA;  LEFT JOIN BANQUE.PFE.DIM_PAIEMENT dp ON p.PAIEMENT_ID = dp.PAIEMENT_ID&#xD;&#xA;  JOIN BANQUE.PFE.SA_FACTURES_EXTERNES fe ON dc.CONTRACT_ID = fe.CONTRACT_ID&#xD;&#xA;  LEFT JOIN BANQUE.PFE.DIM_FACTURE df ON fe.NUM_FACTURE_EXTERNE = df.FACTURE_ID&#xD;&#xA;  CROSS JOIN ReportingDate_CTE rd&#xD;&#xA;),&#xD;&#xA;OPA_CALC AS (&#xD;&#xA;  SELECT &#xD;&#xA;    CONTRACT_ID,&#xD;&#xA;    SUM(CAST(REPLACE(BALANCEWTAX, ',', '.') AS NUMBER)) AS OUTSTANDING_PAYMENT_AMOUNT&#xD;&#xA;  FROM BASE_CONTRACTS&#xD;&#xA;  GROUP BY CONTRACT_ID&#xD;&#xA;),&#xD;&#xA;NB_DAYS AS (&#xD;&#xA;  SELECT &#xD;&#xA;    CONTRACT_ID,&#xD;&#xA;    MIN(DUE_DATE) AS DUEDATE_OLD_UNPAID&#xD;&#xA;  FROM BASE_CONTRACTS&#xD;&#xA;  WHERE CAST(REPLACE(BALANCEWTAX, ',', '.') AS NUMBER) != 0&#xD;&#xA;  GROUP BY CONTRACT_ID&#xD;&#xA;),&#xD;&#xA;MD_Y_LOOKUP AS (&#xD;&#xA;  SELECT CONTRACT_ID, DOMAIN_CIBLE AS Y&#xD;&#xA;  FROM (&#xD;&#xA;    SELECT &#xD;&#xA;      bc.CONTRACT_ID,&#xD;&#xA;      md.DOMAIN_CIBLE,&#xD;&#xA;      ROW_NUMBER() OVER (PARTITION BY bc.CONTRACT_ID ORDER BY md.DOMAIN_CIBLE) AS rn&#xD;&#xA;    FROM BASE_CONTRACTS bc&#xD;&#xA;    LEFT JOIN BANQUE.PFE.T_MASTER_DATA md&#xD;&#xA;      ON md.DF_ID = 'DF_529'&#xD;&#xA;      AND md.LOCAL_SOURCE_TABLE = 'EKHCONTR'&#xD;&#xA;      AND md.DOMAIN_SOURCE = bc.CATEGORY_CODE&#xD;&#xA;  ) t&#xD;&#xA;  WHERE rn = 1&#xD;&#xA;),&#xD;&#xA;RES1_CALC AS (&#xD;&#xA;  SELECT &#xD;&#xA;    CONTRACT_ID,&#xD;&#xA;    CASE &#xD;&#xA;      WHEN CATEGORY_CODE = 'LOUN' AND DURATION &lt; 54 THEN 'LOUN'&#xD;&#xA;      WHEN CATEGORY_CODE = 'LOUN' AND DURATION >= 54 THEN 'LOUN54'&#xD;&#xA;      WHEN CATEGORY_CODE = 'LLDN' THEN 'LLDN'&#xD;&#xA;      WHEN CATEGORY_CODE = 'CBLO' THEN 'CBLO'&#xD;&#xA;      ELSE 'OTHER'&#xD;&#xA;    END AS RES1&#xD;&#xA;  FROM BASE_CONTRACTS&#xD;&#xA;),&#xD;&#xA;RES2_LOOKUP AS (&#xD;&#xA;  SELECT CONTRACT_ID, DOMAIN_CIBLE AS RES2&#xD;&#xA;  FROM (&#xD;&#xA;    SELECT &#xD;&#xA;      r.CONTRACT_ID,&#xD;&#xA;      md.DOMAIN_CIBLE,&#xD;&#xA;      ROW_NUMBER() OVER (PARTITION BY r.CONTRACT_ID ORDER BY md.DOMAIN_CIBLE) AS rn&#xD;&#xA;    FROM RES1_CALC r&#xD;&#xA;    LEFT JOIN BANQUE.PFE.T_MASTER_DATA md&#xD;&#xA;      ON md.DF_ID = 'DF_4312'&#xD;&#xA;      AND md.LOCAL_SOURCE_TABLE = 'EKHCONTR'&#xD;&#xA;      AND md.DOMAIN_SOURCE = r.RES1&#xD;&#xA;  ) t&#xD;&#xA;  WHERE rn = 1&#xD;&#xA;),&#xD;&#xA;RES3 AS (&#xD;&#xA;  SELECT &#xD;&#xA;    CONTRACT_ID,&#xD;&#xA;    SUM(CAST(REPLACE(REMAINPAYAM, ',', '.') AS NUMBER)) AS RES3&#xD;&#xA;  FROM BASE_CONTRACTS&#xD;&#xA;  CROSS JOIN ReportingDate_CTE rd&#xD;&#xA;  WHERE DTDUE > rd.ReportingDate &#xD;&#xA;    AND PAYMENT_NUMBER != '000' &#xD;&#xA;    AND DTVALIDFR &lt;= rd.ReportingDate&#xD;&#xA;    AND DTVALIDTO >= rd.ReportingDate&#xD;&#xA;    AND (CAST(REPLACE(INTERAM, ',', '.') AS NUMBER) != 0 OR CAST(REPLACE(CASHFLOW, ',', '.') AS NUMBER) != 0)&#xD;&#xA;  GROUP BY CONTRACT_ID&#xD;&#xA;),&#xD;&#xA;RES4 AS (&#xD;&#xA;  SELECT &#xD;&#xA;    CONTRACT_ID,&#xD;&#xA;    CAST(REPLACE(REMAINPAYAM, ',', '.') AS NUMBER) AS RES4&#xD;&#xA;  FROM BASE_CONTRACTS&#xD;&#xA;  CROSS JOIN ReportingDate_CTE rd&#xD;&#xA;  WHERE DTDUE > rd.ReportingDate&#xD;&#xA;    AND PAYMENT_NUMBER != '000' &#xD;&#xA;    AND DTVALIDFR &lt;= rd.ReportingDate &#xD;&#xA;    AND DTVALIDTO >= rd.ReportingDate &#xD;&#xA;    AND (CAST(REPLACE(INTERAM, ',', '.') AS NUMBER) != 0 OR CAST(REPLACE(CASHFLOW, ',', '.') AS NUMBER) != 0)&#xD;&#xA;),&#xD;&#xA;TOTAL_DEBT_CALC AS (&#xD;&#xA;  SELECT &#xD;&#xA;    opa.CONTRACT_ID,&#xD;&#xA;    opa.OUTSTANDING_PAYMENT_AMOUNT,&#xD;&#xA;    r3.RES3,&#xD;&#xA;    r4.RES4,&#xD;&#xA;    md.Y,&#xD;&#xA;    r2.RES2,&#xD;&#xA;    CASE &#xD;&#xA;      WHEN md.Y = 'LC' AND r2.RES2 != 'OL' THEN opa.OUTSTANDING_PAYMENT_AMOUNT + COALESCE(r3.RES3, 0) + COALESCE(r4.RES4, 0)&#xD;&#xA;      ELSE opa.OUTSTANDING_PAYMENT_AMOUNT + COALESCE(r3.RES3, 0)&#xD;&#xA;    END AS TOTAL_DEBT&#xD;&#xA;  FROM OPA_CALC opa&#xD;&#xA;  LEFT JOIN RES3 r3 ON opa.CONTRACT_ID = r3.CONTRACT_ID&#xD;&#xA;  LEFT JOIN RES4 r4 ON opa.CONTRACT_ID = r4.CONTRACT_ID&#xD;&#xA;  LEFT JOIN MD_Y_LOOKUP md ON opa.CONTRACT_ID = md.CONTRACT_ID&#xD;&#xA;  LEFT JOIN RES2_LOOKUP r2 ON opa.CONTRACT_ID = r2.CONTRACT_ID&#xD;&#xA;),&#xD;&#xA;DEFAULT_VALUE_TEMP AS (&#xD;&#xA;  SELECT &#xD;&#xA;    bc.CONTRACT_ID,&#xD;&#xA;    bc.VALID_FROM_DATE,&#xD;&#xA;    DATEDIFF('DAY', nd.DUEDATE_OLD_UNPAID, rd.ReportingDate) AS NB_DAYS_OF_OPA,&#xD;&#xA;    CASE &#xD;&#xA;      WHEN opa.OUTSTANDING_PAYMENT_AMOUNT > 0.01 * tdc.TOTAL_DEBT AND &#xD;&#xA;           (&#xD;&#xA;             DATEDIFF('DAY', nd.DUEDATE_OLD_UNPAID, rd.ReportingDate) > 90 OR &#xD;&#xA;             (&#xD;&#xA;               DATEDIFF('DAY', nd.DUEDATE_OLD_UNPAID, rd.ReportingDate) > 30 AND &#xD;&#xA;               bc.CONTRACTSTATUS IN ('TPBF4', 'LPBF')&#xD;&#xA;             )&#xD;&#xA;           ) THEN 1&#xD;&#xA;      WHEN bc.CONTRACTSTATUS IN ('TRJ', 'LRJ') THEN 2&#xD;&#xA;      WHEN bc.CONTRACTSTATUS IN ('XRES', 'XCAS', 'XIRR', 'XIRC') THEN 4&#xD;&#xA;      ELSE 0&#xD;&#xA;    END AS TEMP_DEFAULT_VALUE&#xD;&#xA;  FROM BASE_CONTRACTS bc&#xD;&#xA;  LEFT JOIN OPA_CALC opa ON bc.CONTRACT_ID = opa.CONTRACT_ID&#xD;&#xA;  LEFT JOIN NB_DAYS nd ON bc.CONTRACT_ID = nd.CONTRACT_ID&#xD;&#xA;  LEFT JOIN TOTAL_DEBT_CALC tdc ON bc.CONTRACT_ID = tdc.CONTRACT_ID&#xD;&#xA;  CROSS JOIN ReportingDate_CTE rd&#xD;&#xA;),&#xD;&#xA;DEFAULT_VALUE_CALC AS (&#xD;&#xA;  SELECT &#xD;&#xA;    t.CONTRACT_ID,&#xD;&#xA;    t.NB_DAYS_OF_OPA,&#xD;&#xA;    CASE &#xD;&#xA;      WHEN t.TEMP_DEFAULT_VALUE IN (1, 4) &#xD;&#xA;           AND rd.ReportingDate > DATEADD(MONTH, 3, t.VALID_FROM_DATE) THEN DATEADD(MONTH, 3, t.VALID_FROM_DATE)&#xD;&#xA;      WHEN t.TEMP_DEFAULT_VALUE = 2 &#xD;&#xA;           AND rd.ReportingDate > DATEADD(MONTH, 12, t.VALID_FROM_DATE) THEN DATEADD(MONTH, 12, t.VALID_FROM_DATE)&#xD;&#xA;      ELSE NULL&#xD;&#xA;    END AS INITIAL_RELEASE_DATE,&#xD;&#xA;    CASE &#xD;&#xA;      WHEN &#xD;&#xA;        (CASE &#xD;&#xA;           WHEN t.TEMP_DEFAULT_VALUE IN (1, 4) AND rd.ReportingDate > DATEADD(MONTH, 3, t.VALID_FROM_DATE) THEN DATEADD(MONTH, 3, t.VALID_FROM_DATE)&#xD;&#xA;           WHEN t.TEMP_DEFAULT_VALUE = 2 AND rd.ReportingDate > DATEADD(MONTH, 12, t.VALID_FROM_DATE) THEN DATEADD(MONTH, 12, t.VALID_FROM_DATE)&#xD;&#xA;           ELSE NULL&#xD;&#xA;         END) IS NOT NULL&#xD;&#xA;      THEN DATEADD(MONTH, 1, &#xD;&#xA;        CASE &#xD;&#xA;          WHEN t.TEMP_DEFAULT_VALUE IN (1, 4) AND rd.ReportingDate > DATEADD(MONTH, 3, t.VALID_FROM_DATE) THEN DATEADD(MONTH, 3, t.VALID_FROM_DATE)&#xD;&#xA;          WHEN t.TEMP_DEFAULT_VALUE = 2 AND rd.ReportingDate > DATEADD(MONTH, 12, t.VALID_FROM_DATE) THEN DATEADD(MONTH, 12, t.VALID_FROM_DATE)&#xD;&#xA;          ELSE NULL&#xD;&#xA;        END)&#xD;&#xA;      ELSE NULL&#xD;&#xA;    END AS FINAL_RELEASE_DATE,&#xD;&#xA;    CASE &#xD;&#xA;      WHEN t.TEMP_DEFAULT_VALUE IN (1, 4) AND rd.ReportingDate > DATEADD(MONTH, 3, t.VALID_FROM_DATE) THEN &#xD;&#xA;        CASE &#xD;&#xA;          WHEN rd.ReportingDate > DATEADD(MONTH, 4, t.VALID_FROM_DATE) THEN 0&#xD;&#xA;          ELSE 5&#xD;&#xA;        END&#xD;&#xA;      WHEN t.TEMP_DEFAULT_VALUE = 2 AND rd.ReportingDate > DATEADD(MONTH, 12, t.VALID_FROM_DATE) THEN &#xD;&#xA;        CASE &#xD;&#xA;          WHEN rd.ReportingDate > DATEADD(MONTH, 13, t.VALID_FROM_DATE) THEN 0&#xD;&#xA;          ELSE 5&#xD;&#xA;        END&#xD;&#xA;      ELSE t.TEMP_DEFAULT_VALUE&#xD;&#xA;    END AS DEFAULT_VALUE&#xD;&#xA;  FROM DEFAULT_VALUE_TEMP t&#xD;&#xA;  CROSS JOIN ReportingDate_CTE rd&#xD;&#xA;),&#xD;&#xA;FINAL_RESULT AS (&#xD;&#xA;  SELECT &#xD;&#xA;    bc.CONTRACT_ID,&#xD;&#xA;    bc.PAYMENT_NUMBER,&#xD;&#xA;    bc.EXTINVOICE,&#xD;&#xA;    bc.VALID_FROM_DATE,&#xD;&#xA;    dvc.DEFAULT_VALUE,&#xD;&#xA;    opa.OUTSTANDING_PAYMENT_AMOUNT,&#xD;&#xA;    tdc.TOTAL_DEBT,&#xD;&#xA;    dvc.NB_DAYS_OF_OPA,&#xD;&#xA;    dvc.INITIAL_RELEASE_DATE,&#xD;&#xA;    dvc.FINAL_RELEASE_DATE,&#xD;&#xA;    ROW_NUMBER() OVER (&#xD;&#xA;      PARTITION BY bc.CONTRACT_ID &#xD;&#xA;      ORDER BY dvc.FINAL_RELEASE_DATE DESC NULLS LAST&#xD;&#xA;    ) AS rn&#xD;&#xA;  FROM BASE_CONTRACTS bc&#xD;&#xA;  LEFT JOIN OPA_CALC opa ON bc.CONTRACT_ID = opa.CONTRACT_ID&#xD;&#xA;  LEFT JOIN NB_DAYS nd ON bc.CONTRACT_ID = nd.CONTRACT_ID&#xD;&#xA;  LEFT JOIN TOTAL_DEBT_CALC tdc ON bc.CONTRACT_ID = tdc.CONTRACT_ID&#xD;&#xA;  LEFT JOIN DEFAULT_VALUE_CALC dvc ON bc.CONTRACT_ID = dvc.CONTRACT_ID&#xD;&#xA;)&#xD;&#xA;SELECT &#xD;&#xA;  CONTRACT_ID,&#xD;&#xA;  PAYMENT_NUMBER,&#xD;&#xA;  EXTINVOICE,&#xD;&#xA;  VALID_FROM_DATE,&#xD;&#xA;  DEFAULT_VALUE,&#xD;&#xA;  OUTSTANDING_PAYMENT_AMOUNT,&#xD;&#xA;  TOTAL_DEBT,&#xD;&#xA;  NB_DAYS_OF_OPA,&#xD;&#xA;  INITIAL_RELEASE_DATE,&#xD;&#xA;  FINAL_RELEASE_DATE&#xD;&#xA;FROM FINAL_RESULT&#xD;&#xA;WHERE rn = 1&#xD;&#xA;ORDER BY CONTRACT_ID DESC;&quot;"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="CHECK" name="configuration.propagateRecordSet" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="configuration.recordSetColumn" value="CONTRACT_ID" show="false"/>
+    <elementParameter field="CHECK" name="configuration.usePreparedStatement" value="false"/>
+    <elementParameter field="TABLE" name="configuration.preparedStatementParameters" show="false"/>
+    <elementParameter field="CHECK" name="configuration.detectErrorWhenMultiStatements" value="false"/>
+    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
+    <elementParameter field="CHECK" name="configuration.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.queryTimeout" value="30" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
+    <metadata connector="FLOW" label="FACT_DEFAUT" name="tDBRow_1">
+      <column comment="" key="false" length="12" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="PAYMENT_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="EXTINVOICE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="VALID_FROM_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="DEFAULT_VALUE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="OUTSTANDING_PAYMENT_AMOUNT" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="TOTAL_DEBT" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="NB_DAYS_OF_OPA" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="INITIAL_RELEASE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="FINAL_RELEASE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="reject" label="FACT_DEFAUT" name="reject">
+      <column comment="" key="false" length="12" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="PAYMENT_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="EXTINVOICE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="VALID_FROM_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="DEFAULT_VALUE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="OUTSTANDING_PAYMENT_AMOUNT" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="TOTAL_DEBT" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="NB_DAYS_OF_OPA" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="INITIAL_RELEASE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="FINAL_RELEASE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="440" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Output" show="false"/>
+    <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="1" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="LABEL" value="__configuration.dataSet.tableName__"/>
+    <elementParameter field="TACOKIT_GUESS_SCHEMA" name="configuration.dataSet.schema:Guess Schema_configuration.dataSet.schema" value=""/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.schema:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.schema:REPOSITORY_SCHEMA_TYPE" value="_08r9kCtMEfC1gb9COxFZIA - FACT_DEFAUT" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.dbType" value="JDBC" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://UYKYMDU-DT38274.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.host" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="&quot;80&quot;" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver">
+      <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
+    </elementParameter>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:Aeisi5cGOrvzuurmYTXsgx/xZMea9o4qFIYKUW9Mr4+m0F7pkfrLKyTrHRc="/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="&quot;snowflake_id&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="&quot;BASIC&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="&quot;FACT_DEFAUT&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
+    <elementParameter field="CHECK" name="configuration.clearData" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.createTableIfNotExists" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.varcharLength" value="-1" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForCreateTableAndDML.keys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForDML.keys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.sortStrategy" value="COMPOUND" show="false"/>
+    <elementParameter field="TABLE" name="configuration.sortKeys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.distributionStrategy" value="AUTO" show="false"/>
+    <elementParameter field="TABLE" name="configuration.distributionKeys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.ignoreUpdate" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
+    <elementParameter field="TABLE" name="configuration.additionalColumns"/>
+    <elementParameter field="CHECK" name="configuration.useFieldOptions" value="false"/>
+    <elementParameter field="TABLE" name="configuration.fieldOptions" show="false">
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CONTRACT_ID" id="0"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="1"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="2"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="3"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="4"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PAYMENT_NUMBER" id="5"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="6"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="7"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="8"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="9"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="EXTINVOICE" id="10"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="11"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="12"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="13"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="14"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="VALID_FROM_DATE" id="15"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="16"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="17"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="18"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="19"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DEFAULT_VALUE" id="20"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="21"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="22"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="23"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="24"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="OUTSTANDING_PAYMENT_AMOUNT" id="25"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="26"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="27"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="28"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="29"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TOTAL_DEBT" id="30"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="31"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="32"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="33"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="34"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="NB_DAYS_OF_OPA" id="35"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="36"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="37"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="38"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="39"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="INITIAL_RELEASE_DATE" id="40"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="41"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="42"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="43"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="44"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="FINAL_RELEASE_DATE" id="45"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="46"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="47"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="48"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="49"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.debugQuery" value="false"/>
+    <elementParameter field="CHECK" name="configuration.useBatch" value="true"/>
+    <elementParameter field="TEXT" name="configuration.batchSize" value="10000"/>
+    <elementParameter field="CHECK" name="configuration.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.queryTimeout" value="30" show="false"/>
+    <elementParameter field="CHECK" name="configuration.rewriteBatchedStatements" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useOriginColumnName" value="true" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
+    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
+    <metadata connector="FLOW" label="FACT_DEFAUT" name="tDBOutput_1">
+      <column comment="" key="false" length="12" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="PAYMENT_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="EXTINVOICE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="VALID_FROM_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="DEFAULT_VALUE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="OUTSTANDING_PAYMENT_AMOUNT" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="TOTAL_DEBT" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="NB_DAYS_OF_OPA" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="INITIAL_RELEASE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="FINAL_RELEASE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
+    <metadata connector="reject" label="FACT_DEFAUT" name="reject">
+      <column comment="" key="false" length="12" name="CONTRACT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="PAYMENT_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="EXTINVOICE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="VALID_FROM_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="DEFAULT_VALUE" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="OUTSTANDING_PAYMENT_AMOUNT" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="TOTAL_DEBT" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="NB_DAYS_OF_OPA" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="INITIAL_RELEASE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="FINAL_RELEASE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+</talendfile:ProcessType>
