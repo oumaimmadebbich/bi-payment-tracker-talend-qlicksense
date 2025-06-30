@@ -399,8 +399,8 @@
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="// === Replace null in MAIDEN_NAME and CITY ===&#xA;String[] fakeMaidenNames = {&#xA;    &quot;Anderson&quot;, &quot;Taylor&quot;, &quot;Morgan&quot;, &quot;Hughes&quot;, &quot;Bennett&quot;,&#xA;    &quot;Ramirez&quot;, &quot;Mitchell&quot;, &quot;Gonzalez&quot;, &quot;Lopez&quot;, &quot;Perry&quot;&#xA;};&#xA;&#xA;String[] fakeCities = {&#xA;    &quot;Springfield&quot;, &quot;Riverside&quot;, &quot;Fairview&quot;, &quot;Madison&quot;, &quot;Georgetown&quot;,&#xA;    &quot;Franklin&quot;, &quot;Greenville&quot;, &quot;Clinton&quot;, &quot;Dayton&quot;, &quot;Ashland&quot;&#xA;};&#xA;&#xA;String generatedMaidenName = fakeMaidenNames[(int)(Math.random() * fakeMaidenNames.length)];&#xA;String generatedCity = fakeCities[(int)(Math.random() * fakeCities.length)];&#xA;&#xA;output_row.MAIDEN_NAME = (input_row.MAIDEN_NAME != null) ? input_row.MAIDEN_NAME : generatedMaidenName;&#xA;output_row.CITY = (input_row.CITY != null) ? input_row.CITY : generatedCity;&#xA;&#xA;// === Weighted manager assignment ===&#xA;// Managers repeated to increase their likelihood&#xA;String[] managers = {&#xA;    &quot;Alice Johnson&quot;, &quot;Bob Smith&quot;, &quot;Bob Smith&quot;, &quot;Charlie Brown&quot;,&#xA;    &quot;Diana Miller&quot;, &quot;Eve Davis&quot;, &quot;Eve Davis&quot;, &quot;Eve Davis&quot;,&#xA;    &quot;Frank Harris&quot;, &quot;Grace Thompson&quot;, &quot;Grace Thompson&quot;, &quot;Grace Thompson&quot;,&#xA;    &quot;Henry Walker&quot;, &quot;Henry Walker&quot;,&#xA;    &quot;Isabella Moore&quot;, &quot;Jack White&quot;, &quot;Jack White&quot;,&#xA;    &quot;Karen Lewis&quot;, &quot;Karen Lewis&quot;, &quot;Karen Lewis&quot;, &quot;Karen Lewis&quot;,&#xA;    &quot;Liam Scott&quot;, &quot;Liam Scott&quot;, &quot;Liam Scott&quot;, &quot;Liam Scott&quot;, &quot;Liam Scott&quot;,&#xA;    &quot;Mona Turner&quot;, &quot;Noah Young&quot;, &quot;Noah Young&quot;, &quot;Olivia Hall&quot;,&#xA;    &quot;Paul Allen&quot;, &quot;Paul Allen&quot;, &quot;Quincy Wright&quot;, &quot;Rachel King&quot;,&#xA;    &quot;Samuel Green&quot;, &quot;Tina Adams&quot;, &quot;Umar Baker&quot;,&#xA;    &quot;Vera Nelson&quot;, &quot;Walter Carter&quot;, &quot;Xena Price&quot;,&#xA;    &quot;Yasmine Reed&quot;, &quot;Zack Foster&quot;&#xA;};&#xA;&#xA;output_row.NAME_OF_MANAGER = managers[(int)(Math.random() * managers.length)];&#xA;&#xA;// === Copy remaining fields ===&#xA;output_row.CUSTOMER_ID = input_row.CUSTOMER_ID;&#xA;output_row.FIRST_NAME = input_row.FIRST_NAME;&#xA;output_row.LAST_NAME = input_row.LAST_NAME;&#xA;output_row.SEX = input_row.SEX;&#xA;output_row.BIRTHDAY = input_row.BIRTHDAY;&#xA;output_row.COUNTRY = input_row.COUNTRY;&#xA;output_row.EMAIL_ADDRESS = input_row.EMAIL_ADDRESS;&#xA;output_row.MOBILE_NUMBER = input_row.MOBILE_NUMBER;&#xA;output_row.SOCIAL_SECURITY_CODE = input_row.SOCIAL_SECURITY_CODE;&#xA;output_row.MATRIMONIAL_STATUS_CODE = input_row.MATRIMONIAL_STATUS_CODE;&#xA;output_row.SIRET_NUMBER = input_row.SIRET_NUMBER;&#xA;output_row.REVENUES = input_row.REVENUES;&#xA;output_row.CHARGES = input_row.CHARGES;&#xA;output_row.ADDITIONAL_REVENUES = input_row.ADDITIONAL_REVENUES;&#xA;output_row.START_DATE = input_row.START_DATE;&#xA;output_row.END_DATE = input_row.END_DATE;&#xA;output_row.BASEL_CLASSIFICATION = input_row.BASEL_CLASSIFICATION;&#xA;output_row.CLIENT_TYPE_CODE = input_row.CLIENT_TYPE_CODE;&#xA;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="// === Replace null in MAIDEN_NAME and CITY ===&#xA;String[] fakeMaidenNames = {&#xA;    &quot;Anderson&quot;, &quot;Taylor&quot;, &quot;Morgan&quot;, &quot;Hughes&quot;, &quot;Bennett&quot;,&#xA;    &quot;Ramirez&quot;, &quot;Mitchell&quot;, &quot;Gonzalez&quot;, &quot;Lopez&quot;, &quot;Perry&quot;&#xA;};&#xA;&#xA;String[] fakeCities = {&#xA;    &quot;Springfield&quot;, &quot;Riverside&quot;, &quot;Fairview&quot;, &quot;Madison&quot;, &quot;Georgetown&quot;,&#xA;    &quot;Franklin&quot;, &quot;Greenville&quot;, &quot;Clinton&quot;, &quot;Dayton&quot;, &quot;Ashland&quot;&#xA;};&#xA;&#xA;String generatedMaidenName = fakeMaidenNames[(int)(Math.random() * fakeMaidenNames.length)];&#xA;String generatedCity = fakeCities[(int)(Math.random() * fakeCities.length)];&#xA;&#xA;output_row.MAIDEN_NAME = (input_row.MAIDEN_NAME != null) ? input_row.MAIDEN_NAME : generatedMaidenName;&#xA;output_row.CITY = (input_row.CITY != null) ? input_row.CITY : generatedCity;&#xA;&#xA;// === Weighted manager assignment ===&#xA;// Managers repeated to increase their likelihood&#xA;String[] managers = {&#xA;    &quot;Alice Johnson&quot;, &quot;Bob Smith&quot;, &quot;Bob Smith&quot;, &quot;Charlie Brown&quot;,&#xA;    &quot;Diana Miller&quot;, &quot;Eve Davis&quot;, &quot;Eve Davis&quot;, &quot;Eve Davis&quot;,&#xA;    &quot;Frank Harris&quot;, &quot;Grace Thompson&quot;, &quot;Grace Thompson&quot;, &quot;Grace Thompson&quot;,&#xA;    &quot;Henry Walker&quot;, &quot;Henry Walker&quot;,&#xA;    &quot;Isabella Moore&quot;, &quot;Jack White&quot;, &quot;Jack White&quot;,&#xA;    &quot;Karen Lewis&quot;, &quot;Karen Lewis&quot;, &quot;Karen Lewis&quot;, &quot;Karen Lewis&quot;,&#xA;    &quot;Liam Scott&quot;, &quot;Liam Scott&quot;, &quot;Liam Scott&quot;, &quot;Liam Scott&quot;, &quot;Liam Scott&quot;,&#xA;    &quot;Mona Turner&quot;, &quot;Noah Young&quot;, &quot;Noah Young&quot;, &quot;Olivia Hall&quot;,&#xA;    &quot;Paul Allen&quot;, &quot;Paul Allen&quot;, &quot;Quincy Wright&quot;, &quot;Rachel King&quot;,&#xA;    &quot;Samuel Green&quot;, &quot;Tina Adams&quot;, &quot;Umar Baker&quot;,&#xA;    &quot;Vera Nelson&quot;, &quot;Walter Carter&quot;, &quot;Xena Price&quot;,&#xA;    &quot;Yasmine Reed&quot;, &quot;Zack Foster&quot;&#xA;};&#xA;&#xA;output_row.NAME_OF_MANAGER = managers[(int)(Math.random() * managers.length)];&#xA;&#xA;// === Copy remaining fields ===&#xA;output_row.CUSTOMER_ID = input_row.CUSTOMER_ID;&#xA;output_row.FIRST_NAME = input_row.FIRST_NAME;&#xA;output_row.LAST_NAME = input_row.LAST_NAME;&#xA;output_row.SEX = input_row.SEX;&#xA;output_row.BIRTHDAY = input_row.BIRTHDAY;&#xA;output_row.COUNTRY = input_row.COUNTRY;&#xA;output_row.EMAIL_ADDRESS = input_row.EMAIL_ADDRESS;&#xA;output_row.MOBILE_NUMBER = input_row.MOBILE_NUMBER;&#xA;output_row.SOCIAL_SECURITY_CODE = input_row.SOCIAL_SECURITY_CODE;&#xA;output_row.MATRIMONIAL_STATUS_CODE = input_row.MATRIMONIAL_STATUS_CODE;&#xA;output_row.SIRET_NUMBER = input_row.SIRET_NUMBER;&#xA;output_row.REVENUES = input_row.REVENUES;&#xA;output_row.CHARGES = input_row.CHARGES;&#xA;output_row.ADDITIONAL_REVENUES = input_row.ADDITIONAL_REVENUES;&#xA;output_row.START_DATE = input_row.START_DATE;&#xA;output_row.END_DATE = input_row.END_DATE;&#xA;output_row.BASEL_CLASSIFICATION = input_row.BASEL_CLASSIFICATION;&#xA;output_row.CLIENT_TYPE_CODE = input_row.CLIENT_TYPE_CODE;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="SA_CUSTOMER" name="tJavaRow_1">
       <column comment="" key="false" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1006,20 +1006,11 @@
   </node>
   <node componentName="JDBCInput" componentVersion="2" offsetLabelX="0" offsetLabelY="0" posX="120" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Input" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI0lucHV0" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="2" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value=""/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="__configuration.dataSet.tableName__"/>
@@ -1160,7 +1151,6 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
     <metadata connector="FLOW" label="SA_CUSTOMER" name="tDBInput_2">
       <column comment="" key="false" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -1314,8 +1304,8 @@
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="// VARCHAR fields: replace null with &quot;-&quot;&#xA;output_row.CUSTOMER_ID = input_row.CUSTOMER_ID != null ? input_row.CUSTOMER_ID : &quot;-&quot;;&#xA;output_row.FIRST_NAME = input_row.FIRST_NAME != null ? input_row.FIRST_NAME : &quot;-&quot;;&#xA;output_row.MAIDEN_NAME = input_row.MAIDEN_NAME != null ? input_row.MAIDEN_NAME : &quot;-&quot;;&#xA;output_row.LAST_NAME = input_row.LAST_NAME != null ? input_row.LAST_NAME : &quot;-&quot;;&#xA;output_row.SEX = input_row.SEX != null ? input_row.SEX : &quot;-&quot;;&#xA;output_row.COUNTRY = input_row.COUNTRY != null ? input_row.COUNTRY : &quot;-&quot;;&#xA;output_row.CITY = input_row.CITY != null ? input_row.CITY : &quot;-&quot;;&#xA;output_row.EMAIL_ADDRESS = input_row.EMAIL_ADDRESS != null ? input_row.EMAIL_ADDRESS : &quot;-&quot;;&#xA;output_row.MOBILE_NUMBER = input_row.MOBILE_NUMBER != null ? input_row.MOBILE_NUMBER : &quot;-&quot;;&#xA;output_row.SOCIAL_SECURITY_CODE = input_row.SOCIAL_SECURITY_CODE != null ? input_row.SOCIAL_SECURITY_CODE : &quot;-&quot;;&#xA;output_row.MATRIMONIAL_STATUS_CODE = input_row.MATRIMONIAL_STATUS_CODE != null ? input_row.MATRIMONIAL_STATUS_CODE : &quot;-&quot;;&#xA;output_row.SIRET_NUMBER = input_row.SIRET_NUMBER != null ? input_row.SIRET_NUMBER : &quot;-&quot;;&#xA;output_row.BASEL_CLASSIFICATION = input_row.BASEL_CLASSIFICATION != null ? input_row.BASEL_CLASSIFICATION : &quot;-&quot;;&#xA;output_row.CLIENT_TYPE_CODE = input_row.CLIENT_TYPE_CODE != null ? input_row.CLIENT_TYPE_CODE : &quot;-&quot;;&#xA;output_row.NAME_OF_MANAGER = input_row.NAME_OF_MANAGER != null ? input_row.NAME_OF_MANAGER : &quot;-&quot;;&#xA;&#xA;// FLOAT fields: replace null with 0.0 to match FLOAT type&#xA;output_row.REVENUES = input_row.REVENUES != null ? input_row.REVENUES : 0.0;&#xA;output_row.CHARGES = input_row.CHARGES != null ? input_row.CHARGES : 0.0;&#xA;output_row.ADDITIONAL_REVENUES = input_row.ADDITIONAL_REVENUES != null ? input_row.ADDITIONAL_REVENUES : 0.0;&#xA;&#xA;// DATE fields: keep null (or use a default date if required)&#xA;output_row.DATE_VALID_FROM = input_row.DATE_VALID_FROM != null ? input_row.DATE_VALID_FROM : null;&#xA;output_row.DATE_VALID_TO = input_row.DATE_VALID_TO != null ? input_row.DATE_VALID_TO : null;&#xA;output_row.BIRTHDAY = input_row.BIRTHDAY != null ? input_row.BIRTHDAY : null;&#xA;output_row.START_DATE = input_row.START_DATE != null ? input_row.START_DATE : null;&#xA;output_row.END_DATE = input_row.END_DATE != null ? input_row.END_DATE : null;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="// VARCHAR fields: replace null with &quot;-&quot;&#xA;output_row.CUSTOMER_ID = input_row.CUSTOMER_ID != null ? input_row.CUSTOMER_ID : &quot;-&quot;;&#xA;output_row.FIRST_NAME = input_row.FIRST_NAME != null ? input_row.FIRST_NAME : &quot;-&quot;;&#xA;output_row.MAIDEN_NAME = input_row.MAIDEN_NAME != null ? input_row.MAIDEN_NAME : &quot;-&quot;;&#xA;output_row.LAST_NAME = input_row.LAST_NAME != null ? input_row.LAST_NAME : &quot;-&quot;;&#xA;output_row.SEX = input_row.SEX != null ? input_row.SEX : &quot;-&quot;;&#xA;output_row.COUNTRY = input_row.COUNTRY != null ? input_row.COUNTRY : &quot;-&quot;;&#xA;output_row.CITY = input_row.CITY != null ? input_row.CITY : &quot;-&quot;;&#xA;output_row.EMAIL_ADDRESS = input_row.EMAIL_ADDRESS != null ? input_row.EMAIL_ADDRESS : &quot;-&quot;;&#xA;output_row.MOBILE_NUMBER = input_row.MOBILE_NUMBER != null ? input_row.MOBILE_NUMBER : &quot;-&quot;;&#xA;output_row.SOCIAL_SECURITY_CODE = input_row.SOCIAL_SECURITY_CODE != null ? input_row.SOCIAL_SECURITY_CODE : &quot;-&quot;;&#xA;output_row.MATRIMONIAL_STATUS_CODE = input_row.MATRIMONIAL_STATUS_CODE != null ? input_row.MATRIMONIAL_STATUS_CODE : &quot;-&quot;;&#xA;output_row.SIRET_NUMBER = input_row.SIRET_NUMBER != null ? input_row.SIRET_NUMBER : &quot;-&quot;;&#xA;output_row.BASEL_CLASSIFICATION = input_row.BASEL_CLASSIFICATION != null ? input_row.BASEL_CLASSIFICATION : &quot;-&quot;;&#xA;output_row.CLIENT_TYPE_CODE = input_row.CLIENT_TYPE_CODE != null ? input_row.CLIENT_TYPE_CODE : &quot;-&quot;;&#xA;output_row.NAME_OF_MANAGER = input_row.NAME_OF_MANAGER != null ? input_row.NAME_OF_MANAGER : &quot;-&quot;;&#xA;&#xA;// FLOAT fields: replace null with 0.0 to match FLOAT type&#xA;output_row.REVENUES = input_row.REVENUES != null ? input_row.REVENUES : 0.0;&#xA;output_row.CHARGES = input_row.CHARGES != null ? input_row.CHARGES : 0.0;&#xA;output_row.ADDITIONAL_REVENUES = input_row.ADDITIONAL_REVENUES != null ? input_row.ADDITIONAL_REVENUES : 0.0;&#xA;&#xA;// DATE fields: keep null (or use a default date if required)&#xA;output_row.DATE_VALID_FROM = input_row.DATE_VALID_FROM != null ? input_row.DATE_VALID_FROM : null;&#xA;output_row.DATE_VALID_TO = input_row.DATE_VALID_TO != null ? input_row.DATE_VALID_TO : null;&#xA;output_row.BIRTHDAY = input_row.BIRTHDAY != null ? input_row.BIRTHDAY : null;&#xA;output_row.START_DATE = input_row.START_DATE != null ? input_row.START_DATE : null;&#xA;output_row.END_DATE = input_row.END_DATE != null ? input_row.END_DATE : null;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="SA_CUSTOMER" name="tJavaRow_2">
       <column comment="" key="false" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1548,7 +1538,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="dim_cust">
         <mapperTableEntries name="CUSTOMER_ID" expression="row4.CUSTOMER_ID " type="id_String" nullable="true"/>
@@ -1628,17 +1618,8 @@
   </node>
   <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="600" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Output" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="1" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -1811,7 +1792,6 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
     <metadata connector="FLOW" label="DIM_CUSTOMER" name="tDBOutput_2">
       <column comment="" key="true" length="11" name="CUSTOMER_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -2134,12 +2114,12 @@
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
 </talendfile:ProcessType>

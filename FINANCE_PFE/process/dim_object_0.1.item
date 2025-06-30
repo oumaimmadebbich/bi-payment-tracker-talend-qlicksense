@@ -105,7 +105,7 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value=""/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="LABEL" value="__configuration.dataSet.tableName__"/>
@@ -370,7 +370,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="dim_obj" expressionFilter="row1.OBJECT_ID != null &amp;&amp; !row1.OBJECT_ID.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.ACTUAL_DELIVERY_DATE != null &amp;&amp;&#xD;&#xA;row1.BRAND_CODE != null &amp;&amp; !row1.BRAND_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.RANGE_CODE != null &amp;&amp; !row1.RANGE_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.OBJECT_GROUP_CODE != null &amp;&amp; !row1.OBJECT_GROUP_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.ENERGY_CODE != null &amp;&amp; !row1.ENERGY_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.TYPE_CODE != null &amp;&amp; !row1.TYPE_CODE.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.NOMENCLATURA_LABEL_1 != null &amp;&amp; !row1.NOMENCLATURA_LABEL_1.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.REGISTRATION_NUMBER != null &amp;&amp; !row1.REGISTRATION_NUMBER.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.CHASSIS_NUMBER != null &amp;&amp; !row1.CHASSIS_NUMBER.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.FISCAL_POWER != null &amp;&amp;&#xD;&#xA;row1.DIN_POWER != null &amp;&amp;&#xD;&#xA;row1.ENGINE_CUBIC_CAPACITY != null &amp;&amp; !row1.ENGINE_CUBIC_CAPACITY.equals(&quot;NULL&quot;) &amp;&amp;&#xD;&#xA;row1.REGISTRATION_DATE != null &amp;&amp;&#xD;&#xA;row1.ROADING_DATE != null &amp;&amp;&#xD;&#xA;row1.DELIVERY_DATE != null &amp;&amp;&#xD;&#xA;row1.YEAR_OF_PRODUCTION != null &amp;&amp;&#xD;&#xA;row1.MILEAGE != null &amp;&amp;&#xD;&#xA;row1.RESTITUTION_MILEAGE != null &amp;&amp;&#xD;&#xA;row1.PURPOSE_OF_USE != null &amp;&amp; !row1.PURPOSE_OF_USE.equals(&quot;NULL&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="OBJECT_ID" expression="row1.OBJECT_ID " type="id_String" nullable="true"/>
@@ -427,17 +427,8 @@
   </node>
   <node componentName="JDBCOutput" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="200">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="Output" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="1" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="JDBC" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="HELP" value="HELP" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
@@ -605,7 +596,6 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="DATASTORE_PATH" value="configuration.dataSet.dataStore" show="false"/>
     <metadata connector="FLOW" label="DIM_OBJECT" name="tDBOutput_1">
       <column comment="" key="true" length="30" name="OBJECT_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
@@ -759,7 +749,7 @@
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
 </talendfile:ProcessType>

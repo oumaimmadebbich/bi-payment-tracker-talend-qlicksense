@@ -393,7 +393,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="dim_fact">
         <mapperTableEntries name="FACTURE_ID" expression="row1.NUM_FACTURE_EXTERNE " type="id_String" nullable="true"/>

@@ -694,7 +694,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="dim_contrat">
         <mapperTableEntries name="CONTRACT_ID" expression="row1.CONTRACT_ID " type="id_String" nullable="true"/>
