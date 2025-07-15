@@ -1084,6 +1084,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "6d2f68f6-2c39-411b-9fda-74d0c721a91dCwBEfCHyvLUxoW7VQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_i3vwQDT2EfCG9bs1tUVyLA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_d916cafb2405459ca9 - test_0.1",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "6d4d0fa7-2ec6-4aac-8a66-0664eead2c70CwBEfCHyvLUxoW7VQ",
     "version" : "0.1",
     "type" : "job"

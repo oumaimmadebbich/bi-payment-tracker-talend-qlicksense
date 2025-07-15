@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:FileMetadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="http://www.talend.org/metadata/file">
+  <connection xmi:id="_8c51c6c8e7ce4b5cb4" id="_8c51c6c8e7ce4b5cb4" label="object" name="object" version="0.1" type="Excel">
+    <FileConnection allSheets="true" encoding="UTF-8" fieldSeparatorValue=";" firstColumn="1" footer="0" header="1" limitValue="">
+      <filePath>D:\FinalData\object.xlsx</filePath>
+      <sheetName>Sheet1</sheetName>
+    </FileConnection>
+    <schema xmi:id="3af5728a-811d-4eac-9ea1-b285a9cc37b4" name="test_0.1" label="test_0.1">
+      <column name="KEKOBJECT" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="ACT_DL_DTE" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKBRAND" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKRANG" type="id_String" length="3" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKNOMCL" type="id_String" length="18" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKOBJG" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKENERC" type="id_String" length="3" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKTYCOD" type="id_String" length="6" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKLABEL1" type="id_String" length="45" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKLABEL2" type="id_String" length="255" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKREGIST" type="id_String" length="13" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KVEHICLE" type="id_String" length="25" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKFISCAL" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKDINP" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="EKECCAP" type="id_Double" length="18" nullable="true" precision="2" usefulColumn="true"/>
+<column name="RECORDMODE" type="id_String" length="255" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTEKREG" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTEKROAD" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTEKDEV" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="YEARPROD" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="CCMILEAG" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="CCMILREST" type="id_Integer" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="KFRPUUSE" type="id_String" length="6" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTVALIDFR" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DTVALIDTO" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+<column name="DM_EXDATE" type="id_String" length="15" nullable="true" precision="0" usefulColumn="true"/>
+    </schema>
+  </connection>
+</talendfile:FileMetadata>

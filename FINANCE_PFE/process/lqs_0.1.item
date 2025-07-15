@@ -6,6 +6,20 @@
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
     <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
     <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
     <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
@@ -13,16 +27,77 @@
     <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
     <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
     <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:HbpV5Lj1PFloEPjqARr/bdves2g9MF8HoiljnBxU" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
     <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/Be0+FxCVoxg3/Zbovol+HwWNiJZNCieZJuUqcdl" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
     <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
     <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
     <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="200">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
@@ -30,6 +105,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_S7NS0CwpEfCYXa0lt59XIQ" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="C:/Users/Admin/Downloads/kontrr.xlsx"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:8IgfU+auDMUR5riaEUXAZ3iT6KwApULfxIU/tmex"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="Sheet1" id="0"/>
@@ -49,20 +125,473 @@
     <elementParameter field="TABLE" name="TRIMSELECT">
       <elementValue elementRef="SCHEMA_COLUMN" value="KEKCONTR" id="0"/>
       <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTVALIDFR" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTVALIDTO" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CREATEDON" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CRM_ENDDAT" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTEKAPROD" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTEKDPROD" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTEKFPROD" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTCANCON" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTACCEPT" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTEKBBAG" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTEKDCORB" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTCANCLI" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EKCTPCD" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EKNETCOD" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EKPRDTCO" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKOCNTR" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECORDMODE" id="34"/>
+      <elementValue elementRef="TRIM" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KFREKCUST" id="36"/>
+      <elementValue elementRef="TRIM" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KFRPAYR" id="38"/>
+      <elementValue elementRef="TRIM" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEKCONTR" id="40"/>
+      <elementValue elementRef="TRIM" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FEKCONTR" id="42"/>
+      <elementValue elementRef="TRIM" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FEKPBDFL" id="44"/>
+      <elementValue elementRef="TRIM" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FEKSPCON" id="46"/>
+      <elementValue elementRef="TRIM" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKOBJECT" id="48"/>
+      <elementValue elementRef="TRIM" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKPROV" id="50"/>
+      <elementValue elementRef="TRIM" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKPURCHS" id="52"/>
+      <elementValue elementRef="TRIM" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKREPN" id="54"/>
+      <elementValue elementRef="TRIM" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKSALESM" id="56"/>
+      <elementValue elementRef="TRIM" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKDRIVER" id="58"/>
+      <elementValue elementRef="TRIM" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EKFRPLED" id="60"/>
+      <elementValue elementRef="TRIM" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FLASTVER" id="62"/>
+      <elementValue elementRef="TRIM" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKADDRE" id="64"/>
+      <elementValue elementRef="TRIM" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KFREKCS2T" id="66"/>
+      <elementValue elementRef="TRIM" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KFREKCST2" id="68"/>
+      <elementValue elementRef="TRIM" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FFRVWBANK" id="70"/>
+      <elementValue elementRef="TRIM" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FFRVWFI" id="72"/>
+      <elementValue elementRef="TRIM" value="false" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEKCOSTI" id="74"/>
+      <elementValue elementRef="TRIM" value="false" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEKURAD" id="76"/>
+      <elementValue elementRef="TRIM" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KFRCOMP" id="78"/>
+      <elementValue elementRef="TRIM" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOGSYS" id="80"/>
+      <elementValue elementRef="TRIM" value="false" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FBSDOUBT" id="82"/>
+      <elementValue elementRef="TRIM" value="false" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPINCHAR" id="84"/>
+      <elementValue elementRef="TRIM" value="false" id="85"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKBARCC" id="86"/>
+      <elementValue elementRef="TRIM" value="false" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKBARFIC" id="88"/>
+      <elementValue elementRef="TRIM" value="false" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKBARTPC" id="90"/>
+      <elementValue elementRef="TRIM" value="false" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PKMISSORI" id="92"/>
+      <elementValue elementRef="TRIM" value="false" id="93"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TPEKENTCR" id="94"/>
+      <elementValue elementRef="TRIM" value="false" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KZNEUWGW" id="96"/>
+      <elementValue elementRef="TRIM" value="false" id="97"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KCONTMAN" id="98"/>
+      <elementValue elementRef="TRIM" value="false" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KFRPROD" id="100"/>
+      <elementValue elementRef="TRIM" value="false" id="101"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKCONTR2" id="102"/>
+      <elementValue elementRef="TRIM" value="false" id="103"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKNADDR" id="104"/>
+      <elementValue elementRef="TRIM" value="false" id="105"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKOCNTR2" id="106"/>
+      <elementValue elementRef="TRIM" value="false" id="107"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EKRIBNR" id="108"/>
+      <elementValue elementRef="TRIM" value="false" id="109"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIME" id="110"/>
+      <elementValue elementRef="TRIM" value="false" id="111"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCEKOPT" id="112"/>
+      <elementValue elementRef="TRIM" value="false" id="113"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DURATION" id="114"/>
+      <elementValue elementRef="TRIM" value="false" id="115"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALDAY" id="116"/>
+      <elementValue elementRef="TRIM" value="false" id="117"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DUR_UNIT" id="118"/>
+      <elementValue elementRef="TRIM" value="false" id="119"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CURRENCY" id="120"/>
+      <elementValue elementRef="TRIM" value="false" id="121"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PCEKVATRT" id="122"/>
+      <elementValue elementRef="TRIM" value="false" id="123"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PCEKINTER" id="124"/>
+      <elementValue elementRef="TRIM" value="false" id="125"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PCEKINEFF" id="126"/>
+      <elementValue elementRef="TRIM" value="false" id="127"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PCEKINSE" id="128"/>
+      <elementValue elementRef="TRIM" value="false" id="129"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PCEKINSL" id="130"/>
+      <elementValue elementRef="TRIM" value="false" id="131"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKFUNB" id="132"/>
+      <elementValue elementRef="TRIM" value="false" id="133"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKCAPC" id="134"/>
+      <elementValue elementRef="TRIM" value="false" id="135"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKFPAY" id="136"/>
+      <elementValue elementRef="TRIM" value="false" id="137"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKOPFEE" id="138"/>
+      <elementValue elementRef="TRIM" value="false" id="139"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKGADEP" id="140"/>
+      <elementValue elementRef="TRIM" value="false" id="141"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKBYBACK" id="142"/>
+      <elementValue elementRef="TRIM" value="false" id="143"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIBFINT" id="144"/>
+      <elementValue elementRef="TRIM" value="false" id="145"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AFRFINHT" id="146"/>
+      <elementValue elementRef="TRIM" value="false" id="147"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ABNFINHT" id="148"/>
+      <elementValue elementRef="TRIM" value="false" id="149"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AFRAPPORT" id="150"/>
+      <elementValue elementRef="TRIM" value="false" id="151"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ABASELOC" id="152"/>
+      <elementValue elementRef="TRIM" value="false" id="153"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ABSCOLES" id="154"/>
+      <elementValue elementRef="TRIM" value="false" id="155"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKPART" id="156"/>
+      <elementValue elementRef="TRIM" value="false" id="157"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALFNOTAX" id="158"/>
+      <elementValue elementRef="TRIM" value="false" id="159"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALIFETAX" id="160"/>
+      <elementValue elementRef="TRIM" value="false" id="161"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALFYETAX" id="162"/>
+      <elementValue elementRef="TRIM" value="false" id="163"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALPENTAX" id="164"/>
+      <elementValue elementRef="TRIM" value="false" id="165"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALIPETAX" id="166"/>
+      <elementValue elementRef="TRIM" value="false" id="167"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALPEYTAX" id="168"/>
+      <elementValue elementRef="TRIM" value="false" id="169"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ABFINTTC" id="170"/>
+      <elementValue elementRef="TRIM" value="false" id="171"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKPTIMP" id="172"/>
+      <elementValue elementRef="TRIM" value="false" id="173"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KABDEAL" id="174"/>
+      <elementValue elementRef="TRIM" value="false" id="175"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKAVNT" id="176"/>
+      <elementValue elementRef="TRIM" value="false" id="177"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KILOMETER" id="178"/>
+      <elementValue elementRef="TRIM" value="false" id="179"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
+    <elementParameter field="TABLE" name="DATESELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKCONTR" id="0"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="1"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTVALIDFR" id="3"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="4"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTVALIDTO" id="6"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="7"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CREATEDON" id="9"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="10"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CRM_ENDDAT" id="12"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="13"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTEKAPROD" id="15"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="16"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTEKDPROD" id="18"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="19"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTEKFPROD" id="21"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="22"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTCANCON" id="24"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="25"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="26"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTACCEPT" id="27"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="28"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTEKBBAG" id="30"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="31"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="32"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTEKDCORB" id="33"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="34"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTCANCLI" id="36"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="37"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="38"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EKCTPCD" id="39"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="40"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EKNETCOD" id="42"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="43"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="44"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EKPRDTCO" id="45"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="46"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKOCNTR" id="48"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="49"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="50"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECORDMODE" id="51"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="52"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KFREKCUST" id="54"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="55"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="56"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KFRPAYR" id="57"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="58"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEKCONTR" id="60"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="61"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="62"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FEKCONTR" id="63"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="64"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FEKPBDFL" id="66"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="67"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="68"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FEKSPCON" id="69"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="70"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKOBJECT" id="72"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="73"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="74"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKPROV" id="75"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="76"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKPURCHS" id="78"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="79"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="80"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKREPN" id="81"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="82"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKSALESM" id="84"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="85"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="86"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKDRIVER" id="87"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="88"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EKFRPLED" id="90"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="91"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="92"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FLASTVER" id="93"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="94"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKADDRE" id="96"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="97"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="98"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KFREKCS2T" id="99"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="100"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="101"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KFREKCST2" id="102"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="103"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="104"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FFRVWBANK" id="105"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="106"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="107"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FFRVWFI" id="108"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="109"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="110"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEKCOSTI" id="111"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="112"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="113"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEKURAD" id="114"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="115"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="116"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KFRCOMP" id="117"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="118"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="119"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOGSYS" id="120"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="121"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="122"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FBSDOUBT" id="123"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="124"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="125"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPINCHAR" id="126"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="127"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="128"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKBARCC" id="129"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="130"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="131"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKBARFIC" id="132"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="133"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="134"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKBARTPC" id="135"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="136"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="137"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PKMISSORI" id="138"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="139"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="140"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TPEKENTCR" id="141"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="142"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="143"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KZNEUWGW" id="144"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="145"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="146"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KCONTMAN" id="147"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="148"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="149"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KFRPROD" id="150"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="151"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="152"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKCONTR2" id="153"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="154"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="155"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKNADDR" id="156"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="157"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="158"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKOCNTR2" id="159"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="160"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="161"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EKRIBNR" id="162"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="163"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="164"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIME" id="165"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="166"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="167"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCEKOPT" id="168"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="169"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="170"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DURATION" id="171"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="172"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="173"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALDAY" id="174"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="175"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="176"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DUR_UNIT" id="177"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="178"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="179"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CURRENCY" id="180"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="181"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="182"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PCEKVATRT" id="183"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="184"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="185"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PCEKINTER" id="186"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="187"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="188"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PCEKINEFF" id="189"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="190"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="191"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PCEKINSE" id="192"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="193"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="194"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PCEKINSL" id="195"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="196"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="197"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKFUNB" id="198"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="199"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="200"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKCAPC" id="201"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="202"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="203"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKFPAY" id="204"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="205"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="206"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKOPFEE" id="207"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="208"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="209"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKGADEP" id="210"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="211"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="212"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKBYBACK" id="213"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="214"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="215"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIBFINT" id="216"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="217"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="218"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AFRFINHT" id="219"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="220"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="221"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ABNFINHT" id="222"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="223"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="224"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AFRAPPORT" id="225"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="226"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="227"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ABASELOC" id="228"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="229"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="230"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ABSCOLES" id="231"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="232"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="233"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKPART" id="234"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="235"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="236"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALFNOTAX" id="237"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="238"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="239"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALIFETAX" id="240"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="241"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="242"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALFYETAX" id="243"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="244"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="245"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALPENTAX" id="246"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="247"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="248"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALIPETAX" id="249"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="250"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="251"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALPEYTAX" id="252"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="253"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="254"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ABFINTTC" id="255"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="256"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="257"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AEKPTIMP" id="258"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="259"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="260"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KABDEAL" id="261"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="262"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="263"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEKAVNT" id="264"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="265"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="266"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KILOMETER" id="267"/>
+      <elementValue elementRef="CONVERTDATE" value="false" id="268"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="269"/>
+    </elementParameter>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="UTF-8"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="READ_REAL_VALUE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FORMAT_DATE_CELLS" value="true" show="false"/>
     <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="false"/>
     <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" value="false" show="false"/>
     <elementParameter field="CHECK" name="SUPPRESS_WARN" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
     <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" value="true" show="false"/>
     <elementParameter field="CHECK" name="CONFIGURE_INFLATION_RATIO" value="false"/>
+    <elementParameter field="TEXT" name="INFLATION_RATIO" value="" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="q"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
-            <column comment="" key="false" length="255" name="KEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="KEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="DTVALIDFR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="DTVALIDTO" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="CREATEDON" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
@@ -154,7 +683,7 @@
       <column comment="" key="false" length="255" name="KILOMETER" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-            <column comment="" key="false" length="255" name="KEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="KEKCONTR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="DTVALIDFR" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="DTVALIDTO" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="CREATEDON" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
@@ -253,110 +782,22 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="c978d07c-4d1c-4a5e-8f23-3068e05738c8CwBEfCHyvLUxoW7VQ-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="CONTRAT_1" name="CONTRAT_1">
-      <!-- Dynamic schema 1 -->
-    </metadata>
+    <metadata connector="FLOW" label="CONTRAT_1" name="CONTRAT_1"/>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="CONTRAT_1">
-                <mapperTableEntries name="CONTRACTID" expression="row1.KEKCONTR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DTVALIDFR" expression="row1.DTVALIDFR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DTVALIDTO" expression="row1.DTVALIDTO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CREATEDON" expression="row1.CREATEDON" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRM_ENDDAT" expression="row1.CRM_ENDDAT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DTEKAPROD" expression="row1.DTEKAPROD" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DTEKDPROD" expression="row1.DTEKDPROD" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DTEKFPROD" expression="row1.DTEKFPROD" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DTCANCON" expression="row1.DTCANCON" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DTACCEPT" expression="row1.DTACCEPT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DTEKBBAG" expression="row1.DTEKBBAG" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DTEKDCORB" expression="row1.DTEKDCORB" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DTCANCLI" expression="row1.DTCANCLI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EKCTPCD" expression="row1.EKCTPCD" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EKNETCOD" expression="row1.EKNETCOD" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EKPRDTCO" expression="row1.EKPRDTCO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKOCNTR" expression="row1.KEKOCNTR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="RECORDMODE" expression="row1.RECORDMODE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KFREKCUST" expression="row1.KFREKCUST" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KFRPAYR" expression="row1.KFRPAYR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SEKCONTR" expression="row1.SEKCONTR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FEKCONTR" expression="row1.FEKCONTR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FEKPBDFL" expression="row1.FEKPBDFL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FEKSPCON" expression="row1.FEKSPCON" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKOBJECT" expression="row1.KEKOBJECT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKPROV" expression="row1.KEKPROV" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKPURCHS" expression="row1.KEKPURCHS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKREPN" expression="row1.KEKREPN" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKSALESM" expression="row1.KEKSALESM" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKDRIVER" expression="row1.KEKDRIVER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EKFRPLED" expression="row1.EKFRPLED" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FLASTVER" expression="row1.FLASTVER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKADDRE" expression="row1.KEKADDRE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KFREKCS2T" expression="row1.KFREKCS2T" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KFREKCST2" expression="row1.KFREKCST2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FFRVWBANK" expression="row1.FFRVWBANK" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FFRVWFI" expression="row1.FFRVWFI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SEKCOSTI" expression="row1.SEKCOSTI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DEKURAD" expression="row1.DEKURAD" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KFRCOMP" expression="row1.KFRCOMP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LOGSYS" expression="row1.LOGSYS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FBSDOUBT" expression="row1.FBSDOUBT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DEPINCHAR" expression="row1.DEPINCHAR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKBARCC" expression="row1.KEKBARCC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKBARFIC" expression="row1.KEKBARFIC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKBARTPC" expression="row1.KEKBARTPC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PKMISSORI" expression="row1.PKMISSORI" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TPEKENTCR" expression="row1.TPEKENTCR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KZNEUWGW" expression="row1.KZNEUWGW" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KCONTMAN" expression="row1.KCONTMAN" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KFRPROD" expression="row1.KFRPROD" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKCONTR2" expression="row1.KEKCONTR2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKNADDR" expression="row1.KEKNADDR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKOCNTR2" expression="row1.KEKOCNTR2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EKRIBNR" expression="row1.EKRIBNR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TIME" expression="row1.TIME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CCEKOPT" expression="row1.CCEKOPT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DURATION" expression="row1.DURATION" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CALDAY" expression="row1.CALDAY" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DUR_UNIT" expression="row1.DUR_UNIT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CURRENCY" expression="row1.CURRENCY" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PCEKVATRT" expression="row1.PCEKVATRT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PCEKINTER" expression="row1.PCEKINTER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PCEKINEFF" expression="row1.PCEKINEFF" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PCEKINSE" expression="row1.PCEKINSE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PCEKINSL" expression="row1.PCEKINSL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AEKFUNB" expression="row1.AEKFUNB" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AEKCAPC" expression="row1.AEKCAPC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AEKFPAY" expression="row1.AEKFPAY" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AEKOPFEE" expression="row1.AEKOPFEE" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AEKGADEP" expression="row1.AEKGADEP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AEKBYBACK" expression="row1.AEKBYBACK" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AIBFINT" expression="row1.AIBFINT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AFRFINHT" expression="row1.AFRFINHT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ABNFINHT" expression="row1.ABNFINHT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AFRAPPORT" expression="row1.AFRAPPORT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ABASELOC" expression="row1.ABASELOC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ABSCOLES" expression="row1.ABSCOLES" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AEKPART" expression="row1.AEKPART" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ALFNOTAX" expression="row1.ALFNOTAX" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ALIFETAX" expression="row1.ALIFETAX" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ALFYETAX" expression="row1.ALFYETAX" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ALPENTAX" expression="row1.ALPENTAX" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ALIPETAX" expression="row1.ALIPETAX" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ALPEYTAX" expression="row1.ALPEYTAX" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ABFINTTC" expression="row1.ABFINTTC" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AEKPTIMP" expression="row1.AEKPTIMP" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KABDEAL" expression="row1.KABDEAL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KEKAVNT" expression="row1.KEKAVNT" type="id_String" nullable="true"/>
-        <mapperTableEntries name="KILOMETER" expression="row1.KILOMETER" type="id_String" nullable="true"/>
-      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="CONTRAT_1"/>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-                <mapperTableEntries name="KEKCONTR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="KEKCONTR" type="id_String" nullable="true"/>
         <mapperTableEntries name="DTVALIDFR" type="id_String" nullable="true"/>
         <mapperTableEntries name="DTVALIDTO" type="id_String" nullable="true"/>
         <mapperTableEntries name="CREATEDON" type="id_String" nullable="true"/>
@@ -453,13 +894,511 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="bmV3amRiYyNKREJDI091dHB1dA" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_08r9kCtMEfC1gb9COxFZIA"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.enableDBType" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.setRawUrl" value="true" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.jdbcUrl" value="&quot;jdbc:snowflake://OVEAIAI-BQ70569.snowflakecomputing.com/?user=OUMAYMADEBBICH&amp;warehouse=COMPUTE_WH&amp;db=BANQUE&amp;schema=PFE&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.port" value="80" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.parameters" show="false"/>
+    <elementParameter field="TABLE" name="configuration.dataSet.dataStore.jdbcDriver">
+      <elementValue elementRef="configuration.dataSet.dataStore.jdbcDriver[].path" value="mvn:org.talend.libraries/snowflake-jdbc-3.24.0/6.0.0-SNAPSHOT/jar" id="0"/>
+    </elementParameter>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.dataStore.jdbcClass" value="&quot;net.snowflake.client.jdbc.SnowflakeDriver&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.userId" value="&quot;OUMAYMADEBBICH&quot;"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.dataStore.password" value="enc:system.encryption.key.v1:5BW89ypWUWBZ3KCc0/4gu8HfuelpRGIHCjEk8fIrL8HAF6/dZ/3htK6jGV0="/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useSharedDBConnection" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useDataSource" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="configuration.dataSet.dataStore.dbMapping" value="mysql_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.authenticationType" value="BASIC" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.dataStore.grantType" value="CLIENT_CREDENTIALS" show="false"/>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.tableName" value="DIM_CONTRAT"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataAction" value="INSERT"/>
+    <elementParameter field="CHECK" name="configuration.clearData" value="false"/>
+    <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+    <elementParameter field="CHECK" name="configuration.createTableIfNotExists" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.varcharLength" value="-1" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForCreateTableAndDML.keys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.keysForDML.keys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.sortStrategy" value="COMPOUND" show="false"/>
+    <elementParameter field="TABLE" name="configuration.sortKeys" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.distributionStrategy" value="AUTO" show="false"/>
+    <elementParameter field="TABLE" name="configuration.distributionKeys" show="false"/>
+    <elementParameter field="TABLE" name="configuration.ignoreUpdate" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.useAutoCommit" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.autoCommit" value="false" show="false"/>
+    <elementParameter field="CHECK" name="configuration.dataSet.dataStore.defineProtocol" value="false" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionTimeOut" value="30" show="false"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.dataStore.connectionValidationTimeOut" value="10" show="false"/>
+    <elementParameter field="TEXT" name="configuration.commitEvery" value="10000"/>
+    <elementParameter field="TABLE" name="configuration.additionalColumns"/>
+    <elementParameter field="CHECK" name="configuration.useFieldOptions" value="false"/>
+    <elementParameter field="TABLE" name="configuration.fieldOptions" show="false">
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CONTRACTID" id="0"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="1"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="2"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="3"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="4"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DTVALIDFR" id="5"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="6"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="7"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="8"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="9"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DTVALIDTO" id="10"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="11"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="12"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="13"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="14"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CREATEDON" id="15"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="16"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="17"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="18"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="19"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CRM_ENDDAT" id="20"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="21"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="22"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="23"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="24"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DTEKAPROD" id="25"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="26"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="27"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="28"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="29"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DTEKDPROD" id="30"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="31"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="32"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="33"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="34"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DTEKFPROD" id="35"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="36"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="37"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="38"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="39"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DTCANCON" id="40"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="41"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="42"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="43"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="44"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DTACCEPT" id="45"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="46"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="47"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="48"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="49"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DTEKBBAG" id="50"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="51"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="52"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="53"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="54"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DTEKDCORB" id="55"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="56"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="57"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="58"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="59"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DTCANCLI" id="60"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="61"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="62"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="63"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="64"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="EKCTPCD" id="65"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="66"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="67"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="68"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="69"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="EKNETCOD" id="70"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="71"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="72"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="73"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="74"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="EKPRDTCO" id="75"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="76"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="77"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="78"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="79"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKOCNTR" id="80"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="81"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="82"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="83"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="84"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="RECORDMODE" id="85"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="86"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="87"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="88"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="89"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KFREKCUST" id="90"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="91"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="92"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="93"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="94"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KFRPAYR" id="95"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="96"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="97"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="98"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="99"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="SEKCONTR" id="100"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="101"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="102"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="103"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="104"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="FEKCONTR" id="105"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="106"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="107"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="108"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="109"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="FEKPBDFL" id="110"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="111"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="112"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="113"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="114"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="FEKSPCON" id="115"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="116"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="117"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="118"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="119"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKOBJECT" id="120"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="121"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="122"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="123"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="124"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKPROV" id="125"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="126"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="127"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="128"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="129"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKPURCHS" id="130"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="131"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="132"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="133"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="134"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKREPN" id="135"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="136"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="137"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="138"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="139"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKSALESM" id="140"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="141"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="142"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="143"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="144"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKDRIVER" id="145"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="146"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="147"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="148"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="149"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="EKFRPLED" id="150"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="151"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="152"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="153"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="154"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="FLASTVER" id="155"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="156"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="157"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="158"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="159"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKADDRE" id="160"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="161"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="162"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="163"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="164"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KFREKCS2T" id="165"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="166"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="167"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="168"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="169"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KFREKCST2" id="170"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="171"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="172"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="173"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="174"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="FFRVWBANK" id="175"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="176"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="177"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="178"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="179"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="FFRVWFI" id="180"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="181"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="182"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="183"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="184"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="SEKCOSTI" id="185"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="186"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="187"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="188"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="189"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DEKURAD" id="190"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="191"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="192"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="193"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="194"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KFRCOMP" id="195"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="196"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="197"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="198"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="199"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="LOGSYS" id="200"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="201"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="202"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="203"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="204"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="FBSDOUBT" id="205"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="206"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="207"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="208"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="209"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DEPINCHAR" id="210"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="211"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="212"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="213"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="214"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKBARCC" id="215"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="216"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="217"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="218"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="219"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKBARFIC" id="220"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="221"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="222"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="223"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="224"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKBARTPC" id="225"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="226"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="227"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="228"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="229"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PKMISSORI" id="230"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="231"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="232"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="233"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="234"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TPEKENTCR" id="235"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="236"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="237"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="238"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="239"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KZNEUWGW" id="240"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="241"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="242"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="243"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="244"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KCONTMAN" id="245"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="246"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="247"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="248"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="249"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KFRPROD" id="250"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="251"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="252"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="253"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="254"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKCONTR2" id="255"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="256"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="257"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="258"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="259"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKNADDR" id="260"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="261"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="262"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="263"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="264"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKOCNTR2" id="265"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="266"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="267"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="268"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="269"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="EKRIBNR" id="270"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="271"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="272"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="273"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="274"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="TIME" id="275"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="276"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="277"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="278"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="279"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CCEKOPT" id="280"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="281"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="282"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="283"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="284"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DURATION" id="285"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="286"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="287"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="288"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="289"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CALDAY" id="290"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="291"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="292"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="293"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="294"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="DUR_UNIT" id="295"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="296"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="297"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="298"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="299"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="CURRENCY" id="300"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="301"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="302"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="303"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="304"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PCEKVATRT" id="305"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="306"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="307"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="308"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="309"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PCEKINTER" id="310"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="311"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="312"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="313"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="314"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PCEKINEFF" id="315"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="316"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="317"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="318"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="319"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PCEKINSE" id="320"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="321"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="322"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="323"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="324"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="PCEKINSL" id="325"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="326"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="327"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="328"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="329"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="AEKFUNB" id="330"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="331"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="332"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="333"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="334"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="AEKCAPC" id="335"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="336"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="337"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="338"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="339"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="AEKFPAY" id="340"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="341"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="342"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="343"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="344"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="AEKOPFEE" id="345"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="346"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="347"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="348"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="349"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="AEKGADEP" id="350"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="351"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="352"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="353"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="354"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="AEKBYBACK" id="355"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="356"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="357"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="358"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="359"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="AIBFINT" id="360"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="361"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="362"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="363"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="364"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="AFRFINHT" id="365"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="366"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="367"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="368"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="369"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ABNFINHT" id="370"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="371"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="372"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="373"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="374"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="AFRAPPORT" id="375"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="376"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="377"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="378"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="379"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ABASELOC" id="380"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="381"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="382"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="383"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="384"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ABSCOLES" id="385"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="386"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="387"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="388"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="389"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="AEKPART" id="390"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="391"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="392"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="393"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="394"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ALFNOTAX" id="395"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="396"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="397"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="398"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="399"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ALIFETAX" id="400"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="401"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="402"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="403"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="404"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ALFYETAX" id="405"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="406"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="407"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="408"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="409"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ALPENTAX" id="410"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="411"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="412"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="413"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="414"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ALIPETAX" id="415"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="416"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="417"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="418"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="419"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ALPEYTAX" id="420"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="421"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="422"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="423"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="424"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="ABFINTTC" id="425"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="426"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="427"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="428"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="429"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="AEKPTIMP" id="430"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="431"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="432"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="433"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="434"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KABDEAL" id="435"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="436"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="437"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="438"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="439"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KEKAVNT" id="440"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="441"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="442"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="443"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="444"/>
+      <elementValue elementRef="configuration.fieldOptions[].columnName" value="KILOMETER" id="445"/>
+      <elementValue elementRef="configuration.fieldOptions[].deleteKey" value="false" id="446"/>
+      <elementValue elementRef="configuration.fieldOptions[].insertable" value="false" id="447"/>
+      <elementValue elementRef="configuration.fieldOptions[].updatable" value="false" id="448"/>
+      <elementValue elementRef="configuration.fieldOptions[].updateKey" value="false" id="449"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="configuration.debugQuery" value="false"/>
     <elementParameter field="CHECK" name="configuration.useBatch" value="true"/>
     <elementParameter field="TEXT" name="configuration.batchSize" value="10000"/>
+    <elementParameter field="CHECK" name="configuration.useQueryTimeout" value="false"/>
+    <elementParameter field="TEXT" name="configuration.queryTimeout" value="30" show="false"/>
+    <elementParameter field="CHECK" name="configuration.rewriteBatchedStatements" value="true" show="false"/>
+    <elementParameter field="CHECK" name="configuration.useOriginColumnName" value="true" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" value="-1" show="false"/>
+    <elementParameter field="TECHNICAL" name="configuration.dataSet.dataStore.__version" value="-1" show="false"/>
     <metadata connector="FLOW" label="DIM_CONTRAT" name="tDBOutput_1">
-            <column comment="" key="false" length="255" name="CONTRACTID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CONTRACTID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="DTVALIDFR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="DTVALIDTO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="CREATEDON" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -551,7 +1490,7 @@
       <column comment="" key="false" length="255" name="KILOMETER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="reject" label="DIM_CONTRAT" name="reject">
-            <column comment="" key="false" length="255" name="CONTRACTID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CONTRACTID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="DTVALIDFR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="DTVALIDTO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="CREATEDON" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -644,6 +1583,8 @@
       <column comment="" defaultValue="" key="false" length="255" name="errorCode" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
+    <metadata connector="LOOKUP" name="LOOKUP"/>
+    <metadata connector="MERGE" name="MERGE"/>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
